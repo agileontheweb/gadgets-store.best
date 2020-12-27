@@ -1,0 +1,9 @@
+*.log
+.well-known/
+error_log
+bower_components/
+node_modules/
+package-lock.json
+dist/
+.DS_Store
+.htaccess

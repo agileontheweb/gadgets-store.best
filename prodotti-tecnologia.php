@@ -22,7 +22,7 @@
           <div class="bg-white rounded-lg shadow-xl">
             <div class="p-12">
               <div>
-               <img src="<?php echo $list[$i]->image ?>" alt="<?php echo $list[$i]->name ?>">
+               <img src="<?php echo $list[$i]->image ?>" alt="<?php echo $list[$i]->name ?>" width="600" height="600">
               </div>
               <div class="mt-8 text-center">
                 <h1 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h1>
