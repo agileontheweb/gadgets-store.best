@@ -8,7 +8,6 @@
   <body class="bg-gray-200">
     <?php include("shared/navbar.php") ?>
     <div class="pt-32">
-      <?php include("shared/_ricevi_promozioni.php") ?>
       <h1 class="text-center text-2xl font-bold py-12 text-gray-600">
         <span class="inline-block border-b-4 border-gray-600 pb-3">Prodotti per la Casa</span>
       </h1>
@@ -36,6 +35,7 @@
         </div>
       <?php } ?>
       </div>
+      <?php include("shared/_ricevi_promozioni.php") ?>
     </div>
     <?php include("shared/footer.php") ?>
   </body>

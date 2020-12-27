@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<products status = "ok">
+  <record>
+      <name>Amazon Prime</name>
+      <description>Accedere alla consegna GRATUITA, illimitata, in un giorno, di milioni di articoli e la consegna nello stesso giorno in determinati codici postali residenziali.</description>
+      <image>img/prodotti/prime.jpg</image>
+      <link>http://www.amazon.it/amazonprime?tag=corsidigrafic-21</link>
+  </record>
+
+  <record>
+      <name>Amazon Music</name>
+      <description>Ascoltare oltre 40 milioni di brani, senza pubblicità, online e offline, tramite l’app Amazon Music.</description>
+      <image>img/prodotti/amazonmusic.jpg</image>
+      <link>https://www.amazon.it/music/unlimited?tag=corsidigrafic-21</link>
+  </record>
+
+  <record>
+      <name>Amazon Video</name>
+      <description>Avrai la posizione di qualsiasi oggetto sempre a portata di smartphone.</description>
+      <image>img/prodotti/primevideo.jpg</image>
+      <link>https://www.primevideo.com/offers/ref=atv_nb_lcl_it_IT?tag=corsidigrafic-21</link>
+  </record>
+
+  <record>
+      <name>Kindle Unlimited</name>
+      <description>Servizio che consente di leggere illimitatamente, scegliendo tra più di 1 milione di titoli.</description>
+      <image>img/prodotti/kindleunlimited.jpg</image>
+      <link>https://www.amazon.it/kindle-dbs/hz/signup?tag=corsidigrafic-21</link>
+  </record>
+</products>

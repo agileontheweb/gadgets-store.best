@@ -17,11 +17,11 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 
 	<nav class="flex p-3">
 	  <a class="flex navbar-brand" href="<?php echo $projectPath ?>">
-     <img src="img/logo.png" class="w-20 h-20">
+     <img src="img/logo.png" class="w-14 h-14 md:w-20 md:h-20">
 		 <span class="hidden">Gadgets Store</span>
 	  </a>
 
-		<div class="flex lg:hidden absolute right-10 pt-6">
+		<div class="flex lg:hidden absolute right-10 pt-3 md:pt-6">
 			<a class="flex text-white" id="btn-primary-sub-menu" href="#">
 			 <i class="fas fa-bars fa-2x"></i>
 		  </a>

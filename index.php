@@ -13,7 +13,7 @@
       <?php include("shared/_bellezza.php") ?>
       <?php include("shared/_ricevi_promozioni.php") ?>
       <?php include("shared/_perlacasa.php") ?>
-      <?php include("shared/carousel.php") ?>
+      <?php include("shared/_amazon.php") ?>
     </div>
     <?php include("shared/footer.php") ?>
   </body>

@@ -1,18 +1,18 @@
-<footer class="bg-white mt-6">
+<footer class="bg-white mt-2">
   <div class="p-3">
-    <div class="flex">
-      <div class="flex-1 mx-auto p-3">
+    <div class="md:flex">
+      <div class="mx-auto p-3">
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cosa-e-gadgets-store.php"><small>Cos'è Gadgets Store</small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cookie-policy.php"><small>Cookie Policy</small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/disclaimer.php"><small>Disclaimer</small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/contatti.php"><small>Contatti</small></a>
       </div>
-      <div class="flex-1 p-3 text-right">
+      <!-- <div class="flex-1 p-3 text-right">
         <a href="https://www.facebook.com/GadgetsStoreBest" target="blank">
           <i class="fab fa-facebook-square"></i>
           Gadgets Store
         </a>
-      </div>
+      </div> -->
     </div>
     <hr>
     <p class="p-3 text-center text-xs">
@@ -37,8 +37,3 @@
 <script src="<?php echo $projectPath ?>bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
 <script src="<?php echo $projectPath ?>/js/countdown.js"></script>
 <script src="<?php echo $projectPath ?>/js/main.js"></script>
-
-<?php $set_count_down = "2020/11/27 23:59:59"; ?>
-<script>
-  var setCountDown = "<?php echo $set_count_down; ?>";
-</script>

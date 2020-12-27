@@ -9,7 +9,6 @@
     <?php include("shared/navbar.php") ?>
 
     <div class="pt-32">
-      <?php include("shared/_ricevi_promozioni.php") ?>
       <h1 class="text-center text-2xl font-bold py-12 text-pink-600">
         <span class="inline-block border-b-4 border-pink-600 pb-3">Prodotti per la Bellezza</span>
       </h1>
@@ -36,6 +35,7 @@
         </div>
       <?php } ?>
       </div>
+      <?php include("shared/_ricevi_promozioni.php") ?>
     </div>
     <?php include("shared/footer.php") ?>
   </body>

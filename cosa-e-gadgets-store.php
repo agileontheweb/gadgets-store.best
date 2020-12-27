@@ -7,7 +7,7 @@
   <body class="bg-gray-100">
     <?php include("shared/navbar.php") ?>
 
-    <div class="pt-32">
+    <div class="pt-32 px-3">
       <h1 class="text-center text-2xl font-bold py-12 text-gray-600">
         <span class="inline-block border-b-4 border-gray-600 pb-3">Gadgets Store</span>
       </h1>
