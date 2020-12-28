@@ -10,7 +10,7 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 ?>
 
 <div class="fixed left-0 right-0 mb-0 border-0 rounded-0 bg-black">
-	<div class="bg-red-500 p-1 text-center text-white text-sm">
+	<div class="bg-red-500 p-3 text-center text-white text-sm">
 		Le offerte potrebbero terminare tra:
 		<div class="inline-block ml-1 count-down font-bold"><span class="clock"></span></div>
 	</div>
@@ -34,6 +34,9 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 				</li>
 				<li class="">
 					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-la-bellezza.php">Bellezza</a>
+				</li>
+				<li class="">
+					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-il-benessere.php">Benessere</a>
 				</li>
 				<li class="">
 					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-la-casa.php">Casa</a>
@@ -63,6 +66,9 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 			</li>
 			<li class="py-3 w-full">
 				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-la-bellezza.php">Bellezza</a>
+			</li>
+			<li class="py-3 w-full">
+				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-il-benessere.php">Benessere</a>
 			</li>
 			<li class="py-3 w-full">
 				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-la-casa.php">Casa</a>

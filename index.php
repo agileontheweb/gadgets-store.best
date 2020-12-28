@@ -10,6 +10,8 @@
     <div class="pt-32">
       <?php include("shared/_tecnologia.php") ?>
       <?php include("shared/_ricevi_promozioni.php") ?>
+      <?php include("shared/_benessere.php") ?>
+      <?php include("shared/_ricevi_promozioni.php") ?>
       <?php include("shared/_bellezza.php") ?>
       <?php include("shared/_ricevi_promozioni.php") ?>
       <?php include("shared/_perlacasa.php") ?>
