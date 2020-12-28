@@ -1,6 +1,3 @@
-<div class="hidden">
-	<?#php include("shared/modal_mailerlite.php") ?>
-</div>
 <?php
 if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 	$projectPath = "http://localhost:8888/gadgets-store.best/";
@@ -17,7 +14,7 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 
 	<nav class="flex p-3">
 	  <a class="flex navbar-brand" href="<?php echo $projectPath ?>">
-     <img src="img/logo.png" class="w-14 h-14 md:w-20 md:h-20">
+     <img src="<?php echo $projectPath ?>/img/logo.png" class="w-14 h-14 md:w-20 md:h-20">
 		 <span class="hidden">Gadgets Store</span>
 	  </a>
 
@@ -33,13 +30,13 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-tecnologia.php">Tecnologia</a>
 				</li>
 				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-la-bellezza.php">Bellezza</a>
+					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-bellezza.php">Bellezza</a>
 				</li>
 				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-il-benessere.php">Benessere</a>
+					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-benessere.php">Benessere</a>
 				</li>
 				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-la-casa.php">Casa</a>
+					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-casa.php">Casa</a>
 				</li>
 				<!-- <li class="">
 					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="http://bit.ly/2OPkFYk">Corsi di Formazione</a>
@@ -65,13 +62,13 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-tecnologia.php">Tecnologia</a>
 			</li>
 			<li class="py-3 w-full">
-				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-la-bellezza.php">Bellezza</a>
+				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-bellezza.php">Bellezza</a>
 			</li>
 			<li class="py-3 w-full">
-				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-il-benessere.php">Benessere</a>
+				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-benessere.php">Benessere</a>
 			</li>
 			<li class="py-3 w-full">
-				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-per-la-casa.php">Casa</a>
+				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-casa.php">Casa</a>
 			</li>
 		</ul>
 	</div>

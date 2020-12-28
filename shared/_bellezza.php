@@ -13,6 +13,15 @@
       while($i <= 5){
         $i++;
       ?>
+      <?php
+        if(empty($list[$i]->linkaffiliate)){
+          $value = $projectPath ."pages/" .$list[$i]->link;
+          $target = false;
+        }else{
+          $value = $list[$i]->linkaffiliate;
+          $target = true;
+        }
+       ?>
     <div class="p-2">
       <div class="bg-white rounded-lg shadow-xl">
         <div class="p-12">
@@ -29,7 +38,7 @@
           <div class="mt-8 text-center">
             <h1 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h1>
             <p class="text-gray-600"><?php echo $list[$i]->description ?></p>
-            <a href="<?php echo $list[$i]->link ?>" class="block mt-6 bg-pink-500 hover:bg-pink-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none" target="_blank" rel="nofollow">
+            <a href="<?php echo $value ?>" class="block mt-6 bg-pink-500 hover:bg-pink-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none" <?php if($target == true){?> target="_blank" rel="nofollow" <?php }?>>
               Vedi
             </a>
           </div>
@@ -45,7 +54,7 @@
           </div>
           <div class="mt-8 text-center">
             <h1 class="font-bold text-lg mb-1 uppercase">Scopri altri prodotti in offerta</h1>
-            <a href="prodotti-per-la-bellezza.php" class="block mt-6 text-black bg-white hover:bg-black border-4 hover:border-4 hover:border-red-400 hover:text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+            <a href="prodotti-bellezza.php" class="block mt-6 text-black bg-white hover:bg-black border-4 hover:border-4 hover:border-red-400 hover:text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
               Vai
             </a>
           </div>
@@ -54,7 +63,7 @@
     </div>
   </div>
   <div class="text-center py-12">
-    <a href="prodotti-per-la-bellezza.php" class="bg-transparent hover:bg-pink-500 text-pink-700 font-semibold hover:text-white py-4 px-8 border border-pink-500 hover:border-transparent rounded">
+    <a href="prodotti-bellezza.php" class="bg-transparent hover:bg-pink-500 text-pink-700 font-semibold hover:text-white py-4 px-8 border border-pink-500 hover:border-transparent rounded">
     Vedi tutti
   </a>
   </div>

@@ -6,7 +6,11 @@
     <?php include('shared/meta.php'); ?>
   </head>
   <body class="bg-gray-200">
+    <script>
+      fbq('track', 'Pagina Casa');
+    </script>
     <?php include("shared/navbar.php") ?>
+
     <div class="pt-32">
       <h1 class="text-center text-2xl font-bold py-12 text-gray-600">
         <span class="inline-block border-b-4 border-gray-600 pb-3">Prodotti per la Casa</span>
@@ -25,7 +29,16 @@
               <div class="mt-8 text-center">
                 <h1 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h1>
                 <p class="text-gray-600"><?php echo $list[$i]->description ?></p>
-                <a href="<?php echo $list[$i]->link ?>" class="block mt-6 bg-gray-500 hover:bg-gray-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none" target="_blank" rel="nofollow">
+                <?php
+                  if(empty($list[$i]->linkaffiliate)){
+                    $value = $projectPath ."pages/" .$list[$i]->link;
+                    $target = false;
+                  }else{
+                    $value = $list[$i]->linkaffiliate;
+                    $target = true;
+                  }
+                 ?>
+                <a href="<?php echo $value ?>" class="block mt-6 bg-gray-500 hover:bg-gray-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none" <?php if($target == true){?> target="_blank" rel="nofollow" <?php }?>>
                   Vedi
                 </a>
               </div>

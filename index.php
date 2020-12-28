@@ -1,3 +1,4 @@
+<?php include("../settings.php") ?>
 <!doctype html>
 <html lang="it">
   <head>
@@ -6,6 +7,9 @@
     <?php include('shared/meta.php'); ?>
   </head>
   <body>
+    <script>
+      fbq('track', 'Home Page');
+    </script>
     <?php include("shared/navbar.php") ?>
     <div class="pt-32">
       <?php include("shared/_tecnologia.php") ?>

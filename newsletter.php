@@ -14,9 +14,13 @@
   </style>
 
   <body class="bg-gray-100">
+    <script>
+      fbq('track', 'Pagina newsletter');
+    </script>
     <?php include("shared/navbar.php") ?>
+
     <div class="pt-32">
-      <h1 class="p-3 text-3xl text-center">
+      <h1 class="text-center text-2xl font-bold py-12 text-gray-600">
         Ricevi gratuitamente le <br><strong>migliori offerte e promozioni <br>in sconto del 50%</strong>.
       </h1>
       <div class="max-w-screen-sm bg-white mx-auto">
