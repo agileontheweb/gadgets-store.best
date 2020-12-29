@@ -35,6 +35,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 	//create default task
-	grunt.registerTask("default", ["concat"], ["imagemin"]);
+	// grunt.registerTask("default", ["concat"], ["imagemin"]);
+	grunt.registerTask("default", ["concat"]);
 
 };

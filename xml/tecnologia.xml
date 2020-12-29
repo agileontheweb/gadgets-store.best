@@ -11,12 +11,30 @@
   </record>
 
   <record>
+    <name>Paladone Star Wars</name>
+    <description>Una brillante lampada da tavolo nel design di un classico Star Wars.</description>
+    <image>img/prodotti/lampada-starwars-posizionabile.jpg</image>
+    <linkaffiliate>https://amzn.to/2WWlHoF</linkaffiliate>
+    <link></link>
+    <offer>Amazon</offer>
+    <formtitle></formtitle>
+    <url_api_product></url_api_product>
+    <selector></selector>
+    <privacy>/</privacy>
+  </record>
+
+
+  <record>
     <name>Drone</name>
     <description>X Tactical è progettato con estrema precisione con un'alta qualità di ripresa.</description>
     <image>img/prodotti/drone.jpg</image>
     <linkaffiliate></linkaffiliate>
     <link>drone-x-tactical.php</link>
     <offer>Sconto 50%</offer>
+    <formtitle>Drone X Tactical</formtitle>
+    <url_api_product>bgood_xdrone</url_api_product>
+    <selector>true</selector>
+    <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
   </record>
 
   <record>
@@ -25,6 +43,7 @@
     <image>img/prodotti/c10xpower.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqD</linkaffiliate>
     <!-- <link>c10-xpower.php</link> -->
+    <url_api_product>bgood_c10xpower</url_api_product>
     <offer>Sconto 50%</offer>
   </record>
 
@@ -50,8 +69,8 @@
       <name>Senti Più 30x</name>
       <description>L’amplificatore di suoni da inserire direttamente nel tuo orecchio.</description>
       <image>img/prodotti/sentipiu30x.jpg</image>
-      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr9</linkaffiliate>
-      <!-- <link>sentipiu30x.php</link> -->
+      <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr9</linkaffiliate> -->
+      <link>sentipiu30x.php</link>
       <offer>Sconto 30%</offer>
   </record>
 

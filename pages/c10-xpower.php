@@ -1,23 +1,15 @@
 <?php include("../settings.php") ?>
 <?php
-  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $title = "C10 X Power";
-    $url_product_api = "bgood_c10xpower";
-    $selector = true;
-    $selector_1 = "1 C10 Xpower €59.90";
-    $selector_2 = "2 C10 Xpower €79.90";
-    $selector_3 = "3 C10 Xpower €99.90";
-    $selector_1_value = "1";
-    $selector_2_value = "2";
-    $selector_3_value = "3";
-    $privacy = "https://www.ilmontestore.sm/privacy-policy/";
-
-    if($selector == true){
-      $selectors = "selector=$selector&selector_1=$selector_1&selector_1_value=$selector_1_value&selector_2=$selector_2&selector_2_value=$selector_2_value&selector_3=$selector_3&selector_3_value=$selector_3_value";
-    }
-    $custom_params = "title=$title&url_product_api=$url_product_api&$selectors&privacy=$privacy";
-    header("location: forms.php?$custom_params");
-  }
+  passDataForms("C10 X Power", "bgood_c10xpower", true,
+            "1 C10 Xpower €59.90",
+            "2 Tactical Drone €159.00",
+            "3 C10 Xpower €99.90",
+            "1",
+            "2",
+            "3",
+            "https://www.ilmontestore.sm/privacy-policy/",
+            null
+          );
 ?>
 
 <!doctype html>
@@ -31,7 +23,7 @@
 
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
-        fbq('track', 'Drone X-Tactical Page');
+        fbq('track', '<?php echo $title ?> Page');
       </script>
     <?php } ?>
 

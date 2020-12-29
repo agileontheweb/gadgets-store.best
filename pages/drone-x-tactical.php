@@ -1,24 +1,17 @@
 <?php include("../settings.php") ?>
 <?php
-
-  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $title = "Drone X Tactical";
-    $url_product_api = "bgood_xdrone";
-    $selector = true;
-    $selector_1 = "1 Tactical Drone €99.00";
-    $selector_2 = "2 Tactical Drone €159.00";
-    $selector_3 = "1 Kit completo €169.00";
-    $selector_1_value = "1";
-    $selector_2_value = "2";
-    $selector_3_value = "1k";
-    $privacy = "https://www.ilmontestore.sm/privacy-policy/";
-
-    if($selector == true){
-      $selectors = "selector=$selector&selector_1=$selector_1&selector_1_value=$selector_1_value&selector_2=$selector_2&selector_2_value=$selector_2_value&selector_3=$selector_3&selector_3_value=$selector_3_value";
-    }
-    $custom_params = "title=$title&url_product_api=$url_product_api&$selectors&privacy=$privacy";
-    header("location: forms.php?$custom_params");
-  }
+  passDataForms("Drone X Tactical",
+            "bgood_xdrone",
+            true,
+            "1 Tactical Drone €99.00",
+            "2 Tactical Drone €159.00",
+            "1 Kit completo €169.00",
+            "1",
+            "2",
+            "1k",
+            "https://www.ilmontestore.sm/privacy-policy/",
+            null
+          );
 ?>
 
 <!doctype html>
@@ -32,7 +25,7 @@
 
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
-        fbq('track', 'Drone X-Tactical Page');
+        fbq('track', 'Drone X Tactical Page');
       </script>
     <?php } ?>
 
@@ -54,7 +47,7 @@
             Ordina Ora
           </a>
         </p>
-        <img src="http://link.gadgets-store.best/landing/b-good/xdrone/1/images/drone.png" alt="">
+        <!-- <img src="http://link.gadgets-store.best/landing/b-good/xdrone/1/images/drone.png" alt=""> -->
       </div>
 
       <div class="bg-black text-white py-4">
