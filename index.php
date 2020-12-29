@@ -1,4 +1,4 @@
-<?php include("../settings.php") ?>
+<?php include("settings.php") ?>
 <!doctype html>
 <html lang="it">
   <head>
@@ -7,9 +7,13 @@
     <?php include('shared/meta.php'); ?>
   </head>
   <body>
-    <script>
-      fbq('track', 'Home Page');
-    </script>
+
+    <?php if( !in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
+      <script>
+        fbq('track', 'Home Page');
+      </script>
+    <?php } ?>
+
     <?php include("shared/navbar.php") ?>
     <div class="pt-32">
       <?php include("shared/_tecnologia.php") ?>

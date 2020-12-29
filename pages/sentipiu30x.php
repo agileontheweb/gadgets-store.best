@@ -1,21 +1,25 @@
 <?php include("../settings.php") ?>
 <?php
-
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $title = "Drone X Tactical";
-    $url_product_api = "bgood_xdrone";
-    $selector = true;
-    $selector_1 = "1 Tactical Drone €99.00";
-    $selector_2 = "2 Tactical Drone €159.00";
-    $selector_3 = "1 Kit completo €169.00";
+    $title = "Senti piú 30x";
+    $url_product_api = "dmc_sentipiù30x";
+
+    $selector = false;
+    $selector_1 = "1 C10 Xpower €59.90";
+    $selector_2 = "2 C10 Xpower €79.90";
+    $selector_3 = "3 C10 Xpower €99.90";
     $selector_1_value = "1";
     $selector_2_value = "2";
-    $selector_3_value = "1k";
-    $privacy = "https://www.ilmontestore.sm/privacy-policy/";
+    $selector_3_value = "3";
+    $quantity = "1";
+    $privacy = "https://www.dmcshop.it/privacy-policy";
 
     if($selector == true){
       $selectors = "selector=$selector&selector_1=$selector_1&selector_1_value=$selector_1_value&selector_2=$selector_2&selector_2_value=$selector_2_value&selector_3=$selector_3&selector_3_value=$selector_3_value";
+    }else{
+      $selectors = "quantity=$quantity";
     }
+
     $custom_params = "title=$title&url_product_api=$url_product_api&$selectors&privacy=$privacy";
     header("location: forms.php?$custom_params");
   }
@@ -24,7 +28,7 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <title>Drone X Tactical - Gadgets Store - Prodotti scontati e in promozione</title>
+    <title>Senti pìù 30X  - Gadgets Store - Prodotti scontati e in promozione</title>
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>
@@ -32,21 +36,21 @@
 
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
-        fbq('track', 'Drone X-Tactical Page');
+        fbq('track', <?php echo $title ?>);
       </script>
     <?php } ?>
 
-    <form action="drone-x-tactical.php" method="post"></form>
+    <form action="sentipiu30x.php" method="post"></form>
 
     <?php include("../shared/navbar.php") ?>
     <div class="pt-32">
       <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
-        <span class="inline-block border-b-4 border-gray-600 pb-3">IL NUOVO DRONE MILITARE</span>
+        <span class="inline-block border-b-4 border-gray-600 pb-3">Senti più 30X</span>
       </h1>
 
       <div class="max-w-screen-md mx-auto">
         <p class="p-3">
-          <strong>XTactical Drone</strong> è un drone progettato con precisione, specificamente pensato per volare facilmente, rendendo perfetto il volo in ambienti chiusi o la registrazione in azione, mentre si è in movimento. La sua struttura pieghevole e il suo design leggero lo rendono un oggetto essenziale per ogni avventura!
+          <strong>Senti più 30x</strong> Torna a sentire i suoni che ami! La risata di tuo nipote, una bella canzone di un tempo o un film in televisione ci rendono felici e meritano di essere sentiti bene!
         </p>
 
         <p class="mx-auto text-center my-6">

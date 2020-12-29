@@ -1,16 +1,15 @@
 <?php include("../settings.php") ?>
 <?php
-
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $title = "Drone X Tactical";
-    $url_product_api = "bgood_xdrone";
+    $title = "C10 X Power";
+    $url_product_api = "bgood_c10xpower";
     $selector = true;
-    $selector_1 = "1 Tactical Drone €99.00";
-    $selector_2 = "2 Tactical Drone €159.00";
-    $selector_3 = "1 Kit completo €169.00";
+    $selector_1 = "1 C10 Xpower €59.90";
+    $selector_2 = "2 C10 Xpower €79.90";
+    $selector_3 = "3 C10 Xpower €99.90";
     $selector_1_value = "1";
     $selector_2_value = "2";
-    $selector_3_value = "1k";
+    $selector_3_value = "3";
     $privacy = "https://www.ilmontestore.sm/privacy-policy/";
 
     if($selector == true){
@@ -24,7 +23,7 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <title>Drone X Tactical - Gadgets Store - Prodotti scontati e in promozione</title>
+    <title>C10 X Power - Gadgets Store - Prodotti scontati e in promozione</title>
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>
@@ -36,12 +35,12 @@
       </script>
     <?php } ?>
 
-    <form action="drone-x-tactical.php" method="post"></form>
+    <form action="c10-xpower.php" method="post"></form>
 
     <?php include("../shared/navbar.php") ?>
     <div class="pt-32">
       <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
-        <span class="inline-block border-b-4 border-gray-600 pb-3">IL NUOVO DRONE MILITARE</span>
+        <span class="inline-block border-b-4 border-gray-600 pb-3">C10 X Power</span>
       </h1>
 
       <div class="max-w-screen-md mx-auto">

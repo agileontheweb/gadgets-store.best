@@ -27,16 +27,16 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 		<div class="hidden lg:flex">
 			<ul class="items-center flex">
 				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-tecnologia.php">Tecnologia</a>
+					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-tecnologia.php">Tecnologia</a>
 				</li>
 				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-bellezza.php">Bellezza</a>
+					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-bellezza.php">Bellezza</a>
 				</li>
 				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-benessere.php">Benessere</a>
+					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-benessere.php">Benessere</a>
 				</li>
 				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-casa.php">Casa</a>
+					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-casa.php">Casa</a>
 				</li>
 				<!-- <li class="">
 					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="http://bit.ly/2OPkFYk">Corsi di Formazione</a>
@@ -44,7 +44,7 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 			</ul>
 	  </div>
 		<div class="hidden lg:flex absolute p-2 right-10">
-			<a href="newsletter.php" class="hover:bg-red-500 hover:text-white border-b-4 border-red-500 font-bold text-white px-3 py-3" data-toggle="modal" data-target="#signupropmotion">
+			<a href="<?php echo $projectPath ?>newsletter.php" class="hover:bg-red-500 hover:text-white border-b-4 border-red-500 font-bold text-white px-3 py-3" data-toggle="modal" data-target="#signupropmotion">
 				Sconti nella tua email
 			</a>
 		</div>
@@ -59,16 +59,16 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="./">Home</a>
 			</li>
 			<li class="py-3 w-full">
-				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-tecnologia.php">Tecnologia</a>
+				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-tecnologia.php">Tecnologia</a>
 			</li>
 			<li class="py-3 w-full">
-				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-bellezza.php">Bellezza</a>
+				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-bellezza.php">Bellezza</a>
 			</li>
 			<li class="py-3 w-full">
-				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-benessere.php">Benessere</a>
+				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-benessere.php">Benessere</a>
 			</li>
 			<li class="py-3 w-full">
-				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="prodotti-casa.php">Casa</a>
+				<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-casa.php">Casa</a>
 			</li>
 		</ul>
 	</div>

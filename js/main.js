@@ -3,4 +3,8 @@ $(document).ready(function(){
   $("#btn-primary-sub-menu, #btn-close").click(function() {
     $("#primary-sub-menu").toggle();
   });
+
+  $(".btn-submit-to-forms").click(function() {
+    $('form').submit();
+  });
 });

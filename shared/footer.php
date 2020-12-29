@@ -7,12 +7,6 @@
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/disclaimer.php"><small>Disclaimer</small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/contatti.php"><small>Contatti</small></a>
       </div>
-      <!-- <div class="flex-1 p-3 text-right">
-        <a href="https://www.facebook.com/GadgetsStoreBest" target="blank">
-          <i class="fab fa-facebook-square"></i>
-          Gadgets Store
-        </a>
-      </div> -->
     </div>
     <hr>
     <p class="p-3 text-center text-xs">
@@ -31,15 +25,13 @@
   </div>
 </footer>
 
-<?php
-if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
+<?php if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
   <script src="<?php echo $projectPath ?>bower_components/jquery/dist/jquery.min.js"></script>
   <script src="<?php echo $projectPath ?>js/jquery.ihavecookies.js"></script>
   <script src="<?php echo $projectPath ?>js/GDPR-cookie.js"></script>
   <script src="<?php echo $projectPath ?>bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
   <script src="<?php echo $projectPath ?>js/countdown.js"></script>
   <script src="<?php echo $projectPath ?>js/main.js"></script>
-
 <?php }else{ ?>
   <script src="<?php echo $projectPath ?>/dist/built.js"></script>
 <?php }?>
