@@ -46,7 +46,7 @@
 
 ?>
 	<form method="post" accept-charset="utf-8" role="form" action="form.php"
-  	class="max-w-screen-md mx-auto px-3 bg-white border-4 border-dashed border-green-500 py-3">
+  	class="max-w-screen-md px-4 mx-auto px-3 bg-white border-4 border-dashed border-green-500">
 		<p class="text-center py-3">Compila il modulo qui sotto per poter acquistare il prodotto.
 			Un operatore ti ricontatterá a breve per confermare i tuoi dati.
 			<strong>La Spedizione è gratuita.</strong>

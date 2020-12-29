@@ -33,7 +33,7 @@
       <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
         <span class="inline-block pb-3">Modulo Acquisto <strong class="text-green-500"><?php echo $title;?> </strong></span>
       </h1>
-      <div class="max-w-screen-sm mx-auto mt-8">
+      <div class="max-w-screen-sm mx-auto mt-8 px-3">
         <?php include("form.php") ?>
       </div>
     </div>

@@ -41,13 +41,13 @@
         <p class="p-3">
           <strong>XTactical Drone</strong> è un drone progettato con precisione, specificamente pensato per volare facilmente, rendendo perfetto il volo in ambienti chiusi o la registrazione in azione, mentre si è in movimento. La sua struttura pieghevole e il suo design leggero lo rendono un oggetto essenziale per ogni avventura!
         </p>
-
+        <img src="../img/prodotti/drone-1.png" alt="">
         <p class="mx-auto text-center my-6">
           <a href="#" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
             Ordina Ora
           </a>
         </p>
-        <!-- <img src="http://link.gadgets-store.best/landing/b-good/xdrone/1/images/drone.png" alt=""> -->
+
       </div>
 
       <div class="bg-black text-white py-4">
@@ -61,15 +61,15 @@
 
           <p class="p-3">
             <ul class="flex">
-              <li class="flex-1 text-center p-3 font-bold uppercase">Pieghevole</li>
-              <li class="flex-1 text-center p-3 font-bold uppercase">Leggero</li>
-              <li class="flex-1 text-center p-3 font-bold uppercase">Durevole</li>
+              <li class="flex-1 text-center p-3 font-bold uppercase text-sm">Pieghevole</li>
+              <li class="flex-1 text-center p-3 font-bold uppercase text-sm">Leggero</li>
+              <li class="flex-1 text-center p-3 font-bold uppercase text-sm">Durevole</li>
             </ul>
           </p>
           <iframe height="349" class="w-full my-6" src="https://www.youtube.com/embed/r_f9QHMw0VY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
           <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-            <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/user-img.png" alt="Woman's Face">
+            <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="../img/prodotti/drone-mike-freizer.png" alt="Mike Freizer">
             <div class="text-center space-y-2 sm:text-left text-black">
               <div class="space-y-0.5">
                 <p class="text-lg font-semibold">
@@ -100,8 +100,8 @@
               <strong>XTactical Drone</strong> è il drone tra i più veloci
               tra quelli della sua taglia, con una distanza massima di trasmissione fino a 100 metri.
             </p>
-            <img src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/reviews-img-1.png" class="mx-auto" alt="">
-            <div class="grid grid-cols-3 gap-4 mt-6">
+            <img src="../img/prodotti/drone-2.png" class="mx-auto" alt="">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
               <div class="flex-1 text-center p-6  bg-gray-100">
                 <h3 class="font-bold uppercase py-3">Drone pieghevole</h3>
                 <p>Le eliche si piegano verso l'interno, per fare in modo che il drone possa essere trasportato più facilmente ed essere protetto meglio durante il trasporto</p>
@@ -143,7 +143,7 @@
             <p class="p-3 text-center">
               <strong>XTactical Drone</strong> vanta tutte le funzionalità necessarie a soddisfare i professionisti, ma è estremamente semplice da far volare e da comandare, persino per i principianti assoluti.
             </p>
-            <img src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/reviews-img-2.png" class="mx-auto" alt="">
+            <img src="../img/prodotti/drone-3.png" class="mx-auto" alt="">
 
             <p class="mx-auto text-center my-6">
               <a href="#" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
@@ -154,7 +154,7 @@
             <p class="p-3 text-center">
               <strong>XTactical Drone</strong> è dotato di scatti fotografici integrati e preimpostati, come lo scatto a boomerang e quello ad asteroide; quindi, premendo solo un pulsante, persino il soggetto tecnicamente più a digiuno può avere un'impronta di qualità professionale
             </p>
-            <img src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/reviews-img-3.png" class="mx-auto" alt="">
+            <img src="../img/prodotti/drone-4.png" class="mx-auto" alt="">
 
             <p class="mx-auto text-center my-6">
               <a href="#" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
@@ -171,7 +171,7 @@
             </h2>
 
             <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6">
-              <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/real-img-1.png" alt="Woman's Face">
+              <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="../img/prodotti/drone-logo-1.png" alt="Woman's Face">
               <div class="text-center space-y-2 sm:text-left text-black">
                 <p>
                   "La qualità di questo drone è sconvolgente, paragonata al prezzo che pagherai. Questo segna un punto di svolta nella vendita dei droni. Dal XTactical Drone si evince chiaramente che, adesso, è possibile acquistare un drone di alta gamma ad una frazione del costo di alcuni dei modelli di punta presenti sul mercato. Adesso, questa tecnologia è accessibile a tutti e non potremmo esserne più entusiasti!"
@@ -180,7 +180,7 @@
             </div>
 
             <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6">
-              <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/real-img-2.png" alt="Woman's Face">
+              <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="../img/prodotti/drone-logo-2.png" alt="Woman's Face">
               <div class="text-center space-y-2 sm:text-left text-black">
                 <p>
                   "Siamo sempre alla ricerca del modo migliore di documentare le nostre fantastiche avventure, in modo da poterle condividere con i nostri clienti e seguaci. Abbiamo sperimentato i droni in passato, ma finora li avevamo sempre trovati eccessivamente complicati, sottopotenziati e troppo fragili da mettere in valigia. Il XTactical Drone ha completamente cambiato il modo in cui registriamo i nostri viaggi e, adesso, giriamo video di qualità professionale nella metà del tempo!".
@@ -189,7 +189,7 @@
             </div>
 
             <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6">
-              <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/real-img-3.png" alt="Woman's Face">
+              <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="../img/prodotti/drone-logo-3.png" alt="Woman's Face">
               <div class="text-center space-y-2 sm:text-left text-black">
                 <p>
                   "Non farti ingannare dalle dimensioni compatte del drone: la potenza che custodisce può essere paragonata a quella della maggior parte dei dispositivi dalle dimensioni di due o tre volte maggiori di XTactical Drone. La sua ingegneria di precisione lo rende sia leggero che sorprendentemente robusto. La confezione è corredata di eliche di ricambio per ogni eventualità, ma non siamo del tutto sicuri che avrai mai bisogno di usarle!"
@@ -211,13 +211,13 @@
               <span class="inline-block border-b-4 border-gray-600 pb-3 uppercase">Il Drone meglio valutato dai clienti su Internet</span>
             </h2>
 
-            <img class="block mx-auto h-16 my-6" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/rated-logo.png" alt="Woman's Face">
+            <img class="block mx-auto h-16 my-6" src="../img/prodotti/drone-rated-logo.png" alt="Woman's Face">
             <div class="text-center">
-              <img class="inline-block" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/star.png" alt="Woman's Face">
-              <img class="inline-block" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/star.png" alt="Woman's Face">
-              <img class="inline-block" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/star.png" alt="Woman's Face">
-              <img class="inline-block" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/star.png" alt="Woman's Face">
-              <img class="inline-block" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/star.png" alt="Woman's Face">
+              <img class="inline-block" src="../img/prodotti/star.png" alt="stella">
+              <img class="inline-block" src="../img/prodotti/star.png" alt="stella">
+              <img class="inline-block" src="../img/prodotti/star.png" alt="stella">
+              <img class="inline-block" src="../img/prodotti/star.png" alt="stella">
+              <img class="inline-block" src="../img/prodotti/star.png" alt="stella">
               5/5
             </div>
 
@@ -230,13 +230,14 @@
 
           <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
           	<div class="relative block flex flex-col md:flex-row items-center">
-          	  <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4">
+
+              <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4">
           	    <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
           	      <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
                 		<h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">1 XTACTICAL DRONE</h1>
                 	  <h2 class="text-sm text-gray-500 text-center">€ 99.00</h2>
                     <h3 class="text-sm text-gray-500 text-center text-red-600 pb-6 font-bold">Sconto 50%</h3>
-                    <img class="mx-auto" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/drone-min.png" alt="Woman's Face">
+                    <img class="mx-auto" src="..img/prodotti/drone-5.png" alt="Woman's Face">
                   </div>
                   <p class="text-center mt-4">Spedizione Gratuita</p>
                   <div class="block flex items-center p-8 pt-0  uppercase">
@@ -247,7 +248,7 @@
                 </div>
               </div>
 
-              <div class="w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg">
+              <div class="w-full sm:w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg">
                 <div class="text-sm leading-none rounded-t-lg bg-red-500 text-white text-black font-semibold uppercase py-4 text-center tracking-wide">
                   Il più venduto
                 </div>
@@ -337,7 +338,7 @@
                       </li>
                     </ul>
                   </div>
-                  <img class="mx-auto" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/promo.png" alt="Woman's Face">
+                  <img class="mx-auto" src="../img/prodotti/drone-kit.png" alt="Drone Kit">
                 </div>
                 <div class="block flex items-center p-8  uppercase">
                   <a href="#" class="btn-submit-to-forms text-center mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
@@ -346,14 +347,14 @@
                 </div>
               </div>
 
-              <div class="bg-white w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
-                <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+              <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
+                <div class="bg-white  block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
                   <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
                     2 XTACTICAL DRONE
                   </h1>
                   <h2 class="text-sm text-gray-500 text-center">€ 159.00</h2>
                   <h3 class="text-sm text-gray-500 text-center pb-6 text-red-600 pb-6 font-bold">Risparmi €39.00</h3>
-                  <img class="mx-auto" src="https://link.offerte2019.info/landing/b-good/xdrone/1/images/drone-min.png" alt="Woman's Face">
+                  <img class="mx-auto" src="../img/prodotti/drone-5.png" alt="Drone">
                   <div class="block flex items-center p-8  uppercase">
                     <a href="#" class="text-center btn-submit-to-forms mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
                        Ordina subito
