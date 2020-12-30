@@ -1,8 +1,21 @@
 <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
+
 	if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 		$projectPath = "http://localhost:8888/gadgets-store.best/";
 	}else{
 	  $projectPath = "https://gadgets-store.best/";
+	}
+
+	function fixedNavbar(){
+		echo "fixed";
+		if(class_exists('LANDING') || class_exists('FORMS')){
+			echo "relative";
+		}
+
 	}
 
   function colorBadge($color){

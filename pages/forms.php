@@ -1,5 +1,6 @@
 <?php include("../settings.php") ?>
 <?php
+  class FORMS {};
   $title = $_GET['title'];
   $url_product_api = $_GET['url_product_api'];
   $price = $_GET['price'];
@@ -29,7 +30,7 @@
     <?php } ?>
 
     <?php include("../shared/navbar.php") ?>
-    <div class="pt-32">
+    <div>
       <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
         <span class="inline-block pb-3">Modulo Acquisto <strong class="text-green-500"><?php echo $title;?> </strong></span>
       </h1>

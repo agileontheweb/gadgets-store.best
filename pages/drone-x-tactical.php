@@ -1,5 +1,7 @@
 <?php include("../settings.php") ?>
 <?php
+  class LANDING {};
+
   passDataForms("Drone X Tactical",
             "bgood_xdrone",
             true,
@@ -22,7 +24,7 @@
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body>
+  <body class="landing-page">
 
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
@@ -33,7 +35,7 @@
     <form action="drone-x-tactical.php" method="post"></form>
 
     <?php include("../shared/navbar.php") ?>
-    <div class="pt-32">
+    <div>
       <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
         <span class="inline-block border-b-4 border-gray-600 pb-3">IL NUOVO DRONE MILITARE</span>
       </h1>
