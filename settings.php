@@ -43,14 +43,15 @@
 										$selector_3_value,
 										$privacy,
 										$quantity,
-										$price
+										$price,
+										$img
 										){
 
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			if($selector == true){
 				$selectors = "selector=$selector&selector_1=$selector_1&selector_1_value=$selector_1_value&selector_2=$selector_2&selector_2_value=$selector_2_value&selector_3=$selector_3&selector_3_value=$selector_3_value";
 			}
-			$custom_params = "title=$title&url_product_api=$url_product_api&$selectors&privacy=$privacy&quantity=$quantity&price=$price";
+			$custom_params = "title=$title&url_product_api=$url_product_api&$selectors&privacy=$privacy&quantity=$quantity&price=$price&img=$img";
 			header("location: forms.php?$custom_params");
 		}
 	}

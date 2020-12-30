@@ -1,4 +1,5 @@
 <?php
+	$img = $_GET['img'];
 
 	if(isset($_POST['submit'])){
 		$title = $_POST["title"];
@@ -53,6 +54,8 @@
 			Un operatore ti ricontatterá a breve per confermare i tuoi dati.
 			<strong>La Spedizione è gratuita.</strong>
 		</p>
+
+		<img src="<?php echo $img?>" class="max-w-xs mx-auto">
 		<div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
 		<input type="hidden" name="fingerprint" id="fingerprint" value="">
 		<input type="hidden" name="source_id" id="source_id" value="07ff46bb6597">
