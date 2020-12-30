@@ -6,6 +6,13 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 }
 ?>
 
+<div class="hidden loadingpage fixed h-full w-full flex items-center justify-center bg-opacity-80 bg-black z-30">
+	<div class="z-10 px-6 text-center text-white text-md font-bold text-2xl">
+		Caricando il modulo d'ordine...
+		<p class="text-sm text-yellow-300">..attendere...</p>
+	</div>
+</div>
+
 <div class="fixed left-0 right-0 mb-0 border-0 rounded-0 bg-black z-20">
 	<div class="bg-red-500 py-3 text-center text-white text-xs sm:text-sm">
 		Le offerte potrebbero terminare tra:

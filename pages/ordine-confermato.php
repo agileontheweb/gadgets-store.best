@@ -21,7 +21,7 @@
 
     <?php include("../shared/navbar.php") ?>
     <div class="pt-32 text-gray-600">
-      <div class="max-w-screen-sm bg-white mx-auto">
+      <div class="max-w-screen-sm bg-white mx-auto px-3">
         <h1 class="text-center text-2xl font-bold pt-12">
           <span class="inline-block border-b-4 border-gray-600 pb-3">Grazie <?php echo $name ?> il tuo ordine è in fase di analisi.</span>
         </h1>

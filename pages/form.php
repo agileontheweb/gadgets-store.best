@@ -45,6 +45,7 @@
 	}
 
 ?>
+
 	<form method="post" accept-charset="utf-8" role="form" action="form.php"
   	class="max-w-screen-md px-4 mx-auto px-3 bg-white border-4 border-dashed border-green-500">
 		<p class="text-center py-3">Compila il modulo qui sotto per poter acquistare il prodotto.
