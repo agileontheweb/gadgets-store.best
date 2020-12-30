@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
+#ini_set('display_errors', '1');
+#ini_set('display_startup_errors', '1');
+#error_reporting(E_ALL);
 
 
 	if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
@@ -15,7 +15,12 @@ error_reporting(E_ALL);
 		if(class_exists('LANDING') || class_exists('FORMS')){
 			echo "relative";
 		}
+	}
 
+	function showFacebook(){
+		if(class_exists('LANDING') || class_exists('FORMS')){
+			echo "hidden";
+		}
 	}
 
   function colorBadge($color){

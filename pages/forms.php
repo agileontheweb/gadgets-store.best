@@ -36,6 +36,15 @@
       </h1>
       <div class="max-w-screen-sm mx-auto mt-8 px-3">
         <?php include("form.php") ?>
+        <div class="max-w-screen-sm mx-auto">
+          <p class="text-center text-4xl mt-3">
+            <i class="fas fa-arrow-up"></i>
+          </div>
+          <p class="text-center text-2xl font-bold px-3 py-3">
+            Compila il modulo qui sopra e non preoccuparti di altro, una opertatrice
+            telefonica si incaricherà di chiamarti non appena possibile.
+          </p>
+        </div>
       </div>
     </div>
     <?php include("../shared/footer.php") ?>

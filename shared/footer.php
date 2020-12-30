@@ -1,6 +1,13 @@
 <footer class="bg-white mt-2">
   <div class="p-3">
     <div class="md:flex">
+      <div class="mx-auto p-3 bg-blue-500 text-white hover:bg-blue-600 text-center <?php showFacebook() ?>">
+        <a class="px-3" href="https://www.facebook.com/GadgetsStoreBest/" target="blank">
+          <small>
+            <i class="fa fa-facebook"></i>
+            Seguici su Facebook</small>
+        </a>
+      </div>
       <div class="mx-auto p-3">
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cosa-e-gadgets-store.php"><small>Cos'è Gadgets Store</small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cookie-policy.php"><small>Cookie Policy</small></a>
@@ -9,7 +16,7 @@
       </div>
     </div>
     <hr>
-    <p class="p-3 text-center text-xs">
+    <p class="p-3 text-gray-500 text-center text-xs">
       Le informazioni contenute in questo sito web sono solamente a scopo
       informativo e non intendono sostituire il consulto da parte di un esperto.
       Le informazioni ed eventuali recensioni si basano su materiale di natura
