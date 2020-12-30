@@ -8,6 +8,7 @@
             "2",
             "3",
             "https://www.ilmontestore.sm/privacy-policy/",
+            null,
             null
           );
 ?>

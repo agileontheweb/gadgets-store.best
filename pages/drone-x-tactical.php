@@ -10,7 +10,8 @@
             "2",
             "1k",
             "https://www.ilmontestore.sm/privacy-policy/",
-            null
+            null,
+            "20.00"
           );
 ?>
 
@@ -25,7 +26,7 @@
 
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
-        fbq('track', 'Drone X Tactical Page');
+        fbq('trackCustom', 'PageView Drone X Tactical Page');
       </script>
     <?php } ?>
 
@@ -39,7 +40,11 @@
 
       <div class="max-w-screen-md mx-auto">
         <p class="p-3">
-          <strong>XTactical Drone</strong> è un drone progettato con precisione, specificamente pensato per volare facilmente, rendendo perfetto il volo in ambienti chiusi o la registrazione in azione, mentre si è in movimento. La sua struttura pieghevole e il suo design leggero lo rendono un oggetto essenziale per ogni avventura!
+          <strong>XTactical Drone</strong> è un drone progettato con precisione,
+          specificamente pensato per volare facilmente, rendendo perfetto il
+          volo in ambienti chiusi o all'aperto registrando fedelmente mentre si
+          è in movimento. La sua <strong>struttura pieghevole e il suo design leggero</strong>
+          lo rendono un oggetto essenziale per ogni avventura!
         </p>
         <img src="../img/prodotti/drone-1.png" alt="Drone">
         <p class="mx-auto text-center my-6">
@@ -56,7 +61,8 @@
             <span class="inline-block border-b-4 border-gray-600 pb-3">CARATTERISTICHE</span>
           </h2>
           <p class="p-3">
-          Prodigio di ingegneria e di design, XTactical Drone è stato costruito per andare ovunque ti porti l'avventura. Ereditando le migliori qualità della serie XTactical, questo drone ultra-portatile e pieghevole mostra prestazioni di volo e funzionalità di alto livello, per un'esplorazione senza limiti.
+          Prodigio di ingegneria e di design, XTactical Drone è stato costruito per andare ovunque ti porti l'avventura. Ereditando le migliori qualità della serie XTactical, questo drone <strong>ultra-portatile</strong>
+          e pieghevole mostra prestazioni di volo e <strong>funzionalità di alto livello</strong>, per un'esplorazione senza limiti.
           </p>
 
           <p class="p-3">

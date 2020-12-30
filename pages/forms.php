@@ -2,6 +2,7 @@
 <?php
   $title = $_GET['title'];
   $url_product_api = $_GET['url_product_api'];
+  $price = $_GET['price'];
   $selector = $_GET['selector'];
   $selector_1 = $_GET['selector_1'];
   $selector_2 = $_GET['selector_2'];
@@ -21,10 +22,9 @@
     <?php include('../shared/meta.php'); ?>
   </head>
   <body>
-
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
-        fbq('track', '<?php echo $title ?> Page CheckIn');
+        fbq('trackCustom', 'InitiateCheckout <?php echo $title ?>');
       </script>
     <?php } ?>
 

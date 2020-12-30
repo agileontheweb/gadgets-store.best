@@ -2,6 +2,7 @@
 
 	if(isset($_POST['submit'])){
 		$title = $_POST["title"];
+		$price = $_POST['price'];
 		$name = $_POST["name"];
 		$surname = $_POST["surname"];
 		$phone = $_POST["phone"];
@@ -11,10 +12,10 @@
 		$quantity = $_POST["quantity"];
 		$url_product_api = $_POST["url_product_api"];
 
-		sendRequest($title, $name, $surname, $phone, $quantity, $address, $zipcode, $city, $url_product_api);
+		sendRequest($title, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city, $url_product_api);
 	}
 
-	function sendRequest($title, $name, $surname, $phone, $quantity, $address, $zipcode, $city,$url_product_api){
+	function sendRequest($title, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city,$url_product_api){
 		$url = "https://network.worldfilia.net/manager/inventory/buy/$url_product_api.json";
 		//Initiate cURL.
 		$ch = curl_init($url);
@@ -40,7 +41,7 @@
 		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 		if ($httpcode == 200){
-			header("Location: ordine-confermato.php?title=$title&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
+			header("Location: ordine-confermato.php?title=$title&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
 		}
 	}
 
@@ -57,6 +58,7 @@
 		<input type="hidden" name="source_id" id="source_id" value="07ff46bb6597">
 		<input type="hidden" name="url_product_api" id="url_product_api" value="<?php echo $url_product_api;?>">
 		<input type="hidden" name="title" id="title" value="<?php echo $title;?>">
+		<input type="hidden" name="price" id="price" value="<?php echo $price;?>">
 
 		<div class="form-group py-3">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nome</label>
