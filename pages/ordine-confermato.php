@@ -47,5 +47,6 @@
     </div>
   </div>
   <?php include("../shared/footer.php") ?>
+  <?php include("../shared/px-hotjar.php") ?>
   </body>
 </html>
