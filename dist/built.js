@@ -292,7 +292,7 @@
   });
 
   $(".btn-submit-to-forms").click(function() {
-    console.log("Submit form");
+    $(".loadingpage").show();
     $('form').submit();
   });
 });
