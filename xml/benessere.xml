@@ -27,6 +27,20 @@
       <link></link>
       <offer>Promo 2x1</offer>
   </record>
+
+  <record>
+    <name>Penna Agopuntura Elettronica</name>
+    <description>Promuove la circolazione sanguigna nella pelle e mantiene la salute.</description>
+    <image>img/prodotti/penna-agopuntura.jpg</image>
+    <linkaffiliate>https://amzn.to/386EsMF</linkaffiliate>
+    <link></link>
+    <offer>Amazon</offer>
+    <formtitle></formtitle>
+    <url_api_product></url_api_product>
+    <selector></selector>
+    <privacy>/</privacy>
+  </record>
+
   <record>
     <name>NECK RING</name>
     <description>Massaggiatore innovativo che massaggia in profondità.</description>
