@@ -1,5 +1,6 @@
 <?php
 	$img = $_GET['img'];
+	$extra = $_GET["extra"];
 
 	if(isset($_POST['submit'])){
 		$title = $_POST["title"];
@@ -102,7 +103,7 @@
 		</div>
 		<?php if($selector==true) {?>
 			<div class="form-group">
-				<label class="block text-gray-700 text-sm font-bold mb-2" for="zipcode">Quantità</label>
+				<label class="block text-gray-700 text-sm font-bold mb-2" for="zipcode">Quantità  <?php echo $extra; ?></label>
 				<select name="quantity" class=" mb-3 form-control block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline text-black" required="required">
 					<option value="<?php echo $selector_1_value;?>" selected="selected"><?php echo $selector_1 ?></option>
 					<option value="<?php echo $selector_2_value;?>"><?php echo $selector_2 ?></option>

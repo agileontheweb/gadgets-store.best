@@ -14,7 +14,8 @@
             "https://www.ilmontestore.sm/privacy-policy/",
             null,
             "20.00",
-            "../img/prodotti/drone-3.png"
+            "../img/prodotti/drone-3.png",
+            null
           );
 ?>
 

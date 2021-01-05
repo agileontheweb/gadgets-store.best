@@ -1,8 +1,7 @@
 <?php
-#ini_set('display_errors', '1');
-#ini_set('display_startup_errors', '1');
-#error_reporting(E_ALL);
-
+	#ini_set('display_errors', '1');
+	#ini_set('display_startup_errors', '1');
+	#error_reporting(E_ALL);
 
 	if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 		$projectPath = "http://localhost:8888/gadgets-store.best/";
@@ -17,11 +16,24 @@
 		}
 	}
 
+	function showNavBar(){
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		$fb_params = "fbclid";
+		if (strpos($url, $fb_params) == true && class_exists('LANDING')) {
+			echo "hidden";
+		}
+		if(class_exists('FORMS')) {
+			echo "hidden";
+		}
+	}
+
 	function showFacebook(){
 		if(class_exists('LANDING') || class_exists('FORMS')){
 			echo "hidden";
 		}
 	}
+
+
 
   function colorBadge($color){
     if($color == "Amazon"){
@@ -44,14 +56,15 @@
 										$privacy,
 										$quantity,
 										$price,
-										$img
+										$img,
+										$extra
 										){
 
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			if($selector == true){
 				$selectors = "selector=$selector&selector_1=$selector_1&selector_1_value=$selector_1_value&selector_2=$selector_2&selector_2_value=$selector_2_value&selector_3=$selector_3&selector_3_value=$selector_3_value";
 			}
-			$custom_params = "title=$title&url_product_api=$url_product_api&$selectors&privacy=$privacy&quantity=$quantity&price=$price&img=$img";
+			$custom_params = "title=$title&url_product_api=$url_product_api&$selectors&privacy=$privacy&quantity=$quantity&price=$price&img=$img&extra=$extra";
 			header("location: forms.php?$custom_params");
 		}
 	}

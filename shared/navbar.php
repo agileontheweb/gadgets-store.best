@@ -19,43 +19,43 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 		<div class="inline-block ml-1 count-down font-bold"><span class="clock"></span></div>
 	</div>
 
-	<nav class="flex p-3">
-	  <a class="flex navbar-brand" href="<?php echo $projectPath ?>">
-     <img src="<?php echo $projectPath ?>/img/logo.png" class="w-14 h-14 md:w-20 md:h-20">
-		 <span class="hidden">Gadgets Store</span>
-	  </a>
-
-		<div class="flex lg:hidden absolute right-10 pt-3 md:pt-6">
-			<a class="flex text-white" id="btn-primary-sub-menu" href="#">
-			 <i class="fas fa-bars fa-2x"></i>
+	<nav class="flex p-3 <?php showNavBar();?>">
+		  <a class="flex navbar-brand" href="<?php echo $projectPath ?>">
+	     <img src="<?php echo $projectPath ?>/img/logo.png" class="w-14 h-14 md:w-20 md:h-20">
+			 <span class="hidden">Gadgets Store</span>
 		  </a>
-		</div>
 
-		<div class="hidden lg:flex">
-			<ul class="items-center flex">
-				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-tecnologia.php">Tecnologia</a>
-				</li>
-				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-bellezza.php">Bellezza</a>
-				</li>
-				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-benessere.php">Benessere</a>
-				</li>
-				<li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-casa.php">Casa</a>
-				</li>
-				<!-- <li class="">
-					<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="http://bit.ly/2OPkFYk">Corsi di Formazione</a>
-				</li> -->
-			</ul>
-	  </div>
-		<div class="hidden lg:flex absolute p-2 right-10">
-			<a href="<?php echo $projectPath ?>newsletter.php" class="hover:bg-red-500 hover:text-white border-b-4 border-red-500 font-bold text-white px-3 py-3" data-toggle="modal" data-target="#signupropmotion">
-				Sconti nella tua email
-			</a>
-		</div>
-	</nav>
+			<div class="flex lg:hidden absolute right-10 pt-3 md:pt-6">
+				<a class="flex text-white" id="btn-primary-sub-menu" href="#">
+				 <i class="fas fa-bars fa-2x"></i>
+			  </a>
+			</div>
+
+			<div class="hidden lg:flex">
+				<ul class="items-center flex">
+					<li class="">
+						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-tecnologia.php">Tecnologia</a>
+					</li>
+					<li class="">
+						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-bellezza.php">Bellezza</a>
+					</li>
+					<li class="">
+						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-benessere.php">Benessere</a>
+					</li>
+					<li class="">
+						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-casa.php">Casa</a>
+					</li>
+					<!-- <li class="">
+						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="http://bit.ly/2OPkFYk">Corsi di Formazione</a>
+					</li> -->
+				</ul>
+		  </div>
+			<div class="hidden lg:flex absolute p-2 right-10">
+				<a href="<?php echo $projectPath ?>newsletter.php" class="hover:bg-red-500 hover:text-white border-b-4 border-red-500 font-bold text-white px-3 py-3" data-toggle="modal" data-target="#signupropmotion">
+					Sconti nella tua email
+				</a>
+			</div>
+		</nav>
 
 	<div class="hidden bg-white fixed z-10 top-0 left-0 right-0 bottom-0" id="primary-sub-menu">
 		<a class="px-3 uppercase hover:text-red-500 mx-3 font-bold absolute right-1 mt-4" id="btn-close" href="#">

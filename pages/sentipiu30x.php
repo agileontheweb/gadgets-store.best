@@ -5,7 +5,7 @@
             false, null, null, null, null, null, null,
             "https://www.dmcshop.it/privacy-policy",
             1,
-            null
+            null,null
           );
 ?>
 

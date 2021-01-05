@@ -23,7 +23,6 @@
     <privacy>/</privacy>
   </record>
 
-
   <record>
     <name>Drone</name>
     <description>X Tactical è progettato con estrema precisione con un'alta qualità di ripresa.</description>
@@ -35,6 +34,16 @@
     <url_api_product>bgood_xdrone</url_api_product>
     <selector>true</selector>
     <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
+  </record>
+
+  <record>
+    <name>XW6.0</name>
+    <description>Smartwatch performante e intuitivo, avrai tutto ciò che ti occorre a portata di mano.</description>
+    <image>img/prodotti/xw60.jpg</image>
+    <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqD</linkaffiliate> -->
+    <link>smartwatch-xwatch6.php</link>
+    <url_api_product>bgood_xwatch6.0</url_api_product>
+    <offer>Sconto 50%</offer>
   </record>
 
   <record>

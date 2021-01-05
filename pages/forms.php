@@ -13,6 +13,7 @@
   $selector_3_value = $_GET['selector_3_value'];
   $quantity = $_GET['quantity'];
   $privacy = $_GET['privacy'];
+  $extra = $_GET['privacy'];
   ?>
 
 <!doctype html>
@@ -34,6 +35,7 @@
       <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
         <span class="inline-block pb-3">Modulo Acquisto <strong class="text-green-500"><?php echo $title;?> </strong></span>
       </h1>
+
       <div class="max-w-screen-sm mx-auto mt-8 px-3">
         <?php include("form.php") ?>
         <div class="max-w-screen-sm mx-auto">
@@ -43,6 +45,9 @@
           <p class="text-center text-2xl font-bold px-3 py-3">
             Compila il modulo qui sopra e non preoccuparti di altro, una opertatrice
             telefonica si incaricherà di chiamarti non appena possibile.
+          </p>
+          <p class="text-center">
+            <img src="../img/prodotti/operatore-telefonico.jpg" class="img-fluid w-full my-3" class="Giovanni" width="640" height="640">
           </p>
         </div>
       </div>
