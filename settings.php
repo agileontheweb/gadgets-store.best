@@ -33,8 +33,6 @@
 		}
 	}
 
-
-
   function colorBadge($color){
     if($color == "Amazon"){
       $color = "bg-yellow-500 text-yellow-100";
@@ -44,7 +42,8 @@
     echo $color;
   }
 
-	function passDataForms($title,
+	function passDataForms(
+										$title,
 										$url_product_api,
 										$selector,
 										$selector_1,

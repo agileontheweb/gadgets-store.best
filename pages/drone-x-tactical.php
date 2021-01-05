@@ -1,7 +1,7 @@
 <?php include("../settings.php") ?>
 <?php
   class LANDING {};
-
+  $remaining_pieces = 27;
   passDataForms("Drone X Tactical",
             "bgood_xdrone",
             true,
@@ -50,12 +50,14 @@
             lo rendono un oggetto essenziale per ogni avventura!
           </p>
           <img src="../img/prodotti/drone-1.png" alt="Drone">
+          <div class="max-w-screen-sm mx-auto px-3">
+            <?php include("../shared/progress-short.php") ?>
+          </div>
           <p class="mx-auto text-center my-6">
             <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
               Ordina Ora
             </button>
           </p>
-
         </div>
 
         <div class="bg-black text-white py-4">

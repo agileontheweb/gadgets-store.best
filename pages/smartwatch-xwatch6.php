@@ -1,5 +1,6 @@
 <?php
   include("../settings.php");
+  $remaining_pieces = 14;
   class LANDING {};
   passDataForms("Smartwatch X-W 6.0 ",
             "bgood_xwatch6.0",
@@ -41,7 +42,7 @@
               Che tu sia uno sportivo, una manager, un ragazzo, una madre di famiglia,
               questo smartwatch è in grado di adattarsi perfettamente alle tue esigenze!
           </h1>
-          
+
           <p class="p-3">
             Il nuovo smartwatch che sta <strong>sfidando le grandi
             multinazionali tecnologiche</strong> è diventato il gadget più in voga del momento
