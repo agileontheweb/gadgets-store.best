@@ -13,7 +13,8 @@
   $selector_3_value = $_GET['selector_3_value'];
   $quantity = $_GET['quantity'];
   $privacy = $_GET['privacy'];
-  $extra = $_GET['privacy'];
+  $extra = $_GET['extra'];
+  $upsell_page = $_GET['upsell_page'];
   ?>
 
 <!doctype html>

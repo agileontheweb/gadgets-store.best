@@ -1,16 +1,39 @@
 <?php
   include("../settings.php");
-  $remaining_pieces = 7;
   class LANDING {};
-  passDataForms("Reggiseno Lovely bra 3 in 1",
-            "dmc_lovelybra3in1",
-            false, null, null, null, null, null, null,
-            "https://www.ilmontestore.sm/privacy-policy/",
-            1,
-            "18.00",
-            "../img/prodotti/reggiseno3in1.jpg",
-            null
-          );
+  $remaining_pieces = 7;
+  isUpsell();
+
+  $name = $_GET['name'];
+  $surname = $_GET['surname'];
+  $phone = $_GET['phone'];
+  $address = $_GET['address'];
+  $city = $_GET['city'];
+  $zipcode = $_GET['zipcode'];
+
+  $title_product = "Reggiseno Lovely bra 3 in 1";
+  $url_product_api = "dmc_lovelybra3in1";
+  $selector = false;
+  $selector_1 = null;
+  $selector_2 = null;
+  $selector_3 = null;
+  $selector_1_value = null;
+  $selector_2_value = null;
+  $selector_3_value = null;
+  $quantity_upsell = null;
+  $privacy = "https://www.ilmontestore.sm/privacy-policy/";
+  $quantity = 1;
+  $price = "18.00";
+  $img = "../img/prodotti/reggiseno3in1.jpg";
+  $extra = null;
+  $upsell_page = "";
+
+  if ($upsell == true) {
+    sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
+  }else{
+    passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
+  }
+
  ?>
 <!doctype html>
 <html lang="it">

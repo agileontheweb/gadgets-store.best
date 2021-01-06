@@ -1,23 +1,40 @@
 <?php
   include("../settings.php");
-  $remaining_pieces = 14;
   class LANDING {};
-  passDataForms("Smartwatch X-W 6.0 ",
-            "bgood_xwatch6.0",
-            true,
-            "1 XW6.0 €59.90",
-            "2 XW6.0 €79.90",
-            "3 XW6.0 €99.90",
-            "1",
-            "2",
-            "3",
-            "https://www.ilmontestore.sm/privacy-policy/",
-            null,
-            "18.00",
-            "../img/prodotti/XW60-sceglistile.jpg",
-            " - Colore e cinturini potrai deciderli al telefono."
-          );
- ?>
+  $remaining_pieces = 14;
+  isUpsell();
+
+  $name = $_GET['name'];
+  $surname = $_GET['surname'];
+  $phone = $_GET['phone'];
+  $address = $_GET['address'];
+  $city = $_GET['city'];
+  $zipcode = $_GET['zipcode'];
+
+  $title_product = "Smartwatch X-W 6.0";
+  $url_product_api = "bgood_xwatch6.0";
+  $selector = true;
+  $selector_1 = "1 XW6.0 €59.90";
+  $selector_2 = "2 XW6.0 €79.90";
+  $selector_3 = "3 XW6.0 €99.90";
+  $selector_1_value = "1";
+  $selector_2_value = "2";
+  $selector_3_value = "3";
+  $quantity_upsell = "1";
+  $privacy = "https://www.ilmontestore.sm/privacy-policy/";
+  $quantity = null;
+  $price = "18.00";
+  $img = "../img/prodotti/XW60-sceglistile.jpg";
+  $extra = " - Colore e cinturini potrai deciderli al telefono.";
+  $upsell_page = "drone-x-tactical.php?upsell";
+
+  if ($upsell === true) {
+    sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
+  }else{
+    passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
+  }
+?>
+
 <!doctype html>
 <html lang="it">
   <head>
@@ -26,7 +43,6 @@
     <?php include('../shared/meta.php'); ?>
   </head>
   <body class="landing-page">
-
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
         fbq('trackCustom', 'PageView XW6.0 Page');
@@ -36,6 +52,10 @@
     <?php include("../shared/navbar.php") ?>
 
     <div>
+      <?php
+        $text_price = "Lo smartwatch in sconto 50% acquista a soli €59.90!";
+        include("upsell_message.php");
+      ?>
       <form action="smartwatch-xwatch6.php" method="post">
         <div class="max-w-screen-md mx-auto px-3">
           <h1 class="text-center text-2xl font-bold pt-12">
@@ -75,7 +95,11 @@
           </div>
           <p class="mx-auto text-center my-6">
             <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-              Ordina Ora
+              <?php if ($upsell == true) { ?>
+                Aggiungi all'ordine
+              <?php }else { ?>
+                Ordina Ora
+              <?php }?>
             </button>
             <span class="block py-3">Spedizione gratuita</span>
           </p>
@@ -188,7 +212,11 @@
 
             <p class="mx-auto text-center my-6">
               <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                Ordina Ora
+                <?php if ($upsell == true) { ?>
+                  Aggiungi all'ordine
+                <?php }else { ?>
+                  Ordina Ora
+                <?php }?>
               </button>
               <h2 class="text-center p-3 font-bold text-2xl text-red-600">Acquista a 59.90€ anziché 119€!</h2>
             </p>
@@ -220,7 +248,11 @@
 
               <p class="mx-auto text-center">
                 <button type="submit" class="font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  Clicca qui per ordinare
+                  <?php if ($upsell == true) { ?>
+                    Aggiungi all'ordine
+                  <?php }else { ?>
+                    Clicca qui per ordinare
+                  <?php }?>
                 </button>
                 <span class="block py-3">Colore e cinturini potrai deciderli al telefono con l'operatrice</span>
               </p>
@@ -251,7 +283,11 @@
                 <h2 class="text-center p-3 font-bold text-2xl text-red-600">Acquista a 59.90€ anziché 119€!</h2>
                 <p class="mx-auto text-center">
                   <button type="submit" class="font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                    Clicca qui per compilare il modulo d'acquisto
+                    <?php if ($upsell == true) { ?>
+                      Aggiungi all'ordine
+                    <?php }else { ?>
+                      Clicca qui per compilare il modulo d'acquisto
+                    <?php }?>
                   </button>
                   <span class="block py-3">🚚 Spedizione gratuita</span>
                 </p>
@@ -275,7 +311,11 @@
               <?php include("recensioni.php") ?>
               <p class="mx-auto text-center">
                 <button type="submit" class="font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  Clicca qui per compilare il modulo d'acquisto
+                  <?php if ($upsell == true) { ?>
+                    Aggiungi all'ordine
+                  <?php }else { ?>
+                    Clicca qui per compilare il modulo d'acquisto
+                  <?php }?>
                 </button>
                 <span class="block py-3">Sconto 50%</span>
               </p>

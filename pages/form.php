@@ -1,7 +1,8 @@
 <?php
 	$img = $_GET['img'];
 	$extra = $_GET["extra"];
-
+	$upsell_page = $_GET["upsell_page"];
+	
 	if(isset($_POST['submit'])){
 		$title = $_POST["title"];
 		$price = $_POST['price'];
@@ -13,15 +14,14 @@
 		$zipcode = $_POST["zipcode"];
 		$quantity = $_POST["quantity"];
 		$url_product_api = $_POST["url_product_api"];
+		$upsell_page = $_POST["upsell_page"];
 
-		sendRequest($title, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city, $url_product_api);
+		sendRequest($title, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city, $url_product_api, $upsell_page);
 	}
 
-	function sendRequest($title, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city,$url_product_api){
+	function sendRequest($title, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city,$url_product_api, $upsell_page){
 		$url = "https://network.worldfilia.net/manager/inventory/buy/$url_product_api.json";
-		//Initiate cURL.
 		$ch = curl_init($url);
-		//The JSON data.
 		$jsonData = array(
 				'source_id' => '07ff46bb6597',
 				'name' => $name . " " . $surname,
@@ -43,10 +43,13 @@
 		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 		if ($httpcode == 200){
-			header("Location: ordine-confermato.php?title=$title&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
+			if(!empty($upsell_page)){
+				header("Location: $upsell_page?upsell&title=$title&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
+			}else{
+				header("Location: ordine-confermato.php?title=$title&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
+			}
 		}
 	}
-
 ?>
 
 	<form method="post" accept-charset="utf-8" role="form" action="form.php"
@@ -63,6 +66,7 @@
 		<input type="hidden" name="url_product_api" id="url_product_api" value="<?php echo $url_product_api;?>">
 		<input type="hidden" name="title" id="title" value="<?php echo $title;?>">
 		<input type="hidden" name="price" id="price" value="<?php echo $price;?>">
+		<input type="hidden" name="upsell_page" id="upsell_page" value="<?php echo $upsell_page;?>">
 
 		<div class="form-group py-3">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nome</label>

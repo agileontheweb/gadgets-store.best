@@ -1,12 +1,39 @@
 <?php include("../settings.php") ?>
 <?php
-  passDataForms("Senti piú 30x",
-            "dmc_sentipiù30x",
-            false, null, null, null, null, null, null,
-            "https://www.dmcshop.it/privacy-policy",
-            1,
-            null,null
-          );
+  include("../settings.php");
+  class LANDING {};
+  $remaining_pieces = 7;
+  isUpsell();
+
+  $name = $_GET['name'];
+  $surname = $_GET['surname'];
+  $phone = $_GET['phone'];
+  $address = $_GET['address'];
+  $city = $_GET['city'];
+  $zipcode = $_GET['zipcode'];
+
+  $title_product = "Senti piú 30x";
+  $url_product_api = "dmc_sentipiù30x";
+  $selector = false;
+  $selector_1 = null;
+  $selector_2 = null;
+  $selector_3 = null;
+  $selector_1_value = null;
+  $selector_2_value = null;
+  $selector_3_value = null;
+  $quantity_upsell = null;
+  $privacy = "https://www.dmcshop.it/privacy-policy/";
+  $quantity = 1;
+  $price = "18.00";
+  $img = "../img/prodotti/sentipiu-1.jpg";
+  $extra = null;
+  $upsell_page = "";
+
+  if ($upsell == true) {
+    sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
+  }else{
+    passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
+  }
 ?>
 
 <!doctype html>
@@ -44,7 +71,7 @@
             Ordina Ora
           </a>
         </p>
-        <img src="http://link.gadgets-store.best/landing/dmc/sentipi%c3%b930x/1/images/1.jpg" alt="">
+        <img src="../img/prodotti/sentipiu-1.jpg" alt="Senti più" class="mx-auto">
       </div>
 
       <div class="bg-blue-500 text-white py-4">
@@ -81,7 +108,7 @@
           <iframe height="349" class="w-full my-6" src="https://www.youtube.com/embed/Zw7_zWMkwMU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
           <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-            <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="http://link.gadgets-store.best/landing/dmc/sentipi%c3%b930x/1/images/1.jpg" alt="Woman's Face">
+            <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="../img/prodotti/sentipiu-1.jpg" alt="Senti più">
             <div class="text-center space-y-2 sm:text-left text-black">
               <div class="space-y-0.5">
                 <p class="text-lg font-semibold">
@@ -120,7 +147,7 @@
               questo oggetto lo puoi avere con estrema facilità grazie al pagamento a domicilio
               in un paio di giorni.
             </p>
-            <img src="http://link.gadgets-store.best/landing/dmc/sentipi%C3%B930x/1/images/10.png" class="mx-auto" alt="">
+            <img src="../img/prodotti/sentipiu-2.jpg" class="mx-auto" alt="Senti più">
             <div class="grid grid-cols-3 gap-4 mt-6">
               <div class="flex-1 text-center p-6  bg-blue-500 text-white">
                 <h3 class="font-bold uppercase py-3">Amplifica fino a 30 volte</h3>
@@ -170,7 +197,7 @@
                 		<h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">1 Senti PIù 30x</h1>
                 	  <h2 class="text-sm text-gray-500 text-center">€ 69.90</h2>
                     <h3 class="text-sm text-gray-500 text-center text-red-600 pb-6 font-bold">Sconto 30%</h3>
-                    <img class="mx-auto" src="http://link.gadgets-store.best/landing/dmc/sentipi%C3%B930x/1/images/8.png" alt="Woman's Face">
+                    <img class="mx-auto" src="../img/prodotti/sentipiu-3.jpg" alt="Senti piu">
                   </div>
                   <p class="text-center mt-4">Spedizione Gratuita</p>
                   <div class="block flex items-center p-8 pt-0  uppercase">

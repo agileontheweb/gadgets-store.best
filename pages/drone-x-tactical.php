@@ -1,22 +1,39 @@
-<?php include("../settings.php") ?>
 <?php
+  include("../settings.php");
   class LANDING {};
   $remaining_pieces = 27;
-  passDataForms("Drone X Tactical",
-            "bgood_xdrone",
-            true,
-            "1 Tactical Drone €99.00",
-            "2 Tactical Drone €159.00",
-            "1 Kit completo €169.00",
-            "1",
-            "2",
-            "1k",
-            "https://www.ilmontestore.sm/privacy-policy/",
-            null,
-            "20.00",
-            "../img/prodotti/drone-3.png",
-            null
-          );
+  isUpsell();
+
+  $name = $_GET['name'];
+  $surname = $_GET['surname'];
+  $phone = $_GET['phone'];
+  $address = $_GET['address'];
+  $city = $_GET['city'];
+  $zipcode = $_GET['zipcode'];
+
+  $title_product = "Drone X Tactical";
+  $url_product_api = "bgood_xdrone";
+  $selector = true;
+  $selector_1 = "1 Tactical Drone €99.00";
+  $selector_2 = "2 Tactical Drone €159.00";
+  $selector_3 = "1 Kit completo €169.00";
+  $selector_1_value = "1";
+  $selector_2_value = "2";
+  $selector_3_value = "1k";
+  $quantity_upsell = "1k";
+  $privacy = "https://www.ilmontestore.sm/privacy-policy/";
+  $quantity = null;
+  $price = "20.00";
+  $img = "../img/prodotti/drone-3.png";
+  $extra = null;
+  $upsell_page = "smartwatch-xwatch6.php?upsell";
+
+  if ($upsell == true) {
+    sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
+  }else{
+    passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
+  }
+
 ?>
 
 <!doctype html>
@@ -36,12 +53,29 @@
 
     <?php include("../shared/navbar.php") ?>
     <div>
+      <?php
+        $text_price = "Incredibile! Risparmia 99.00€ acquista a soli 169€!";
+        include("upsell_message.php");
+      ?>
 
-      <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
-        <span class="inline-block border-b-4 border-gray-600 pb-3">IL NUOVO DRONE MILITARE</span>
-      </h1>
-      <form action="drone-x-tactical.php" method="post">
+      <form action="drone-x-tactical.php" method="post" accept-charset="utf-8" role="form">
+        <div class="hidden">
+          <div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+          <input type="hidden" name="fingerprint" id="fingerprint" value="">
+          <input type="hidden" name="source_id" id="source_id" value="07ff46bb6597">
+          <input type="text" name="title" value="<?php echo $title_product; ?>"/>
+          <input type="text" name="name" value="<?php echo $name; ?>"/>
+          <input type="text" name="surname" value="<?php echo $surname; ?>"/>
+          <input type="text" name="phone" value="<?php echo $phone; ?>"/>
+          <input type="text" name="address" value="<?php echo $address ?>"/>
+          <input type="text" name="city" value="<?php echo $city; ?>"/>
+          <input type="number" name="zipcode" value="<?php echo $zipcode; ?>"/>
+        </div>
+
         <div class="max-w-screen-md mx-auto">
+           <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
+             <span class="inline-block border-b-4 border-gray-600 pb-3">IL NUOVO DRONE MILITARE</span>
+           </h1>
           <p class="p-3">
             <strong>XTactical Drone</strong> è un drone progettato con precisione,
             specificamente pensato per volare facilmente, rendendo perfetto il
@@ -49,13 +83,20 @@
             è in movimento. La sua <strong>struttura pieghevole e il suo design leggero</strong>
             lo rendono un oggetto essenziale per ogni avventura!
           </p>
+
           <img src="../img/prodotti/drone-1.png" alt="Drone">
-          <div class="max-w-screen-sm mx-auto px-3">
+          <h2 class="text-center p-3 font-bold text-2xl text-red-600"> Risparmia 99.00€ acquista a soli 169€!</h2>
+
+          <div class="max-w-screen-sm mx-auto px-3 <?php echo showHideUpsell(true); ?>">
             <?php include("../shared/progress-short.php") ?>
           </div>
           <p class="mx-auto text-center my-6">
             <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-              Ordina Ora
+              <?php if ($upsell == true) { ?>
+                Aggiungi all'ordine
+          		<?php }else { ?>
+                Ordina Ora
+              <?php }?>
             </button>
           </p>
         </div>
@@ -97,7 +138,11 @@
             </div>
             <p class="mx-auto text-center my-6">
               <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                Ordina Ora
+                <?php if ($upsell == true) { ?>
+                  Aggiungi all'ordine
+                <?php }else { ?>
+                  Ordina Ora
+                <?php }?>
               </button>
             </p>
           </div>
@@ -140,7 +185,11 @@
               </div>
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  Ordina Ora
+                  <?php if ($upsell == true) { ?>
+                    Aggiungi all'ordine
+                  <?php }else { ?>
+                    Ordina Ora
+                  <?php }?>
                 </button>
               </p>
             </div>
@@ -158,7 +207,11 @@
 
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  Ordina Ora
+                  <?php if ($upsell == true) { ?>
+                    Aggiungi all'ordine
+                  <?php }else { ?>
+                    Ordina Ora
+                  <?php }?>
                 </button>
               </p>
 
@@ -169,7 +222,11 @@
 
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  Ordina Ora
+                  <?php if ($upsell == true) { ?>
+                    Aggiungi all'ordine
+                  <?php }else { ?>
+                    Ordina Ora
+                  <?php }?>
                 </button>
               </p>
             </div>
@@ -210,7 +267,11 @@
 
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  Ordina Ora
+                  <?php if ($upsell == true) { ?>
+                    Aggiungi all'ordine
+                  <?php }else { ?>
+                    Ordina Ora
+                  <?php }?>
                 </button>
               </p>
             </div>
@@ -234,33 +295,42 @@
 
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  Ordina Ora
+                  <?php if ($upsell == true) { ?>
+                    Aggiungi all'ordine
+                  <?php }else { ?>
+                    Ordina Ora
+                  <?php }?>
                 </button>
               </p>
             </div>
 
             <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
             	<div class="relative block flex flex-col md:flex-row items-center">
+                <?php if (!$upsell == true) { ?>
+                  <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4">
+              	    <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
+              	      <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+                    		<h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">1 XTACTICAL DRONE</h1>
+                    	  <h2 class="text-sm text-gray-500 text-center">€ 99.00</h2>
+                        <h3 class="text-sm text-gray-500 text-center text-red-600 pb-6 font-bold">Sconto 50%</h3>
+                        <img class="mx-auto" src="../img/prodotti/drone-5.png" alt="Drone">
+                      </div>
+                      <p class="text-center mt-4">Spedizione Gratuita</p>
+                      <div class="block flex items-center p-8 pt-0  uppercase">
 
-                <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4">
-            	    <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
-            	      <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
-                  		<h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">1 XTACTICAL DRONE</h1>
-                  	  <h2 class="text-sm text-gray-500 text-center">€ 99.00</h2>
-                      <h3 class="text-sm text-gray-500 text-center text-red-600 pb-6 font-bold">Sconto 50%</h3>
-                      <img class="mx-auto" src="../img/prodotti/drone-5.png" alt="Drone">
-                    </div>
-                    <p class="text-center mt-4">Spedizione Gratuita</p>
-                    <div class="block flex items-center p-8 pt-0  uppercase">
-
-                      <button type="submit" class="text-center btn-submit-to-forms mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
-                         Ordina subito
-                      </button>
+                        <button type="submit" class="text-center btn-submit-to-forms mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
+                          <?php if ($upsell == true) { ?>
+                            Aggiungi all'ordine
+                         <?php }else { ?>
+                            Ordina Subito
+                          <?php }?>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
+                <?php }?>
 
-                <div class="w-full sm:w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg">
+                <div class="w-full sm:w-full max-w-md mx-auto sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg">
                   <div class="text-sm leading-none rounded-t-lg bg-red-500 text-white text-black font-semibold uppercase py-4 text-center tracking-wide">
                     Il più venduto
                   </div>
@@ -354,26 +424,32 @@
                   </div>
                   <div class="block flex items-center p-8  uppercase">
                     <button type="submit" class="btn-submit-to-forms text-center mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
-                       Ordina subito
+                      <?php if ($upsell == true) { ?>
+                        Aggiungi all'ordine
+                     <?php }else { ?>
+                        Ordina Subito
+                      <?php }?>
                     </button>
                   </div>
                 </div>
 
-                <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
-                  <div class="bg-white  block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
-                    <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
-                      2 XTACTICAL DRONE
-                    </h1>
-                    <h2 class="text-sm text-gray-500 text-center">€ 159.00</h2>
-                    <h3 class="text-sm text-gray-500 text-center pb-6 text-red-600 pb-6 font-bold">Risparmi €39.00</h3>
-                    <img class="mx-auto" src="../img/prodotti/drone-5.png" alt="Drone">
-                    <div class="block flex items-center p-8  uppercase">
-                      <button type="submit" class="text-center btn-submit-to-forms mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
-                         Ordina subito
-                      </button>
+                <?php if (!$upsell == true) { ?>
+                  <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
+                    <div class="bg-white  block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+                      <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                        2 XTACTICAL DRONE
+                      </h1>
+                      <h2 class="text-sm text-gray-500 text-center">€ 159.00</h2>
+                      <h3 class="text-sm text-gray-500 text-center pb-6 text-red-600 pb-6 font-bold">Risparmi €39.00</h3>
+                      <img class="mx-auto" src="../img/prodotti/drone-5.png" alt="Drone">
+                      <div class="block flex items-center p-8  uppercase">
+                        <button type="submit" class="text-center btn-submit-to-forms mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
+                          Ordina Subito
+                        </button>
+                      </div>
                     </div>
                   </div>
-              </div>
+                <?php } ?>
             </div>
           </div>
         </div>
