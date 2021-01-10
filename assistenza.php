@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <title>Assistenza Gadgets Store </title>
+    <title>Assistenza <?php echo $brand_name; ?> </title>
     <?php include('shared/meta.php'); ?>
   </head>
   <body class="bg-gray-100">
@@ -14,12 +14,12 @@
     <div class="pt-32 px-3">
       <div class="max-w-screen-md mx-auto">
         <h1 class="text-2xl font-bold py-12">
-          Assistenza Gadgets Store
+          Assistenza <?php echo $brand_name; ?>
         </h1>
         <p class="font-bold">Il prodotto che hai ricevuto non era come volevi? Era difettoso?</p>
         <p class="font-bold">Vuoi fare reclamo per qualsiasi incoveniente?</p>
         <p class="py-3">
-          Gadgets Store non è il fornitore o produttore di nessuno dei prodotti
+          <?php echo $brand_name; ?> non è il fornitore o produttore di nessuno dei prodotti
           che puoi trovare all'interno di questo sito internet gadget-store.best
           per maggiori informazioni ti rimandiamo alla pagina del nostro
           <a class="underline" href="disclaimer.php">disclaimer</a>.

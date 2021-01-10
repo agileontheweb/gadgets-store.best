@@ -9,7 +9,7 @@
         </a>
       </div>
       <div class="mx-auto p-3">
-        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cosa-e-gadgets-store.php"><small>Cos'è Gadgets Store</small></a>
+        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cosa-e-gadgets-store.php"><small>Cos'è <?php echo $brand_name; ?></small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cookie-policy.php"><small>Cookie Policy</small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/disclaimer.php"><small>Disclaimer</small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/contatti.php"><small>Contatti</small></a>
@@ -26,7 +26,7 @@
       Non è quindi possibile ritenere questo sito responsabile riguardo l’accuratezza,
       completezza o veridicità del materiale pubblicato né per eventuali danni
       fisici o morali derivanti dall’uso improprio dei contenuti pubblicati.
-      gadgets-store.best non è produttore e/o fornitore dei prodotti che recensisce.
+      <?php echo $brand_url; ?> non è produttore e/o fornitore dei prodotti che recensisce.
       Per le informazioni e le condizioni sulla privacy consultare i Termini e
       Condizioni del sito fornitore.
     </p>

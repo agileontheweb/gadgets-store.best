@@ -21,7 +21,7 @@
 
     <div class="pt-32">
       <h1 class="text-center text-2xl font-bold py-12 text-gray-600">
-        Ricevi gratuitamente le <br><strong>migliori offerte e promozioni <br>in sconto del 50%</strong>.
+        Ricevi gratuitamente le <br><strong>migliori offerte e promozioni <br>in sconto!</strong> nella tua email.
       </h1>
       <div class="max-w-screen-sm bg-white mx-auto">
         <?php include("shared/_mailerlite.php") ?>

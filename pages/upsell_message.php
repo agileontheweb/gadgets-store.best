@@ -8,7 +8,7 @@
        una sorpresa per te.
      </p>
      <h2 class="text-3xl text-center py-3 text-green-600">
-       <strong>Un'offerta
+       <strong>Abbiamo Un'offerta
        riservata</strong> dedicata
        proprio a te <?php echo $name; ?>
      </h2>

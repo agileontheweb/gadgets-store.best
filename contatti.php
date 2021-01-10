@@ -11,7 +11,7 @@
     <div class="pt-32 px-3">
       <div class="max-w-screen-md mx-auto">
         <h1 class="text-2xl font-bold py-12">
-          Contatta Gadgets Store
+          Contatta <?php echo $brand_name; ?>
         </h1>
         <p class="py-3">
           Hai qualche domanda?<br>

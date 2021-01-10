@@ -1,7 +1,7 @@
 function countDown(){
 
 	var myDate = new Date();
-	myDate.setDate(myDate.getDate()+2);
+	myDate.setDate(myDate.getDate()+1);
 	var tomorrow = myDate.getFullYear() + '/'  + ("0" + (myDate.getMonth() + 1)).slice(-2) + '/' + myDate.getDate() ;
 
 	$('.clock').countdown(tomorrow, function(event) {

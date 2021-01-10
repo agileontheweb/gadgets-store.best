@@ -1,11 +1,3 @@
-<?php
-if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
-	$projectPath = "http://localhost:8888/gadgets-store.best/";
-}else{
-  $projectPath = "https://gadgets-store.best/";
-}
-?>
-
 <div class="hidden loadingpage fixed h-full w-full flex items-center justify-center bg-opacity-80 bg-black z-30">
 	<div class="z-10 px-6 text-center text-white text-md font-bold text-2xl">
 		Caricando il modulo d'ordine...
@@ -14,16 +6,14 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 </div>
 
 <div class="<?php fixedNavbar();?> left-0 right-0 mb-0 border-0 rounded-0 bg-black z-20">
-
-	<div class="bg-red-500 py-3 text-center text-white text-xs sm:text-sm <?php hideBarCounter(); ?>">
-		Tempo Rimasto per Acquistare:
-		<div class="inline-block ml-1 count-down font-bold"><span class="clock"></span></div>
+	<div class="uppercase  font-bold <?php echo colorBarTop(); ?> py-3 text-center text-white text-xs sm:text-sm <?php hideBarCounter(); ?>">
+		<?php messageTop(); ?>
 	</div>
 
 	<nav class="flex p-3 <?php showNavBar();?>">
 		  <a class="flex navbar-brand" href="<?php echo $projectPath ?>">
 	     <img src="<?php echo $projectPath ?>/img/logo.png" class="w-14 h-14 md:w-20 md:h-20">
-			 <span class="hidden">Gadgets Store</span>
+			 <span class="hidden"><?php echo $brand_name; ?></span>
 		  </a>
 
 			<div class="flex lg:hidden absolute right-10 pt-3 md:pt-6">

@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <title>Cos'è Gadgets Store </title>
+    <title>Cos'è <?php echo $brand_name; ?> </title>
     <?php include('shared/meta.php'); ?>
   </head>
   <body class="bg-gray-100">
@@ -11,10 +11,10 @@
     <div class="pt-32 px-3">
       <div class="max-w-screen-md mx-auto">
         <h1 class="text-2xl font-bold py-12">
-          Gadgets Store
+          <?php echo $brand_name; ?>
         </h1>
         <p class="py-3">
-          gadgets-store.best è un raccoglitore di offerte e promozioni di aziende
+          <?php echo $brand_url; ?> è un raccoglitore di offerte e promozioni di aziende
           terze. Su questo sito promuoviamo prodotti di vario genere.
         </p>
         <p class="py-3">

@@ -39,7 +39,7 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <title>Senti pìù 30X  - Gadgets Store - Prodotti scontati e in promozione</title>
+    <title><?php echo $title_product; ?>  | <?php echo $brand_name; ?>  <?php echo $brand_slogan; ?></title>
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>

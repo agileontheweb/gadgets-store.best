@@ -2,9 +2,31 @@
 	// ini_set('display_errors', '1');
 	// ini_set('display_startup_errors', '1');
 	// error_reporting(E_ALL);
+	$brand_name = "Gadgets Store";
+	$brand_url = "https://gadgets-store.best/";
+	$brand_slogan = "Prodotti scontati e in promozione";
 
 	$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 	$upsell;
+
+	function colorBarTop(){
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		if (class_exists('LANDING') || class_exists('FORMS')) {
+			$bg_color = "bg-red-500";
+		}else{
+			$bg_color = "bg-blue-500";
+		}
+		echo $bg_color;
+	}
+
+	function messageTop(){
+		if (class_exists('LANDING') || class_exists('FORMS')) {
+			$message = 'QUESTA OFFERTA SCADE TRA: <div class="inline-block ml-1 count-down font-bold"><span class="clock"></span></div>';
+		}else{
+			$message = "🚚 <span class='pl-3'>Spedizione Gratuita su quasi tutti i prodotti</span>";
+		}
+		echo $message;
+	}
 
 	function isUpsell(){
 		if (strpos($url, "upsell") == true) {
@@ -18,7 +40,6 @@
 	}else{
 	  $projectPath = "https://gadgets-store.best/";
 	}
-
 
 	function fixedNavbar(){
 		echo "fixed";
@@ -39,6 +60,7 @@
 		}
 		if (strpos($url, $upsell_params) == true && class_exists('LANDING')) {
 			echo "hidden";
+			$message = "Landing page mettere timer";
 		}
 	}
 

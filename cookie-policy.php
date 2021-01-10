@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <title>Cookie Policy Gadgets Store </title>
+    <title>Cookie Policy <?php echo $brand_name; ?> </title>
     <?php include('shared/meta.php'); ?>
   </head>
   <body class="bg-gray-100">
@@ -11,7 +11,7 @@
 
       <div class="max-w-screen-md mx-auto">
         <h1 class="text-2xl font-bold py-12">
-          Cookie Policy Gadgets Store.
+          Cookie Policy <?php echo $brand_name; ?>.
         </h1>
         <p class="py-5">
           <strong>Cookie Policy</strong>
