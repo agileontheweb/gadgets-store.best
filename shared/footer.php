@@ -2,7 +2,7 @@
   <div class="p-3">
     <div class="md:flex">
       <div class="mx-auto p-3 bg-blue-500 text-white hover:bg-blue-600 text-center <?php showFacebook() ?>">
-        <a class="px-3" href="https://www.facebook.com/GadgetsStoreBest/" target="blank">
+        <a class="px-3" href="<?php echo $fb_page; ?>" target="blank">
           <small>
             <i class="fa fa-facebook"></i>
             Seguici su Facebook</small>

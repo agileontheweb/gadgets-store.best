@@ -2,14 +2,16 @@
   include("../settings.php");
   class LANDING {};
   $remaining_pieces = 7;
-  isUpsell();
 
-  $name = $_GET['name'];
-  $surname = $_GET['surname'];
-  $phone = $_GET['phone'];
-  $address = $_GET['address'];
-  $city = $_GET['city'];
-  $zipcode = $_GET['zipcode'];
+  isUpsell();
+  if ($upsell == true) {
+    $name = $_GET['name'];
+    $surname = $_GET['surname'];
+    $phone = $_GET['phone'];
+    $address = $_GET['address'];
+    $city = $_GET['city'];
+    $zipcode = $_GET['zipcode'];
+  }
 
   $title_product = "Reggiseno Lovely bra 3 in 1";
   $url_product_api = "dmc_lovelybra3in1";

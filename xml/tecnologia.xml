@@ -8,6 +8,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cqz</linkaffiliate>
       <link></link>
       <offer>Sconto 30%</offer>
+      <prezzo>€49.00</prezzo>
       <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
@@ -18,6 +19,7 @@
     <linkaffiliate>https://amzn.to/2WWlHoF</linkaffiliate>
     <link></link>
     <offer>Amazon</offer>
+    <prezzo>€46.00 - variabile</prezzo>
     <formtitle></formtitle>
     <url_api_product></url_api_product>
     <selector></selector>
@@ -32,6 +34,7 @@
     <linkaffiliate></linkaffiliate>
     <link>drone-x-tactical.php</link>
     <offer>Sconto 50%</offer>
+    <prezzo>da €99.00</prezzo>
     <formtitle>Drone X Tactical</formtitle>
     <url_api_product>bgood_xdrone</url_api_product>
     <selector>true</selector>
@@ -47,6 +50,7 @@
     <link>smartwatch-xwatch6.php</link>
     <url_api_product>bgood_xwatch6.0</url_api_product>
     <offer>Sconto 50%</offer>
+    <prezzo>€59.90</prezzo>
     <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
@@ -58,6 +62,7 @@
     <!-- <link>c10-xpower.php</link> -->
     <url_api_product>bgood_c10xpower</url_api_product>
     <offer>Sconto 50%</offer>
+    <prezzo>€59.90</prezzo>
     <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
@@ -68,6 +73,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CsU</linkaffiliate>
     <link></link>
     <offer>Sconto 50%</offer>
+    <prezzo>€69.90</prezzo>
     <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
@@ -78,6 +84,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqE</linkaffiliate>
     <link></link>
     <offer>Sconto 50%</offer>
+    <prezzo>€59.00</prezzo>
     <produttore>https://advmarket.shop/</produttore>
   </record>
 
@@ -88,6 +95,7 @@
       <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr9</linkaffiliate> -->
       <link>sentipiu30x.php</link>
       <offer>Sconto 30%</offer>
+      <prezzo>€69.90</prezzo>
       <produttore>https://webshopitaly.sm</produttore>
   </record>
 
@@ -98,6 +106,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crb</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <prezzo>€59.00</prezzo>
       <produttore>https://www.bazardelleoccasioni.com</produttore>
   </record>
 
@@ -107,6 +116,7 @@
       <image>img/prodotti/aroomdiffuser.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crc</linkaffiliate>
       <link></link>
+      <prezzo>€49.90</prezzo>
       <produttore>https://vigarostore.com/</produttore>
   </record>
 
@@ -117,6 +127,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crd</linkaffiliate>
       <link></link>
       <offer>Sconto 30%</offer>
+      <prezzo>€69.90</prezzo>
       <produttore>https://www.bazardelleoccasioni.com</produttore>
   </record>
 
@@ -126,6 +137,7 @@
       <image>img/prodotti/airlove.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZV</linkaffiliate>
       <link></link>
+      <prezzo>€99.90</prezzo>
       <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
@@ -135,6 +147,7 @@
       <image>img/prodotti/gilet.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cru</linkaffiliate>
       <link></link>
+      <prezzo>€89.90</prezzo>
       <produttore>https://advmarket.shop/</produttore>
   </record>
 

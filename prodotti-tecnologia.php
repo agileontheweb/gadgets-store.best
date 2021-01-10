@@ -44,13 +44,14 @@
                   Vedi
                 </a>
               </div>
-              <?php if($list[$i]->offer){?>
-                <div class="text-center pt-3">
+              <div class="text-center pt-3">
+                <?php if($list[$i]->offer){?>
                   <span class="<?php colorBadge($list[$i]->offer) ?>  inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">
                     <?php echo $list[$i]->offer ?>
                   </span>
-                </div>
-              <?php } ?>
+                <?php } ?>
+                <span class="block text-xs mt-2"><?php echo $list[$i]->prezzo ?></span>
+              </div>
             </div>
           </div>
         </div>

@@ -2,14 +2,16 @@
   include("../settings.php");
   class LANDING {};
   $remaining_pieces = 14;
-  isUpsell();
 
-  $name = $_GET['name'];
-  $surname = $_GET['surname'];
-  $phone = $_GET['phone'];
-  $address = $_GET['address'];
-  $city = $_GET['city'];
-  $zipcode = $_GET['zipcode'];
+  isUpsell();
+  if ($upsell == true) {
+    $name = $_GET['name'];
+    $surname = $_GET['surname'];
+    $phone = $_GET['phone'];
+    $address = $_GET['address'];
+    $city = $_GET['city'];
+    $zipcode = $_GET['zipcode'];
+  }
 
   $title_product = "Smartwatch X-W 6.0";
   $url_product_api = "bgood_xwatch6.0";

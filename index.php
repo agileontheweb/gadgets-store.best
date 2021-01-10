@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <title>Gadgets Store - Prodotti scontati e in promozione</title>
+    <title><?php echo $brand_name; ?> - <?php echo $brand_slogan; ?></title>
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('shared/meta.php'); ?>
   </head>
@@ -15,12 +15,15 @@
     <?php } ?>
 
     <?php include("shared/navbar.php") ?>
-    <div class="pt-32">
+    <div class="pt-28 md:pt-32">
+      <h1 class="py-6 text-center text-2xl px-3 mt-4 border">
+        Tanti <strong><?php echo $brand_slogan; ?></strong> da prendere al volo !
+      </h1>
       <?php include("shared/_tecnologia.php") ?>
       <?php include("shared/_ricevi_promozioni.php") ?>
-      <?php include("shared/_benessere.php") ?>
-      <?php include("shared/_ricevi_promozioni.php") ?>
       <?php include("shared/_bellezza.php") ?>
+      <?php include("shared/_ricevi_promozioni.php") ?>
+      <?php include("shared/_benessere.php") ?>
       <?php include("shared/_ricevi_promozioni.php") ?>
       <?php include("shared/_perlacasa.php") ?>
       <?php include("shared/_amazon.php") ?>

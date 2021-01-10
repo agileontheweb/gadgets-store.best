@@ -2,14 +2,16 @@
   include("../settings.php");
   class LANDING {};
   $remaining_pieces = 27;
-  isUpsell();
 
-  $name = $_GET['name'];
-  $surname = $_GET['surname'];
-  $phone = $_GET['phone'];
-  $address = $_GET['address'];
-  $city = $_GET['city'];
-  $zipcode = $_GET['zipcode'];
+  isUpsell();
+  if ($upsell == true) {
+    $name = $_GET['name'];
+    $surname = $_GET['surname'];
+    $phone = $_GET['phone'];
+    $address = $_GET['address'];
+    $city = $_GET['city'];
+    $zipcode = $_GET['zipcode'];
+  }
 
   $title_product = "Drone X Tactical";
   $url_product_api = "bgood_xdrone";

@@ -1,16 +1,15 @@
 <?php
-	// ini_set('display_errors', '1');
-	// ini_set('display_startup_errors', '1');
-	// error_reporting(E_ALL);
+	ini_set('display_errors', '1');
+	ini_set('display_startup_errors', '1');
+	error_reporting(E_ALL);
 	$brand_name = "Gadgets Store";
 	$brand_url = "https://gadgets-store.best/";
-	$brand_slogan = "Prodotti scontati e in promozione";
-
-	$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-	$upsell;
+	$brand_slogan = "Prodotti Scontati e in Promozione";
+	$fb_page = "https://www.facebook.com/GadgetsStoreBest/";
+	$upsell = false;
 
 	function colorBarTop(){
-		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+
 		if (class_exists('LANDING') || class_exists('FORMS')) {
 			$bg_color = "bg-red-500";
 		}else{
@@ -29,6 +28,7 @@
 	}
 
 	function isUpsell(){
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 		if (strpos($url, "upsell") == true) {
 			$upsell = true;
 			return $upsell;

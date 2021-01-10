@@ -8,6 +8,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqH</linkaffiliate>
     <link></link>
     <offer>Sconto 30%</offer>
+    <prezzo>€59.90</prezzo>
     <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
 
@@ -18,6 +19,7 @@
     <linkaffiliate>http://link.colorecapelli.net/affiliateproject/tracker/click/Css</linkaffiliate>
     <link></link>
     <offer>Promo 2x1</offer>
+    <prezzo>€49.00</prezzo>
     <produttore>https://benesserestore.net/</produttore>
   </record>
 
@@ -27,6 +29,7 @@
     <image>img/prodotti/fast-lifting.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csx</linkaffiliate>
     <link></link>
+    <prezzo>€49.00</prezzo>
     <produttore>https://benesserestore.net/</produttore>
   </record>
 
@@ -36,6 +39,7 @@
     <image>img/prodotti/black-eyelashes.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csv</linkaffiliate>
     <produttore>https://www.ilmontestore.sm/</produttore>
+    <prezzo>€49.00</prezzo>
     <link></link>
   </record>
 
@@ -48,6 +52,7 @@
       <link></link>
       <offer>Promo 2x1</offer>
       <produttore>https://maviva.net/</produttore>
+      <prezzo>€49.00</prezzo>
   </record>
 
   <record>
@@ -57,15 +62,17 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqJ</linkaffiliate>
       <link></link>
       <offer>Sconto 50%</offer>
+      <prezzo>€59.00</prezzo>
       <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
-  
+
   <record>
       <name>Woman Shave</name>
       <description>Rasoio/epilatore da donna, puoi utilizzarlo in ogni parte del corpo.</description>
       <image>img/prodotti/woman-shave.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqL</linkaffiliate>
       <link></link>
+      <prezzo>€59.00</prezzo>
       <produttore>http://advmarket.shop</produttore>
   </record>
 
@@ -76,6 +83,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crf</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <prezzo>€49.00</prezzo>
       <produttore>https://benesserestore.net/</produttore>
   </record>
 
@@ -85,6 +93,7 @@
     <image>img/prodotti/callokiller.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crg</linkaffiliate>
     <link></link>
+    <prezzo>€59.00</prezzo>
     <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
 

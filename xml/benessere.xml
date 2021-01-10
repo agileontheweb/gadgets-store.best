@@ -8,6 +8,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csn</linkaffiliate>
     <link></link>
     <offer>Promo 4x1</offer>
+    <prezzo>€49.00</prezzo>
     <produttore>https://benesserestore.net/</produttore>
   </record>
 
@@ -18,6 +19,7 @@
     <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZW</linkaffiliate> -->
     <link>reggiseno-3in1.php</link>
     <offer>Promo 3x1</offer>
+    <prezzo>€59.90</prezzo>
     <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
 
@@ -28,6 +30,7 @@
     <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZX</linkaffiliate> -->
     <link>footenergy.php</link>
     <offer>Sconto 70%</offer>
+    <prezzo>€69.00</prezzo>
     <produttore>https://advmarket.shop</produttore>
   </record>
 
@@ -38,6 +41,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cso</linkaffiliate>
       <link></link>
       <offer>Sconto 40%</offer>
+      <prezzo>€59.00</prezzo>
       <produttore>https://benesserestore.net/</produttore>
   </record>
 
@@ -48,6 +52,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csp</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <prezzo>€49.00</prezzo>
       <produttore>https://benesserestore.net/</produttore>
   </record>
 
@@ -58,6 +63,7 @@
     <linkaffiliate>https://amzn.to/386EsMF</linkaffiliate>
     <link></link>
     <offer>Amazon</offer>
+    <prezzo>€19.90 - variabile</prezzo>
     <formtitle></formtitle>
     <url_api_product></url_api_product>
     <selector></selector>
@@ -72,6 +78,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crv</linkaffiliate>
     <link></link>
     <offer>Sconto 30%</offer>
+    <prezzo>€59.90</prezzo>
     <produttore>https://italoshop.it/</produttore>
   </record>
 
@@ -81,6 +88,8 @@
       <image>img/prodotti/whitepro.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csr</linkaffiliate>
       <link></link>
+      <offer>Sconto 40%</offer>
+      <prezzo>€39.00</prezzo>
       <produttore>https://benesserestore.net/</produttore>
   </record>
 
@@ -91,6 +100,7 @@
       <linkaffiliate>https://colorecapelli.net/foltina-plus/</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <prezzo>€49.00</prezzo>
       <produttore>https://benesserestore.net/</produttore>
   </record>
 
@@ -100,6 +110,7 @@
     <image>img/prodotti/callokiller.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crg</linkaffiliate>
     <link></link>
+    <prezzo>€49.00</prezzo>
     <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
 
@@ -107,6 +118,7 @@
     <name>Stop Germ</name>
     <description>Sanitizzante per spazzolini da denti a luce UV. Uccide il 99,9% dei batteri nocivi.</description>
     <image>img/prodotti/stopgerm.jpg</image>
+    <prezzo>€49.00</prezzo>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crl</linkaffiliate>
     <produttore>https://advmarket.shop</produttore>
   </record>

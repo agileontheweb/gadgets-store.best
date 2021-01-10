@@ -8,6 +8,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csd</linkaffiliate>
     <link></link>
     <offer>Sconto 40%</offer>
+    <prezzo>€59.90</prezzo>
     <produttore>https://webshopitaly.sm/</produttore>
   </record>
 
@@ -18,6 +19,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csc</linkaffiliate>
     <link></link>
     <offer>Promo 2x1</offer>
+    <prezzo>€59.90</prezzo>
     <produttore>https://webshopitaly.sm/</produttore>
   </record>
 
@@ -28,6 +30,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CA6</linkaffiliate>
     <link></link>
     <offer>Offerta speciale</offer>
+    <prezzo>€69.90</prezzo>
     <formtitle></formtitle>
     <url_api_product></url_api_product>
     <selector>true</selector>
@@ -42,6 +45,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csa</linkaffiliate>
     <link></link>
     <offer>Promo 2x1</offer>
+    <prezzo>€59.99</prezzo>
     <produttore>https://www.kalaishop.com/</produttore>
   </record>
 
@@ -52,6 +56,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqO</linkaffiliate>
     <link></link>
     <offer>Sconto 50%</offer>
+    <prezzo>€75.00</prezzo>
     <produttore>https://webshopitaly.sm/</produttore>
   </record>
 
@@ -62,6 +67,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqP</linkaffiliate>
       <link></link>
       <offer>Offerta Lancio</offer>
+      <prezzo>€99.90</prezzo>
       <produttore>https://webshopitaly.sm/</produttore>
   </record>
 
@@ -72,6 +78,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZV</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <prezzo>€99.90</prezzo>
       <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
@@ -82,6 +89,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crj</linkaffiliate>
       <link></link>
       <offer>Sconto 70%</offer>
+      <prezzo>€69.90</prezzo>
       <produttore>https://webshopitaly.sm/</produttore>
   </record>
 
@@ -91,6 +99,7 @@
       <image>img/prodotti/smart-lens.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crk</linkaffiliate>
       <link></link>
+      <prezzo>€49.00</prezzo>
       <produttore>http://advmarket.shop/</produttore>
   </record>
 
@@ -101,6 +110,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr8</linkaffiliate>
       <link></link>
       <offer>Sconto 30%</offer>
+      <prezzo>€69.90</prezzo>
       <produttore>https://www.kalaishop.com/</produttore>
   </record>
 
@@ -110,6 +120,7 @@
     <image>img/prodotti/rubinetto.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crm</linkaffiliate>
     <link></link>
+    <prezzo>€59.00</prezzo>
     <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
 

@@ -1,16 +1,17 @@
-<?php include("../settings.php") ?>
 <?php
   include("../settings.php");
   class LANDING {};
   $remaining_pieces = 7;
-  isUpsell();
 
-  $name = $_GET['name'];
-  $surname = $_GET['surname'];
-  $phone = $_GET['phone'];
-  $address = $_GET['address'];
-  $city = $_GET['city'];
-  $zipcode = $_GET['zipcode'];
+  isUpsell();
+  if ($upsell == true) {
+    $name = $_GET['name'];
+    $surname = $_GET['surname'];
+    $phone = $_GET['phone'];
+    $address = $_GET['address'];
+    $city = $_GET['city'];
+    $zipcode = $_GET['zipcode'];
+  }
 
   $title_product = "Senti piú 30x";
   $url_product_api = "dmc_sentipiù30x";
@@ -54,7 +55,7 @@
     <form action="sentipiu30x.php" method="post"></form>
 
     <?php include("../shared/navbar.php") ?>
-    <div class="pt-32">
+    <div class="px-3">
       <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
         <span class="inline-block border-b-4 border-gray-600 pb-3">Senti più 30X</span>
       </h1>
