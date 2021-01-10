@@ -1,7 +1,6 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  $remaining_pieces = 27;
 
   isUpsell();
   if ($upsell == true) {
