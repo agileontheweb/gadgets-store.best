@@ -20,6 +20,15 @@
   </record>
 
   <record>
+    <name>Foot Energy</name>
+    <description>Tappetino per i piedi a impulsi magnetici che sollecitano e stimolano i muscoli.</description>
+    <image>img/prodotti/footenergy-1.jpg</image>
+    <!-- <linkaffiliate>http://link.colorecapelli.net/affiliateproject/tracker/click/Css</linkaffiliate> -->
+    <link>footenergy.php</link>
+    <offer>Sconto 70%</offer>
+  </record>
+
+  <record>
       <name>Keto Slim</name>
       <description>integratore naturale che aiuta a perdere adipe e massa grassa in maniera sana e senza sforzo.</description>
       <image>img/prodotti/ketoslim.jpg</image>
