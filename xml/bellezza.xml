@@ -8,6 +8,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqH</linkaffiliate>
     <link></link>
     <offer>Sconto 30%</offer>
+    <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
 
   <record>
@@ -17,6 +18,7 @@
     <linkaffiliate>http://link.colorecapelli.net/affiliateproject/tracker/click/Css</linkaffiliate>
     <link></link>
     <offer>Promo 2x1</offer>
+    <produttore>https://benesserestore.net/</produttore>
   </record>
 
   <record>
@@ -25,6 +27,7 @@
     <image>img/prodotti/fast-lifting.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csx</linkaffiliate>
     <link></link>
+    <produttore>https://benesserestore.net/</produttore>
   </record>
 
   <record>
@@ -32,6 +35,7 @@
     <description>Buovissime e rivoluzionarie extentions magnetiche per ciglia.</description>
     <image>img/prodotti/black-eyelashes.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csv</linkaffiliate>
+    <produttore>https://www.ilmontestore.sm/</produttore>
     <link></link>
   </record>
 
@@ -43,6 +47,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqI</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <produttore>https://maviva.net/</produttore>
   </record>
 
   <record>
@@ -52,22 +57,16 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqJ</linkaffiliate>
       <link></link>
       <offer>Sconto 50%</offer>
+      <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
-  <record>
-    <name>NECK RING</name>
-    <description>Massaggiatore innovativo che massaggia in profondità.</description>
-    <image>img/prodotti/neckringplus.jpg</image>
-    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crv</linkaffiliate>
-    <link></link>
-    <offer>Sconto 30%</offer>
-  </record>
-
+  
   <record>
       <name>Woman Shave</name>
       <description>Rasoio/epilatore da donna, puoi utilizzarlo in ogni parte del corpo.</description>
       <image>img/prodotti/woman-shave.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqL</linkaffiliate>
       <link></link>
+      <produttore>http://advmarket.shop</produttore>
   </record>
 
   <record>
@@ -77,6 +76,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crf</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <produttore>https://benesserestore.net/</produttore>
   </record>
 
   <record>
@@ -85,23 +85,7 @@
     <image>img/prodotti/callokiller.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crg</linkaffiliate>
     <link></link>
-  </record>
-
-  <record>
-    <name>Rhino correct</name>
-    <description>Correttore nasale in silicone medico che permette di eliminare gli enestetismi del naso.</description>
-    <image>img/prodotti/rhino.jpg</image>
-    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cri</linkaffiliate>
-    <link></link>
-    <offer>Sconto 40%</offer>
-  </record>
-
-  <record>
-    <name>Stop Germ</name>
-    <description>Sanitizzante per spazzolini da denti a luce UV. Uccide il 99,9% dei batteri nocivi.</description>
-    <image>img/prodotti/stopgerm.jpg</image>
-    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crl</linkaffiliate>
-    <link></link>
+    <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
 
 </products>

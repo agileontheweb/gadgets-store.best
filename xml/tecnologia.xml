@@ -8,6 +8,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cqz</linkaffiliate>
       <link></link>
       <offer>Sconto 30%</offer>
+      <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
   <record>
@@ -21,6 +22,7 @@
     <url_api_product></url_api_product>
     <selector></selector>
     <privacy>/</privacy>
+    <produttore>https://www.amazon.com</produttore>
   </record>
 
   <record>
@@ -34,6 +36,7 @@
     <url_api_product>bgood_xdrone</url_api_product>
     <selector>true</selector>
     <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
+    <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
   <record>
@@ -44,6 +47,7 @@
     <link>smartwatch-xwatch6.php</link>
     <url_api_product>bgood_xwatch6.0</url_api_product>
     <offer>Sconto 50%</offer>
+    <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
   <record>
@@ -54,6 +58,7 @@
     <!-- <link>c10-xpower.php</link> -->
     <url_api_product>bgood_c10xpower</url_api_product>
     <offer>Sconto 50%</offer>
+    <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
   <record>
@@ -63,6 +68,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CsU</linkaffiliate>
     <link></link>
     <offer>Sconto 50%</offer>
+    <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
   <record>
@@ -72,6 +78,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqE</linkaffiliate>
     <link></link>
     <offer>Sconto 50%</offer>
+    <produttore>https://advmarket.shop/</produttore>
   </record>
 
   <record>
@@ -81,6 +88,7 @@
       <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr9</linkaffiliate> -->
       <link>sentipiu30x.php</link>
       <offer>Sconto 30%</offer>
+      <produttore>https://webshopitaly.sm</produttore>
   </record>
 
   <record>
@@ -90,6 +98,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crb</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <produttore>https://www.bazardelleoccasioni.com</produttore>
   </record>
 
   <record>
@@ -98,6 +107,7 @@
       <image>img/prodotti/aroomdiffuser.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crc</linkaffiliate>
       <link></link>
+      <produttore>https://vigarostore.com/</produttore>
   </record>
 
   <record>
@@ -107,14 +117,16 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crd</linkaffiliate>
       <link></link>
       <offer>Sconto 30%</offer>
+      <produttore>https://www.bazardelleoccasioni.com</produttore>
   </record>
 
   <record>
       <name>AIR LOVER</name>
       <description>Purificatore d'aria portatile senza fili. Batteria agli ioni di Litio ricaricabile.</description>
       <image>img/prodotti/airlove.jpg</image>
-      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqE</linkaffiliate>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZV</linkaffiliate>
       <link></link>
+      <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
   <record>
@@ -123,6 +135,7 @@
       <image>img/prodotti/gilet.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cru</linkaffiliate>
       <link></link>
+      <produttore>https://advmarket.shop/</produttore>
   </record>
 
 </products>

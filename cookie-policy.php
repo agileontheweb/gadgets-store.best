@@ -8,11 +8,12 @@
   <body class="bg-gray-100">
     <?php include("shared/navbar.php") ?>
     <div class="pt-32 px-3">
-      <h1 class="text-center text-2xl font-bold py-12 text-gray-600">
-        <span class="inline-block border-b-4 border-gray-600 pb-3">Cookie Policy Gadgets Store.</span>
-      </h1>
+
       <div class="max-w-screen-md mx-auto">
-        <p class="mt-5">
+        <h1 class="text-2xl font-bold py-12">
+          Cookie Policy Gadgets Store.
+        </h1>
+        <p class="py-5">
           <strong>Cookie Policy</strong>
           Il nostro sito utilizza cookie e altre tecnologie per assicurarci che
           tutti i nostri visitatori abbiano la migliore esperienza possibile.

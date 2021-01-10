@@ -9,16 +9,15 @@
     <?php include("shared/navbar.php") ?>
 
     <div class="pt-32 px-3">
-      <h1 class="text-center text-2xl font-bold py-12 text-gray-600">
-        <span class="inline-block border-b-4 border-gray-600 pb-3">Gadgets Store</span>
-      </h1>
-
       <div class="max-w-screen-md mx-auto">
-        <p class="mt-5">
-          gadgets-store.best è lo spazio web interamente dedicato alla ricerca di
-          Gadgets e prodotti utili da proporre ai nostri visitatori.
+        <h1 class="text-2xl font-bold py-12">
+          Gadgets Store
+        </h1>
+        <p class="py-3">
+          gadgets-store.best è un raccoglitore di offerte e promozioni di aziende
+          terze. Su questo sito promuoviamo prodotti di vario genere.
         </p>
-        <p class="mt-5">
+        <p class="py-3">
           Segui la <a class="text-red-500 underline" href="https://www.facebook.com/GadgetsStoreBest" target="blank">nostra pagina Facebook</a>.
         </p>
       </div>

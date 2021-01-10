@@ -8,24 +8,27 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csn</linkaffiliate>
     <link></link>
     <offer>Promo 4x1</offer>
+    <produttore>https://benesserestore.net/</produttore>
   </record>
 
   <record>
     <name>Reggiseno 3 in 1</name>
     <description>Lovely bra è il Reggiseno ad effetto push-up più comodo sul mercato.</description>
     <image>img/prodotti/reggiseno3in1.jpg</image>
-    <!-- <linkaffiliate>http://link.colorecapelli.net/affiliateproject/tracker/click/Css</linkaffiliate> -->
+    <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZW</linkaffiliate> -->
     <link>reggiseno-3in1.php</link>
     <offer>Promo 3x1</offer>
+    <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
 
   <record>
     <name>Foot Energy</name>
     <description>Tappetino per i piedi a impulsi magnetici che sollecitano e stimolano i muscoli.</description>
     <image>img/prodotti/footenergy-1.jpg</image>
-    <!-- <linkaffiliate>http://link.colorecapelli.net/affiliateproject/tracker/click/Css</linkaffiliate> -->
+    <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZX</linkaffiliate> -->
     <link>footenergy.php</link>
     <offer>Sconto 70%</offer>
+    <produttore>https://advmarket.shop</produttore>
   </record>
 
   <record>
@@ -35,6 +38,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cso</linkaffiliate>
       <link></link>
       <offer>Sconto 40%</offer>
+      <produttore>https://benesserestore.net/</produttore>
   </record>
 
   <record>
@@ -44,6 +48,7 @@
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csp</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <produttore>https://benesserestore.net/</produttore>
   </record>
 
   <record>
@@ -57,6 +62,7 @@
     <url_api_product></url_api_product>
     <selector></selector>
     <privacy>/</privacy>
+    <produttore>https://amazon.com/</produttore>
   </record>
 
   <record>
@@ -66,6 +72,7 @@
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crv</linkaffiliate>
     <link></link>
     <offer>Sconto 30%</offer>
+    <produttore>https://italoshop.it/</produttore>
   </record>
 
   <record>
@@ -74,6 +81,7 @@
       <image>img/prodotti/whitepro.jpg</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csr</linkaffiliate>
       <link></link>
+      <produttore>https://benesserestore.net/</produttore>
   </record>
 
   <record>
@@ -83,6 +91,7 @@
       <linkaffiliate>https://colorecapelli.net/foltina-plus/</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
+      <produttore>https://benesserestore.net/</produttore>
   </record>
 
   <record>
@@ -91,15 +100,7 @@
     <image>img/prodotti/callokiller.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crg</linkaffiliate>
     <link></link>
-  </record>
-
-  <record>
-    <name>Rhino correct</name>
-    <description>Correttore nasale in silicone medico che permette di eliminare gli enestetismi del naso.</description>
-    <image>img/prodotti/rhino.jpg</image>
-    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cri</linkaffiliate>
-    <link></link>
-    <offer>Sconto 40%</offer>
+    <produttore>https://www.ilmontestore.sm/</produttore>
   </record>
 
   <record>
@@ -107,7 +108,7 @@
     <description>Sanitizzante per spazzolini da denti a luce UV. Uccide il 99,9% dei batteri nocivi.</description>
     <image>img/prodotti/stopgerm.jpg</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crl</linkaffiliate>
-    <link></link>
+    <produttore>https://advmarket.shop</produttore>
   </record>
 
 </products>

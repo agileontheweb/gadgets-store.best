@@ -13,6 +13,7 @@
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cookie-policy.php"><small>Cookie Policy</small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/disclaimer.php"><small>Disclaimer</small></a>
         <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/contatti.php"><small>Contatti</small></a>
+        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/assistenza.php"><small>Assistenza</small></a>
       </div>
     </div>
     <hr>

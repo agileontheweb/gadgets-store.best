@@ -16,7 +16,7 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 <div class="<?php fixedNavbar();?> left-0 right-0 mb-0 border-0 rounded-0 bg-black z-20">
 
 	<div class="bg-red-500 py-3 text-center text-white text-xs sm:text-sm <?php hideBarCounter(); ?>">
-		Le offerte potrebbero terminare tra:
+		Tempo Rimasto per Acquistare:
 		<div class="inline-block ml-1 count-down font-bold"><span class="clock"></span></div>
 	</div>
 

@@ -8,11 +8,11 @@
     <?php include("shared/navbar.php") ?>
 
     <div class="pt-32 px-3">
-      <h1 class="text-center text-2xl font-bold py-12 text-gray-600">
-        <span class="inline-block border-b-4 border-gray-600 pb-3">Disclaimer Gadgets Store.</span>
-      </h1>
-    <div class="max-w-screen-md mx-auto">
-        <p class="mt-5">
+      <div class="max-w-screen-md mx-auto">
+        <h1 class="text-2xl font-bold py-12">
+          Disclaimer Gadgets Store.
+        </h1>
+        <p class="my-3">
           I contenuti all'interno di gadgets-store.best sono esclusivamente
           da considerarsi a titolo informativo.
           Le nostre categorie di prodotti spaziano a 360 gradi, puoi trovare informazioni
