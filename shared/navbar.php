@@ -46,9 +46,6 @@ if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 					<li class="">
 						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-casa.php">Casa</a>
 					</li>
-					<!-- <li class="">
-						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="http://bit.ly/2OPkFYk">Corsi di Formazione</a>
-					</li> -->
 				</ul>
 		  </div>
 			<div class="hidden lg:flex absolute p-2 right-10">
