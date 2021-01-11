@@ -1,8 +1,10 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  $remaining_pieces = 14;
+  add_cookie_has_bought();
+  redirect_has_bought();
 
+  $title_product = "Smartwatch X-W 6.0";
   isUpsell();
   if ($upsell == true) {
     $name = $_GET['name'];
@@ -13,7 +15,7 @@
     $zipcode = $_GET['zipcode'];
   }
 
-  $title_product = "Smartwatch X-W 6.0";
+
   $url_product_api = "bgood_xwatch6.0";
   $selector = true;
   $selector_1 = "1 XW6.0 €59.90";
@@ -59,6 +61,7 @@
         include("upsell_message.php");
       ?>
       <form action="smartwatch-xwatch6.php" method="post">
+
         <div class="max-w-screen-md mx-auto px-3">
           <h1 class="text-center text-2xl font-bold pt-12">
               Che tu sia uno sportivo, una manager, un ragazzo, una madre di famiglia,

@@ -1,4 +1,7 @@
-<?php include("settings.php") ?>
+<?php
+  include("settings.php");
+  class NEWSLETTER {};
+?>
 <!doctype html>
 <html lang="it">
   <head>

@@ -6,6 +6,41 @@
 	$brand_url = "https://gadgets-store.best/";
 	$brand_slogan = "Prodotti Scontati e in Promozione";
 	$fb_page = "https://www.facebook.com/GadgetsStoreBest/";
+	$visited_newsletter_page = "";
+	session_start();
+
+	if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
+		$projectPath = "http://localhost:8888/gadgets-store.best/";
+	}else{
+	  $projectPath = "https://gadgets-store.best/";
+	}
+
+	function add_cookie_has_bought(){
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		if (strpos($url, "upsell?upsell") == true) {
+			$has_bought = 'Ha comprato';
+			setcookie("add_cookie_has_bought", $has_bought,time()+3600, '/');
+		}
+	}
+
+	add_cookie_has_newsletter();
+	function add_cookie_has_newsletter(){
+		if (class_exists('NEWSLETTER')) {
+			$has_newsletter = 'has_newsletter';
+			setcookie("add_cookie_has_newsletter", $has_newsletter,time()+3600, '/');
+		}
+	}
+
+	function redirect_has_bought(){
+		if(isset($_COOKIE["add_cookie_has_bought"]) == "has_bought"){
+			header("Location: hai-gia-acquistato.php");
+		}
+	}
+
+	function remove_cookie_has_bought(){
+		setcookie("add_cookie_has_bought", '', 1, '/');
+	}
+
 	$upsell = false;
 
 	function colorBarTop(){
@@ -99,23 +134,9 @@
 		if (class_exists('LANDING') || class_exists('FORMS')) {
 			$message = 'QUESTA OFFERTA SCADE TRA: <div class="inline-block ml-1 count-down font-bold"><span class="clock"></span></div>';
 		}else{
-			$message = "🚚 <span class='pl-3'>Spedizione Gratuita su quasi tutti i prodotti</span>";
+			$message = "🚚 <span class='pl-3'>Spedizione Gratuita su tanti prodotti</span>";
 		}
 		echo $message;
-	}
-
-	function isUpsell(){
-		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-		if (strpos($url, "upsell") == true) {
-			$upsell = true;
-			return $upsell;
-		}
-	}
-
-	if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
-		$projectPath = "http://localhost:8888/gadgets-store.best/";
-	}else{
-	  $projectPath = "https://gadgets-store.best/";
 	}
 
 	function fixedNavbar(){
@@ -140,6 +161,15 @@
 			$message = "Landing page mettere timer";
 		}
 	}
+
+	function isUpsell(){
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		if (strpos($url, "upsell") == true) {
+			$upsell = true;
+			return $upsell;
+		}
+	}
+
 
 	function hideBarCounter(){
 		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
@@ -177,7 +207,7 @@
   }
 
 	function passDataForms(
-										$title,
+										$title_product,
 										$url_product_api,
 										$selector,
 										$selector_1,
@@ -195,17 +225,18 @@
 										){
 
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
 			if($selector == true){
 				$selectors = "selector=$selector&selector_1=$selector_1&selector_1_value=$selector_1_value&selector_2=$selector_2&selector_2_value=$selector_2_value&selector_3=$selector_3&selector_3_value=$selector_3_value";
 			}
-
-			$custom_params = "title=$title&url_product_api=$url_product_api&$selectors&privacy=$privacy&quantity=$quantity&price=$price&img=$img&extra=$extra&upsell_page=$upsell_page";
+			$custom_params = "&$selectors&title_product=$title_product&url_product_api=$url_product_api&privacy=$privacy&quantity=$quantity&price=$price&img=$img&extra=$extra&upsell_page=$upsell_page";
 			header("location: forms.php?$custom_params");
+
 		}
 	}
 
 	function sendFormsUpsell(
-										$title,
+										$title_product,
 										$name,
 										$surname,
 										$phone,
@@ -220,7 +251,7 @@
 
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-			$title = $_POST["title"];
+			$title_product = $_POST["title"];
 			$name = $_POST["name"];
 			$surname = $_POST["surname"];
 			$phone = $_POST["phone"];
@@ -253,7 +284,7 @@
 			$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 			if ($httpcode == 200){
-				header("Location: ordine-confermato.php?title=$title&price=$price&name=$name");
+				header("Location: ordine-confermato.php?title=$title_product&price=$price&name=$name");
 			}
 		}
 	}

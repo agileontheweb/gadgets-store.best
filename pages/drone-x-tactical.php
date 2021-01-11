@@ -1,7 +1,10 @@
 <?php
   include("../settings.php");
   class LANDING {};
+  add_cookie_has_bought();
+  redirect_has_bought();
 
+  $title_product = "Drone X Tactical";
   isUpsell();
   if ($upsell == true) {
     $name = $_GET['name'];
@@ -12,7 +15,6 @@
     $zipcode = $_GET['zipcode'];
   }
 
-  $title_product = "Drone X Tactical";
   $url_product_api = "bgood_xdrone";
   $selector = true;
   $selector_1 = "1 Tactical Drone €99.00";

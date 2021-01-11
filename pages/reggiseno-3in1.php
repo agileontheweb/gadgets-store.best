@@ -1,8 +1,10 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  $remaining_pieces = 7;
+  add_cookie_has_bought();
+  redirect_has_bought();
 
+  $title_product = "Reggiseno Lovely bra 3 in 1";
   isUpsell();
   if ($upsell == true) {
     $name = $_GET['name'];
@@ -13,7 +15,6 @@
     $zipcode = $_GET['zipcode'];
   }
 
-  $title_product = "Reggiseno Lovely bra 3 in 1";
   $url_product_api = "dmc_lovelybra3in1";
   $selector = false;
   $selector_1 = null;

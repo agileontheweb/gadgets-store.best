@@ -1,8 +1,10 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  $remaining_pieces = 7;
+  add_cookie_has_bought();
+  redirect_has_bought();
 
+  $title_product = "Senti piú 30x";
   isUpsell();
   if ($upsell == true) {
     $name = $_GET['name'];
@@ -13,7 +15,7 @@
     $zipcode = $_GET['zipcode'];
   }
 
-  $title_product = "Senti piú 30x";
+
   $url_product_api = "dmc_sentipiù30x";
   $selector = false;
   $selector_1 = null;

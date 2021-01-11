@@ -1,4 +1,7 @@
-<?php include("settings.php") ?>
+<?php
+  include("settings.php");
+  remove_cookie_has_bought();
+?>
 <!doctype html>
 <html lang="it">
   <head>

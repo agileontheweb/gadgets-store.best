@@ -1,16 +1,32 @@
-<?php include("../settings.php") ?>
 <?php
+  include("../settings.php");
   class FORMS {};
-  $title = $_GET['title'];
+  
+  redirect_has_bought();
+
+  if(isset($_GET['title_product'])) {
+    $title_product = $_GET['title_product'];
+  }
+
   $url_product_api = $_GET['url_product_api'];
   $price = $_GET['price'];
-  $selector = $_GET['selector'];
-  $selector_1 = $_GET['selector_1'];
-  $selector_2 = $_GET['selector_2'];
-  $selector_3 = $_GET['selector_3'];
-  $selector_1_value = $_GET['selector_1_value'];
-  $selector_2_value = $_GET['selector_2_value'];
-  $selector_3_value = $_GET['selector_3_value'];
+
+
+  if(isset($_GET['selector'])) {
+    $selector = $_GET['selector'];
+  }else{
+    $selector = false;
+  }
+
+  if($selector == true){
+    $selector_1 = $_GET['selector_1'];
+    $selector_2 = $_GET['selector_2'];
+    $selector_3 = $_GET['selector_3'];
+    $selector_1_value = $_GET['selector_1_value'];
+    $selector_2_value = $_GET['selector_2_value'];
+    $selector_3_value = $_GET['selector_3_value'];
+  }
+
   $quantity = $_GET['quantity'];
   $privacy = $_GET['privacy'];
   $extra = $_GET['extra'];
@@ -27,14 +43,14 @@
   <body>
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
-        fbq('trackCustom', 'InitiateCheckout <?php echo $title ?>');
+        fbq('trackCustom', 'InitiateCheckout <?php echo $title_product ?>');
       </script>
     <?php } ?>
 
     <?php include("../shared/navbar.php") ?>
     <div>
       <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
-        <span class="inline-block pb-3">Modulo Acquisto <strong class="text-green-500"><?php echo $title;?> </strong></span>
+        <span class="inline-block pb-3">Modulo Acquisto <strong class="text-green-500"><?php echo $title_product;?> </strong></span>
       </h1>
 
       <div class="max-w-screen-sm mx-auto mt-8 px-3">

@@ -1,12 +1,13 @@
-<?php include("../settings.php") ?>
-
 <?php
-  $name = $_GET['name'];
-  $title = $_GET['title'];
-  $price = $_GET['price'];
+  include("../settings.php");
+  if(isset($_GET['name'])) {$name = $_GET['name'];}
+  if(isset($_GET['title'])) {$title = $_GET['title'];}
+  if(isset($_GET['price'])) {$price = $_GET['price'];}
+  $_SESSION['has_bought'] = "has_bought";
 ?>
 
 <!doctype html>
+
 <html lang="it">
   <head>
     <title>Ordine Confermato - Gadgets Store - Prodotti scontati e in promozione</title>
@@ -17,7 +18,7 @@
 
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
-        fbq('track', 'Purchase', {currency: "EUR", value: <?php echo $price; ?>});
+        // fbq('track', 'Purchase', {currency: "EUR", value: <?php echo $price; ?>});
       </script>
     <?php } ?>
 

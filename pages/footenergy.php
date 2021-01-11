@@ -1,17 +1,20 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  $remaining_pieces = 9;
-  isUpsell();
-
-  $name = $_GET['name'];
-  $surname = $_GET['surname'];
-  $phone = $_GET['phone'];
-  $address = $_GET['address'];
-  $city = $_GET['city'];
-  $zipcode = $_GET['zipcode'];
+  add_cookie_has_bought();
+  redirect_has_bought();
 
   $title_product = "Foot Energy";
+  isUpsell();
+  if ($upsell == true) {
+    $name = $_GET['name'];
+    $surname = $_GET['surname'];
+    $phone = $_GET['phone'];
+    $address = $_GET['address'];
+    $city = $_GET['city'];
+    $zipcode = $_GET['zipcode'];
+  }
+
   $url_product_api = "nst_footenergy";
   $selector = false;
   $selector_1 = null;
