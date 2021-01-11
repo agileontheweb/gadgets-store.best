@@ -10,7 +10,7 @@
 
     <div class="pt-32 px-3">
       <div class="max-w-screen-md mx-auto">
-        <h1 class="text-2xl font-bold py-12">
+        <h1 class="text-2xl font-bold pt-12">
           <?php echo $brand_name; ?>
         </h1>
         <p class="py-3">

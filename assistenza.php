@@ -13,7 +13,7 @@
 
     <div class="pt-32 px-3">
       <div class="max-w-screen-md mx-auto">
-        <h1 class="text-2xl font-bold py-12">
+        <h1 class="text-2xl font-bold pt-12">
           Assistenza <?php echo $brand_name; ?>
         </h1>
         <p class="font-bold">Il prodotto che hai ricevuto non era come volevi? Era difettoso?</p>
