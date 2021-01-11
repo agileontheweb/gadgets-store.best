@@ -4,20 +4,9 @@
 <!doctype html>
 <html lang="it-IT">
 <head>
-    <meta charset="UTF-8">
-    <title><?php echo $brand_name; ?>  <?php echo $brand_slogan; ?></title>
-    <link href="https://www.google-analytics.com" rel="dns-prefetch">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-		<?php
-		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-		if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
-			include("px-facebook.php");
-			include("px-hotjar.php");
-			include("px-analytics.php");
-		} ?>
+  <meta charset="UTF-8">
+  <title><?php echo $brand_name; ?>  <?php echo $brand_slogan; ?></title>
+  <?php include('../shared/meta.php'); ?>
 </head>
 
 <body>

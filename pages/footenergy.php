@@ -6,6 +6,7 @@
 
   $title_product = "Foot Energy";
   isUpsell();
+
   if ($upsell == true) {
     $name = $_GET['name'];
     $surname = $_GET['surname'];

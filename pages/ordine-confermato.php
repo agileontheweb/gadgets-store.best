@@ -11,7 +11,6 @@
 <html lang="it">
   <head>
     <title>Ordine Confermato - Gadgets Store - Prodotti scontati e in promozione</title>
-    <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>
   <body>
