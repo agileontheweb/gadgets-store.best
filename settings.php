@@ -83,8 +83,10 @@
 		$_11_pm = DateTime::createFromFormat('h:i a', "11:00 pm");
 		$_12_pm = DateTime::createFromFormat('h:i a', "12:00 pm");
 
-		if ($date1 >= $_01_am && $date1 <= $_02_am){
-		 echo(rand(50,55));
+		if ($date1 >= $_12_am && $date1 <= $_01_am){
+		 echo(rand(60,55));
+		}elseif ($date1 >= $_01_am && $date1 <= $_02_am){
+		 echo(rand(60,55));
 	 	}elseif ($date1 >= $_02_am && $date1 <= $_03_am){
 		 echo(rand(55,60));
 	 }elseif ($date1 >= $_03_am && $date1 <= $_04_am){
@@ -124,10 +126,11 @@
 	 	}elseif ($date1 >= $_10_pm && $date1 <= $_11_pm){
 		 echo(rand(05,10));
 	 	}elseif ($date1 >= $_11_pm && $date1 <= $_12_pm){
-	 	echo(rand(01,05));
+	 		echo(rand(05, 10));
 	 	}else{
-		 echo "ternimato";
+		 echo(rand(05,10));
 	 	}
+
 	}
 
 	function messageTop(){

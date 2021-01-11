@@ -11,7 +11,7 @@
 	</div>
 
 	<nav class="flex p-3 <?php showNavBar();?>">
-		  <a class="flex navbar-brand" href="<?php echo $projectPath ?>">
+		  <a class="flex navbar-brand cursor-pointer" href="<?php echo $projectPath ?>">
 	     <img src="<?php echo $projectPath ?>/img/logo.png" class="w-14 h-14 md:w-20 md:h-20">
 			 <span class="hidden"><?php echo $brand_name; ?></span>
 		  </a>
@@ -25,7 +25,7 @@
 			<div class="hidden lg:flex">
 				<ul class="items-center flex">
 					<li class="">
-						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-tecnologia.php">Tecnologia</a>
+						<a class="hover:cursor-pointer px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-tecnologia.php">Tecnologia</a>
 					</li>
 					<li class="">
 						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-bellezza.php">Bellezza</a>
