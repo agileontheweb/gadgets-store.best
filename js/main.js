@@ -1,5 +1,7 @@
 $(document).ready(function(){
+  gdprCookie();
   countDown();
+
   if($('#myCarousel').lenght >= 0){
     $('#myCarousel').carousel();
   }

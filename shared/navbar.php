@@ -6,7 +6,7 @@
 </div>
 
 <div class="<?php fixedNavbar();?> left-0 right-0 mb-0 border-0 rounded-0 bg-black z-20">
-	<div class="uppercase  font-bold <?php echo colorBarTop(); ?> py-3 text-center text-white text-xs sm:text-sm <?php hideBarCounter(); ?>">
+	<div class="uppercase font-bold <?php echo colorBarTop(); ?> py-3 text-center text-white text-xs sm:text-sm <?php hideBarCounter(); ?>">
 		<?php messageTop(); ?>
 	</div>
 

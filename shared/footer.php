@@ -42,5 +42,5 @@
   <script src="<?php echo $projectPath ?>js/countdown.js"></script>
   <script src="<?php echo $projectPath ?>js/main.js"></script>
 <?php }else{ ?>
-  <script src="<?php echo $projectPath ?>/dist/built.js"></script>
+  <script src="<?php echo $projectPath ?>dist/built.js"></script>
 <?php }?>

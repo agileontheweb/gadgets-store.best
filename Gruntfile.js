@@ -3,13 +3,15 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
     concat: {
-      options: {
-        separator: ';',
-      },
       dist: {
-        src: ['bower_components/jquery/dist/jquery.min.js',
-              'bower_components/jquery.countdown/dist/jquery.countdown.min.js',
-              'js/*.js'],
+        src: [
+							'bower_components/jquery/dist/jquery.min.js',
+							'bower_components/bootstrap/dist/js/bootstrap.min.js',
+							'bower_components/jquery.countdown/dist/jquery.countdown.min.js',
+							'js/jquery.ihavecookies.js',
+							'js/GDPR-cookie.js',
+							'js/countdown.js',
+							'js/main.js'],
         dest: 'dist/built.js',
       },
     },
@@ -53,8 +55,8 @@ module.exports = function(grunt) {
 
 	//create default task
 	//grunt.registerTask("default", ["concat"], ["imagemin"]);
-	// grunt.registerTask("default", ["concat"]);
+	 grunt.registerTask("default", ["concat"]);
 	//grunt.registerTask("default", ["imagemin"]);
-	grunt.registerTask("default", ["cssmin"]);
+	//grunt.registerTask("default", ["cssmin"]);
 
 };

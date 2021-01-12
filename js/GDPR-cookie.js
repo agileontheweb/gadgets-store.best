@@ -1,5 +1,4 @@
-$(document).ready(function() {
-
+function gdprCookie(){
   var options = {
       title: 'Accetta Cookies & Privacy Policy',
       message: 'Utilizziamo i cookie per migliorare la navigazione ed esperienza del visitatore. Clicca su <strong>continua</strong> per proseguire.',
@@ -17,10 +16,10 @@ $(document).ready(function() {
   $('body').ihavecookies(options);
 
   if ($.fn.ihavecookies.preference('marketing') === true) {
-      console.log('This should run because marketing is accepted.');
+    console.log('This should run because marketing is accepted.');
   }
 
   $('#gdpr-cookie-accept').on('click', function(){
       $('body').ihavecookies(options, 'reinit');
   });
-});
+}
