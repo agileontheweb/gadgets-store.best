@@ -10,9 +10,9 @@
 		<?php messageTop(); ?>
 	</div>
 
-	<nav class="flex p-3 <?php showNavBar();?>">
+	<nav class="flex p-1 <?php showNavBar();?>">
 		  <a class="flex navbar-brand cursor-pointer" href="<?php echo $projectPath ?>">
-	     <img src="<?php echo $projectPath ?>/img/logo.png" class="w-14 h-14 md:w-20 md:h-20">
+	     <img src="<?php echo $projectPath ?>/img/logo.png" class="w-14 h-14 md:w-16 md:h-16">
 			 <span class="hidden"><?php echo $brand_name; ?></span>
 		  </a>
 
@@ -25,20 +25,20 @@
 			<div class="hidden lg:flex">
 				<ul class="items-center flex">
 					<li class="">
-						<a class="hover:cursor-pointer px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-tecnologia.php">Tecnologia</a>
+						<a class="hover:cursor-pointer text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-tecnologia.php">Tecnologia</a>
 					</li>
 					<li class="">
-						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-bellezza.php">Bellezza</a>
+						<a class="text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-bellezza.php">Bellezza</a>
 					</li>
 					<li class="">
-						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-benessere.php">Benessere</a>
+						<a class=" text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-benessere.php">Benessere</a>
 					</li>
 					<li class="">
-						<a class="px-3 text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-casa.php">Casa</a>
+						<a class=" text-white uppercase hover:text-red-500 mx-3 font-bold" href="<?php echo $projectPath ?>prodotti-casa.php">Casa</a>
 					</li>
 				</ul>
 		  </div>
-			<div class="hidden lg:flex absolute p-2 right-10">
+			<div class="hidden lg:flex absolute right-10">
 				<a href="<?php echo $projectPath ?>newsletter.php" class="hover:bg-red-500 hover:text-white border-b-4 border-red-500 font-bold text-white px-3 py-3" data-toggle="modal" data-target="#signupropmotion">
 					Sconti nella tua email
 				</a>

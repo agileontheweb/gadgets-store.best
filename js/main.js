@@ -1,6 +1,12 @@
 $(document).ready(function(){
   countDown();
-  showProgressBarRemaingPieces();
+  if($('#myCarousel').lenght >= 0){
+    $('#myCarousel').carousel();
+  }
+
+  if($("body").hasClass("landing-page")){
+    showProgressBarRemaingPieces();
+  }
 
   function showProgressBarRemaingPieces(){
     var observer = new IntersectionObserver(function(entries) {
@@ -8,31 +14,22 @@ $(document).ready(function(){
   		console.log('Element is fully visible in screen');
       animateProgressBar();
     }, { threshold: [0] });
-
     observer.observe(document.querySelector(".progress-short"));
-
-    function animateProgressBar(){
-      flag=true;
-      remaing_pieces = $(".progress-bar-animate").data("remaing-pieces");
-
-      $({someValue: 100}).animate({someValue: remaing_pieces}, {
-      	duration: 3000,
-      	easing:'swing',
-      	step: function() {
-      	   $('.progress-short-number').text(Math.ceil(this.someValue));
-           $(".progress-bar-animate").width(this.someValue + '%');
-      	}
-      });
-    }
   }
 
+  function animateProgressBar(){
+    flag=true;
+    remaing_pieces = $(".progress-bar-animate").data("remaing-pieces");
 
-
-  var myCarousel = document.querySelector('#myCarousel')
-  var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 2000,
-    wrap: false
-  })
+    $({someValue: 100}).animate({someValue: remaing_pieces}, {
+      duration: 3000,
+      easing:'swing',
+      step: function() {
+         $('.progress-short-number').text(Math.ceil(this.someValue));
+         $(".progress-bar-animate").width(this.someValue + '%');
+      }
+    });
+  }
 
   $("#btn-primary-sub-menu, #btn-close").click(function() {
     $("#primary-sub-menu").toggle();
