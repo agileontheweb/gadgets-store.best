@@ -10,6 +10,9 @@
 	$zipcode = "";
 	$title_product = $_GET['title_product'];
 
+	$url_remove_space = preg_replace('/\s+/', '', $title_product);
+	$url_for_facebook_event_purchase = strtolower($url_remove_space);
+
 	if(isset($_POST['submit'])){
 		$title_product = $_POST["title_product"];
 		$price = $_POST['price'];
@@ -22,45 +25,40 @@
 		$quantity = $_POST["quantity"];
 		$url_product_api = $_POST["url_product_api"];
 		$upsell_page = $_POST["upsell_page"];
-		sendRequest($title_product, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city, $url_product_api, $upsell_page);
+		$url_for_facebook_event_purchase = $_POST["url_for_facebook_event_purchase"];
+
+		sendRequest($title_product, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city, $url_product_api, $upsell_page, $url_for_facebook_event_purchase);
 	}
 
-	function sendRequest($title_product, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city,$url_product_api, $upsell_page){
+	function sendRequest($title_product, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city,$url_product_api, $upsell_page, $url_for_facebook_event_purchase){
+
+		$url = "https://network.worldfilia.net/manager/inventory/buy/$url_product_api.json";
+		$ch = curl_init($url);
+		$jsonData = array(
+				'source_id' => '07ff46bb6597',
+				'name' => $name . " " . $surname,
+				'phone' => $phone,
+				'quantity' => $quantity,
+				'address' => $address,
+				'zipcode' => $zipcode,
+				'city' => $city
+		);
+		//Encode the array into JSON.
+		$jsonDataEncoded = json_encode($jsonData);
+		//Tell cURL that we want to send a POST request.
+		curl_setopt($ch, CURLOPT_POST, 1);
+		//Attach our encoded JSON string to the POST fields.
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
+		//Set the content type to application/json
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+		$output = curl_exec($ch);
+		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
 		if(!empty($upsell_page)){
 			header("Location: $upsell_page?upsell&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
 		}else{
-			header("Location: ordine-confermato.php?title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
+			header("Location: ordine-confermato.php?url_fb_purchase=$url_for_facebook_event_purchase&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
 		}
-		// $url = "https://network.worldfilia.net/manager/inventory/buy/$url_product_api.json";
-		// $ch = curl_init($url);
-		// $jsonData = array(
-		// 		'source_id' => '07ff46bb6597',
-		// 		'name' => $name . " " . $surname,
-		// 		'phone' => $phone,
-		// 		'quantity' => $quantity,
-		// 		'address' => $address,
-		// 		'zipcode' => $zipcode,
-		// 		'city' => $city
-		// );
-		// //Encode the array into JSON.
-		// $jsonDataEncoded = json_encode($jsonData);
-		// //Tell cURL that we want to send a POST request.
-		// curl_setopt($ch, CURLOPT_POST, 1);
-		// //Attach our encoded JSON string to the POST fields.
-		// curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
-		// //Set the content type to application/json
-		// curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-		// $output = curl_exec($ch);
-		// $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
-		// if ($httpcode == 200){
-		// 	if(!empty($upsell_page)){
-		// 		header("Location: $upsell_page?upsell&title=$title&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
-		// 	}else{
-		// 		$_SESSION['has_bought'] = "has_bought";
-		// 		header("Location: ordine-confermato.php?title=$title&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
-		// 	}
-		// }
 	}
 ?>
 
@@ -76,10 +74,10 @@
 		<input type="hidden" name="fingerprint" id="fingerprint" value="">
 		<input type="hidden" name="source_id" id="source_id" value="07ff46bb6597">
 		<input type="hidden" name="url_product_api" id="url_product_api" value="<?php echo $url_product_api;?>">
-		<input type="hidden" name="title" id="title" value="<?php echo $title_product;?>">
+		<input type="hidden" name="title_product" id="title_product" value="<?php echo $title_product;?>">
 		<input type="hidden" name="price" id="price" value="<?php echo $price;?>">
 		<input type="hidden" name="upsell_page" id="upsell_page" value="<?php echo $upsell_page;?>">
-
+		<input type="hidden" name="url_for_facebook_event_purchase" id="url_for_facebook_event_purchase" value="<?php echo $url_for_facebook_event_purchase;?>">
 		<div class="form-group py-3">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nome</label>
 			<input type="text" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" value="<?php echo $name; ?>" required="required"/ placeholder="Scrivi il tuo nome">
