@@ -1,8 +1,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="<?php echo $projectPath ?>/css/GDPR-cookie.css">
-<link rel="stylesheet" href="<?php echo $projectPath ?>/bower_components/bootstrap/dist/css/bootstrap.css">
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<?php if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
+	<link rel="stylesheet" href="<?php echo $projectPath ?>/css/GDPR-cookie.css">
+	<link rel="stylesheet" href="<?php echo $projectPath ?>/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link href="<?php echo $projectPath ?>css/tailwind.css" rel="stylesheet">
+<?php }else{ ?>
+	<link href="<?php echo $projectPath ?>/dist/built.css" rel="stylesheet">
+<?php }?>
+
+
 
 <script src="https://kit.fontawesome.com/0669c88241.js" crossorigin="anonymous"></script>
 <meta property="og:url"                content="https://www.gadgets-store.best" />

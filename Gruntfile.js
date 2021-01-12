@@ -13,6 +13,22 @@ module.exports = function(grunt) {
         dest: 'dist/built.js',
       },
     },
+
+		cssmin: {
+		  options: {
+		    mergeIntoShorthands: false,
+		    roundingPrecision: -1
+		  },
+		  target: {
+		    files: {
+		      'dist/built.css': [
+										'css/talwind.css',
+										'css/GDPR-cookie.css',
+										'bower_components/bootstrap/dist/css/bootstrap.css']
+		    }
+		  }
+		},
+
 		imagemin: {
 			static: {
 					options: {
@@ -33,10 +49,12 @@ module.exports = function(grunt) {
 	//load concat plugin
 	grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 	//create default task
 	//grunt.registerTask("default", ["concat"], ["imagemin"]);
 	// grunt.registerTask("default", ["concat"]);
-	grunt.registerTask("default", ["imagemin"]);
+	//grunt.registerTask("default", ["imagemin"]);
+	grunt.registerTask("default", ["cssmin"]);
 
 };
