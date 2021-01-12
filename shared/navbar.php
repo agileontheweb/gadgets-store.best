@@ -39,7 +39,7 @@
 				</ul>
 		  </div>
 			<div class="hidden lg:flex absolute right-10">
-				<a href="<?php echo $projectPath ?>newsletter.php" class="hover:bg-red-500 hover:text-white border-b-4 border-red-500 font-bold text-white px-3 py-3" data-toggle="modal" data-target="#signupropmotion">
+				<a href="<?php echo $projectPath ?>newsletter.php" class="hover:bg-red-500 hover:text-white border-b-4 border-red-500 font-bold text-white px-3 py-3">
 					Sconti nella tua email
 				</a>
 			</div>

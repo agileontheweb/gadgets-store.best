@@ -7,9 +7,8 @@
     Iscriviti alla nostra Newsletter e risparmia fino <strong>il 75%</strong> su tanti prodotti!
   </p>
 
-
   <div class="flex justify-center">
-    <a href="newsletter.php" class="uppercase font-bold block bg-white hover:bg-white hover:bg-red-500 hover:text-white text-black rounded-full px-12 py-3 focus:outline-none">
+    <a href="newsletter.php" class="uppercase bg-gray-100 border-2 hover:bg-gray-900 hover:text-gray-100 hover:border-4 font-bold block text-black rounded-full px-12 py-3">
       iscriviti Ora
     </a>
   </div>

@@ -25,7 +25,7 @@
       <div class="bg-white rounded-lg shadow-xl">
         <div class="p-12">
           <div>
-           <img src="<?php echo $list[$i]->image ?>" alt="<?php echo $list[$i]->name ?>" width="300" height="300">
+           <img src="<?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>" alt="<?php echo $list[$i]->name ?>" width="300" height="300">
           </div>
           <div class="text-center pt-3">
             <?php if($list[$i]->offer){?>
