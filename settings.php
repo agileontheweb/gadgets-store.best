@@ -6,7 +6,11 @@
 	$brand_url = "https://gadgets-store.best/";
 	$brand_slogan = "Prodotti Scontati e in Promozione";
 	$fb_page = "https://www.facebook.com/GadgetsStoreBest/";
+	$px_analytics = "G-EX9QLYLTWM";
+	$px_hotjar = "2176744";
+	$px_facebook = "148028286826820";
 	$visited_newsletter_page = "";
+
 	session_start();
 
 	if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
