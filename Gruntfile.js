@@ -24,9 +24,10 @@ module.exports = function(grunt) {
 		  target: {
 		    files: {
 		      'dist/built.css': [
-										'css/talwind.css',
+										'bower_components/bootstrap/dist/css/bootstrap.css',
 										'css/GDPR-cookie.css',
-										'bower_components/bootstrap/dist/css/bootstrap.css']
+										'css/tailwind.css'
+										]
 		    }
 		  }
 		},
@@ -56,7 +57,7 @@ module.exports = function(grunt) {
 	//create default task
 	//grunt.registerTask("default", ["concat"], ["imagemin"]);
 	// grunt.registerTask("default", ["concat"]);
-	grunt.registerTask("default", ["imagemin"]);
-	//grunt.registerTask("default", ["cssmin"]);
+	//grunt.registerTask("default", ["imagemin"]);
+	grunt.registerTask("default", ["cssmin"]);
 
 };

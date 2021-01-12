@@ -6,7 +6,7 @@ if(isset($_GET['name'])) {
 ?>
 <div class="px-3 <?php echo showHideUpsell(false); ?> bg-green-100 py-16">
   <div class="max-w-screen-md mx-auto">
-    <p class="rounded-xl border-4 text-green-600 border-green-400 py-3 px-3 p-3 text-white bg-white">
+    <p class="rounded-xl border-4 text-green-600 border-green-400 py-3 px-3 p-3 bg-white">
       <strong>Grazie <?php echo $name; ?> e complimenti</strong>.
         Nei prossimi minuti un operatore
        ti chiamerà per rispondere alle tue domande o confermare il tuo ordine, ma prima di chiudere questa pagina abbiamo

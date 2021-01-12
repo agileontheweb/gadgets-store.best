@@ -28,7 +28,7 @@
   $privacy = "https://www.ilmontestore.sm/privacy-policy/";
   $quantity = 1;
   $price = "17.00";
-  $img = "../img/prodotti/footenergy-1.jpg";
+  $img = $projectPath . $projectPathImg ."footenergy-1.jpg";
   $extra = null;
   $upsell_page = "";
 
@@ -70,7 +70,7 @@
             quella sgradevole sensazione di gonfiore e pesantezza a gambe e piedi.
             Prendersi cura del proprio corpo non è mai stato così rilassante!
           </p>
-          <img src="../img/prodotti/footenergy-1.jpg" alt="Smartwatch" class="mx-auto max-w-lg w-full">
+          <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-1.jpg" alt="Smartwatch" class="mx-auto max-w-lg w-full">
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6">
             <div class="flex-1 text-center uppercase font-bold border">
@@ -122,19 +122,19 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-white">
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/footenergy-2.jpg" alt="Spalline Larghe" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-2.jpg" alt="Spalline Larghe" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">portatile e facile da usare</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/footenergy-3.jpg" alt="Tessuto leggero e traspirante" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-3.jpg" alt="Tessuto leggero e traspirante" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">15 livelli di intensità</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/footenergy-4.jpg" alt="Elastici contenitivi" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-4.jpg" alt="Elastici contenitivi" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">2 modalità selezionabili</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/footenergy-5.jpg" alt="3 strati di materiale resistente" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-5.jpg" alt="3 strati di materiale resistente" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">Materiale di alta qualità</h3>
               </div>
             </div>
@@ -167,14 +167,14 @@
                   <h3 class="p-3 text-xl text-center">
                     Invia impulsi elettrici dall'unità di controllo rimovibile.
                   </h3>
-                  <img src="../img/prodotti/footenergy-6.jpg" class="mx-auto" alt="leggero e traspirante">
+                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-6.jpg" class="mx-auto" alt="leggero e traspirante">
                 </div>
                 <div class="flex-1 text-center p-6 border">
                   <h3 class="p-3 text-xl text-center">
                     Simula la sensazione di stimolare, massaggiare e
                     rilassare piedi, caviglie, tendini di Achille e muscoli del polpaccio.
                   </h3>
-                  <img src="../img/prodotti/footenergy-7.jpg" class="mx-auto" alt="volumizza il tuo seno in 3 differenti livelli">
+                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-7.jpg" class="mx-auto" alt="volumizza il tuo seno in 3 differenti livelli">
                 </div>
               </div>
             </div>
@@ -200,7 +200,7 @@
               <h2 class="text-center text-2xl font-bold pt-12">
                 <span class="inline-block pb-3 uppercase">RILASSA LE TUE TENSIONI MUSCOLARI E MIGLIORA LA CIRCOLAZIONE SANGUIGNA</span>
               </h2>
-              <img src="../img/prodotti/footenergy-8.jpg" class="mx-auto" alt="Cinturini">
+              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-8.jpg" class="mx-auto" alt="Cinturini">
             </div>
           </div>
 

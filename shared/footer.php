@@ -9,11 +9,11 @@
         </a>
       </div>
       <div class="mx-auto p-3">
-        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cosa-e-gadgets-store.php"><small>Cos'è <?php echo $brand_name; ?></small></a>
-        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/cookie-policy.php"><small>Cookie Policy</small></a>
-        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/disclaimer.php"><small>Disclaimer</small></a>
-        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/contatti.php"><small>Contatti</small></a>
-        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>/assistenza.php"><small>Assistenza</small></a>
+        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>cosa-e-gadgets-store.php"><small>Cos'è <?php echo $brand_name; ?></small></a>
+        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>cookie-policy.php"><small>Cookie Policy</small></a>
+        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>disclaimer.php"><small>Disclaimer</small></a>
+        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>contatti.php"><small>Contatti</small></a>
+        <a class="underline px-3 hover:text-red-500" href="<?php echo $projectPath ?>assistenza.php"><small>Assistenza</small></a>
       </div>
     </div>
     <hr>
@@ -41,6 +41,8 @@
   <script src="<?php echo $projectPath ?>bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
   <script src="<?php echo $projectPath ?>js/countdown.js"></script>
   <script src="<?php echo $projectPath ?>js/main.js"></script>
+  <script src="https://kit.fontawesome.com/0669c88241.js" crossorigin="anonymous"></script>
 <?php }else{ ?>
   <script src="<?php echo $projectPath ?>dist/built.js"></script>
+  <script src="https://kit.fontawesome.com/0669c88241.js" crossorigin="anonymous"></script>
 <?php }?>

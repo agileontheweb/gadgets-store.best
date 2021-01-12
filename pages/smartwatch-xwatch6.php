@@ -28,7 +28,7 @@
   $privacy = "https://www.ilmontestore.sm/privacy-policy/";
   $quantity = null;
   $price = "18.00";
-  $img = "../img/prodotti/XW60-sceglistile.jpg";
+  $img = $projectPath . $projectPathImg . "xw60-sceglistile.jpg";
   $extra = " - Colore e cinturini potrai deciderli al telefono.";
   $upsell_page = "drone-x-tactical.php?upsell";
 
@@ -75,7 +75,7 @@
             smartwatch con funzioni biometriche</strong>. Grazie a questa nuova tecnologia
             puoi tenere sotto controllo la tua salute.
           </p>
-          <img src="../img/prodotti/xw60-sceglistile.jpg" alt="Smartwatch" class="mx-auto w-full">
+          <img src="<?php echo $projectPath?><?php echo $projectPathImg?>xw60-sceglistile.jpg" alt="Smartwatch" class="mx-auto w-full">
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6">
             <div class="flex-1 text-center uppercase font-bold">
@@ -131,22 +131,22 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-white">
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/xw60-foto.jpg" alt="Smartwatch" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>xw60-foto.jpg" alt="Smartwatch" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">FOTOGRAFIE</h3>
                 <p>Scatta foto in remoto controllando il tuo smartphone via bluetooth direttamente dal tuo XW6.0.</p>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/xw60-sonno.jpg" alt="Smartwatch" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>xw60-sonno.jpg" alt="Smartwatch" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">MONITOR DEL SONNO</h3>
                 <p>Analizza la qualità del tuo sonno tutte le notti tramite report e statistiche. Una scarsa qualità del sonno è indice di cattiva salute.</p>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/xw60-sedentario.jpg" alt="Smartwatch" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>xw60-sedentario.jpg" alt="Smartwatch" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">ALLERTA SEDENTARIETA'</h3>
                 <p>Tramite XW6.0 puoi impostare un promemoria che ti avvisa di muoverti dopo troppo tempo passato seduto.</p>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/xw60-trova.jpg" alt="Smartwatch" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>xw60-trova.jpg" alt="Smartwatch" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">TROVA DISPOSITIVO</h3>
                 <p>Trova il tuo smartphone o il tuo orologio tramite questa funzione che lo fà suonare a distanza.</p>
               </div>
@@ -243,11 +243,11 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                 <div class="flex-1 text-center p-6 border">
                   <h3 class="p-3 text-xl text-center">Con l'aggiunta di soli 15€ puoi avere <strong>un'altro cinturino aggiuntivo</strong> in metallo del colore che desideri.</h3>
-                  <img src="../img/prodotti/xw60-cinturini.jpg" class="mx-auto" alt="Cinturini">
+                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>xw60-cinturini.jpg" class="mx-auto" alt="Cinturini">
                 </div>
                 <div class="flex-1 text-center p-6 border">
                   <h3 class="p-3 text-xl text-center">Costruito in materiale interamente impermeabile e resistente a urti e polvere.</h3>
-                  <img src="../img/prodotti/xw60-water.jpg" class="mx-auto" alt="Cinturini">
+                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>xw60-water.jpg" class="mx-auto" alt="Cinturini">
                 </div>
               </div>
 
@@ -275,7 +275,7 @@
                 E’ compatibile con tutti i sistemi operativi, <strong>sia iOS che Android</strong>.
               </p>
 
-              <img src="../img/prodotti/xw60-tecno.jpg" class="mx-auto md:max-w-sm py-3" alt="Smartwatch">
+              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>xw60-tecno.jpg" class="mx-auto md:max-w-sm py-3" alt="Smartwatch">
 
               <p class="p-3 text-center">
                 XW6.0 è provvisto di un'apposita APP semplice ed intuitiva che

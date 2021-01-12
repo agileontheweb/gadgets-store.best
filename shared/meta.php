@@ -6,12 +6,9 @@
 	<link rel="stylesheet" href="<?php echo $projectPath ?>bower_components/bootstrap/dist/css/bootstrap.css">
 	<link href="<?php echo $projectPath ?>css/tailwind.css" rel="stylesheet">
 <?php }else{ ?>
-	<link href="<?php echo $projectPath ?>/dist/built.css" rel="stylesheet">
+	<link href="<?php echo $projectPath ?>dist/built.css" rel="stylesheet" async>
 <?php }?>
 
-
-
-<script src="https://kit.fontawesome.com/0669c88241.js" crossorigin="anonymous"></script>
 <meta property="og:url"                content="https://www.gadgets-store.best" />
 <meta property="og:type"               content="article" />
 <meta property="og:title"              content="Gadgets Store - Acquista Prodotti Online" />

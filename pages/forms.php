@@ -1,7 +1,7 @@
 <?php
   include("../settings.php");
   class FORMS {};
-  
+
   redirect_has_bought();
 
   if(isset($_GET['title_product'])) {
@@ -64,7 +64,7 @@
             telefonica si incaricherà di chiamarti non appena possibile.
           </p>
           <p class="text-center">
-            <img src="../img/prodotti/operatore-telefonico.jpg" class="img-fluid w-full my-3" class="Giovanni" width="640" height="640">
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>operatore-telefonico.jpg" class="img-fluid w-full my-3" class="Giovanni" width="640" height="640">
           </p>
         </div>
       </div>

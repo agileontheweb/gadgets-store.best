@@ -28,7 +28,7 @@
   $privacy = "https://www.dmcshop.it/privacy-policy/";
   $quantity = 1;
   $price = "18.00";
-  $img = "../img/prodotti/sentipiu-1.jpg";
+  $img = $projectPath . $projectPathImg . "sentipiu-1.jpg";
   $extra = null;
   $upsell_page = "";
 
@@ -74,7 +74,7 @@
             Ordina Ora
           </a>
         </p>
-        <img src="../img/prodotti/sentipiu-1.jpg" alt="Senti più" class="mx-auto">
+        <img src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-1.jpg" alt="Senti più" class="mx-auto">
       </div>
 
       <div class="bg-blue-500 text-white py-4">
@@ -111,7 +111,7 @@
           <iframe height="349" class="w-full my-6" src="https://www.youtube.com/embed/Zw7_zWMkwMU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
           <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-            <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="../img/prodotti/sentipiu-1.jpg" alt="Senti più">
+            <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-1.jpg" alt="Senti più">
             <div class="text-center space-y-2 sm:text-left text-black">
               <div class="space-y-0.5">
                 <p class="text-lg font-semibold">
@@ -150,7 +150,7 @@
               questo oggetto lo puoi avere con estrema facilità grazie al pagamento a domicilio
               in un paio di giorni.
             </p>
-            <img src="../img/prodotti/sentipiu-2.jpg" class="mx-auto" alt="Senti più">
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-2.jpg" class="mx-auto" alt="Senti più">
             <div class="grid grid-cols-3 gap-4 mt-6">
               <div class="flex-1 text-center p-6  bg-blue-500 text-white">
                 <h3 class="font-bold uppercase py-3">Amplifica fino a 30 volte</h3>
@@ -200,7 +200,7 @@
                 		<h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">1 Senti PIù 30x</h1>
                 	  <h2 class="text-sm text-gray-500 text-center">€ 69.90</h2>
                     <h3 class="text-sm text-gray-500 text-center text-red-600 pb-6 font-bold">Sconto 30%</h3>
-                    <img class="mx-auto" src="../img/prodotti/sentipiu-3.jpg" alt="Senti piu">
+                    <img class="mx-auto" src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-3.jpg" alt="Senti piu">
                   </div>
                   <p class="text-center mt-4">Spedizione Gratuita</p>
                   <div class="block flex items-center p-8 pt-0  uppercase">

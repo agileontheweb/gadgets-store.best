@@ -27,7 +27,7 @@
   $privacy = "https://www.ilmontestore.sm/privacy-policy/";
   $quantity = 1;
   $price = "18.00";
-  $img = "../img/prodotti/reggiseno3in1.jpg";
+  $img = $projectPath . $projectPathImg . "reggiseno3in1.jpg";
   $extra = null;
   $upsell_page = "";
 
@@ -70,7 +70,7 @@
             Grazie alle spalline più larghe di un normale reggiseno, Lovely Bra è
             super comodo e non lascia quei fastidiosi segni sul tuo corpo!
           </p>
-          <img src="../img/prodotti/reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
+          <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6">
             <div class="flex-1 text-center uppercase font-bold border">
@@ -116,27 +116,27 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-white">
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/reggiseno-04.jpg" alt="Spalline Larghe" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-04.jpg" alt="Spalline Larghe" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">Spalline Larghe</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/reggiseno-05.jpg" alt="Tessuto leggero e traspirante" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-05.jpg" alt="Tessuto leggero e traspirante" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">Tessuto leggero e traspirante</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/reggiseno-06.jpg" alt="Elastici contenitivi" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-06.jpg" alt="Elastici contenitivi" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">Elastici contenitivi</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/reggiseno-07.jpg" alt="3 strati di materiale resistente" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-07.jpg" alt="3 strati di materiale resistente" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">3 strati di materiale resistente</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/reggiseno-08.jpg" alt="Comoda chiusura laterale" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-08.jpg" alt="Comoda chiusura laterale" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">Comoda chiusura laterale</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="../img/prodotti/reggiseno-09.jpg" alt="Fasche effetto push-up" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-09.jpg" alt="Fasche effetto push-up" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">Fasche effetto push-up</h3>
               </div>
             </div>
@@ -166,13 +166,13 @@
                   <h3 class="p-3 text-xl text-center">
                     Tessuto leggero e traspirante ti darà una sensazione di libertà e comfort assoluto.
                   </h3>
-                  <img src="../img/prodotti/reggiseno-01.jpg" class="mx-auto" alt="leggero e traspirante">
+                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-01.jpg" class="mx-auto" alt="leggero e traspirante">
                 </div>
                 <div class="flex-1 text-center p-6 border">
                   <h3 class="p-3 text-xl text-center">
                     Ha anche un effetto push-up che volumizza il tuo seno in 3 differenti livelli!
                   </h3>
-                  <img src="../img/prodotti/reggiseno-03.jpg" class="mx-auto" alt="volumizza il tuo seno in 3 differenti livelli">
+                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-03.jpg" class="mx-auto" alt="volumizza il tuo seno in 3 differenti livelli">
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@
               <h2 class="text-center text-2xl font-bold pt-12">
                 <span class="inline-block pb-3 uppercase">SEMPLICE, FUNZIONALE, adatto a tutti!</span>
               </h2>
-              <img src="../img/prodotti/reggiseno3in1-donna.jpg" class="mx-auto max-w-xs " alt="Cinturini">
+              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1-donna.jpg" class="mx-auto max-w-xs " alt="Cinturini">
 
               <table class="table-auto p-3 w-full mt-10">
 
