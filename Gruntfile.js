@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 							expand: true,
 							cwd: 'img/prodotti/',
 							src: ['**/*.{png,jpg,gif}'],
-							dest: 'img/prodotti2' //Trovare un modo per non sostituire le immagini ma usare quelle esportarte
+							dest: 'dist/img/prodotti'
 					}]
 			}
 		}
@@ -55,8 +55,8 @@ module.exports = function(grunt) {
 
 	//create default task
 	//grunt.registerTask("default", ["concat"], ["imagemin"]);
-	 grunt.registerTask("default", ["concat"]);
-	//grunt.registerTask("default", ["imagemin"]);
+	// grunt.registerTask("default", ["concat"]);
+	grunt.registerTask("default", ["imagemin"]);
 	//grunt.registerTask("default", ["cssmin"]);
 
 };
