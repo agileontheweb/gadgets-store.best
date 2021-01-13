@@ -7,9 +7,13 @@
     <?php include('shared/meta.php'); ?>
   </head>
   <body class="bg-blue-100">
-    <script>
-      fbq('track', 'Pagina tecnologia');
-    </script>
+
+    <?php if( !in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
+      <script>
+        fbq('track', 'Pagina tecnologia');
+      </script>
+    <?php } ?>
+
     <?php include("shared/navbar.php") ?>
 
     <div class="pt-32">
