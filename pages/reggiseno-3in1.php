@@ -255,9 +255,10 @@
                   </tr>
                 </tbody>
               </table>
+              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
             </div>
+
           </div>
-            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
           <div class="max-w-screen-sm mx-auto px-3">
             <?php include("../shared/progress-short.php") ?>
           </div>
