@@ -27,6 +27,7 @@
 		$upsell_page = $_POST["upsell_page"];
 		$url_for_facebook_event_purchase = $_POST["url_for_facebook_event_purchase"];
 
+
 		sendRequest($title_product, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city, $url_product_api, $upsell_page, $url_for_facebook_event_purchase);
 	}
 
@@ -43,21 +44,20 @@
 				'zipcode' => $zipcode,
 				'city' => $city
 		);
-		//Encode the array into JSON.
 		$jsonDataEncoded = json_encode($jsonData);
-		//Tell cURL that we want to send a POST request.
 		curl_setopt($ch, CURLOPT_POST, 1);
-		//Attach our encoded JSON string to the POST fields.
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
-		//Set the content type to application/json
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 		$output = curl_exec($ch);
 		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-		if(!empty($upsell_page)){
-			header("Location: $upsell_page?upsell&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
-		}else{
-			header("Location: ordine-confermato.php?url_fb_purchase=$url_for_facebook_event_purchase&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
+		if ($httpcode == 200){
+		
+			if(!empty($upsell_page)){
+				header("Location: $upsell_page?upsell&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
+			}else{
+				header("Location: ordine-confermato.php?$url_for_facebook_event_purchase&price=$price&name=$name");
+			}
 		}
 	}
 ?>

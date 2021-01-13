@@ -11,7 +11,7 @@
 	$px_facebook = "148028286826820";
 	$px_messanger = "100436285316093";
 	$visited_newsletter_page = "";
-
+	$store_link_upsell = "";
 	session_start();
 
 	if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
@@ -22,14 +22,6 @@
 		$projectPathImg = "dist/img/prodotti/";
 	}
 
-	function add_cookie_has_bought(){
-		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-		if (strpos($url, "upsell?upsell") == true) {
-			$has_bought = 'Ha comprato';
-			setcookie("add_cookie_has_bought", $has_bought,time()+3600, '/');
-		}
-	}
-
 	add_cookie_has_newsletter();
 	function add_cookie_has_newsletter(){
 		if (class_exists('NEWSLETTER')) {
@@ -38,14 +30,48 @@
 		}
 	}
 
-	function redirect_has_bought(){
-		if(isset($_COOKIE["add_cookie_has_bought"]) == "has_bought"){
-			header("Location: hai-gia-acquistato.php");
+	function isUpsell(){
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		if (strpos($url, "upsell") == true) {
+			$upsell = "true";
+			return $upsell;
 		}
 	}
 
-	function remove_cookie_has_bought(){
-		setcookie("add_cookie_has_bought", '', 1, '/');
+	function redirect_has_bought(){
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		if (strpos($url, "upsell?upsell") == true ) {
+			$_SESSION['has_bought_upsell'] = "has_bought_upsell";
+			$store_link_upsell = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+			$_SESSION['store_link_upsell'] = $store_link_upsell;
+		}
+
+		if (isset($_SESSION['has_bought_upsell']) == true && class_exists('FORMS')) {
+			echo "DEVI RIMANDARE ALLA UPSELL";
+			$url = $_SESSION['store_link_upsell'];
+			header("Location: $url");
+		}
+
+		if (isset($_SESSION['has_bought']) == true ) {
+	    $expireAfter = 1;
+	    header("Location: ordine-confermato.php?$url_for_facebook_event_purchase&price=$price&name=$name");
+	    if(isset($_SESSION['last_action'])){
+	      $secondsInactive = time() - $_SESSION['last_action'];
+	      $expireAfterSeconds = $expireAfter * 60;
+	      if($secondsInactive >= $expireAfterSeconds){
+	        session_unset();
+	        session_destroy();
+	        unset($_SESSION['has_bought']);
+	      }
+	    }
+	  }
+	  $_SESSION['last_action'] = time();
+	}
+
+	function remove_session_has_bought(){
+		unset($_SESSION['has_bought']);
+		unset($_SESSION['has_bought_upsell']);
+		unset($_SESSION['last_action']);
 	}
 
 	$upsell = false;
@@ -171,15 +197,6 @@
 			$message = "Landing page mettere timer";
 		}
 	}
-
-	function isUpsell(){
-		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-		if (strpos($url, "upsell") == true) {
-			$upsell = true;
-			return $upsell;
-		}
-	}
-
 
 	function hideBarCounter(){
 		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];

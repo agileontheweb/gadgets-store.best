@@ -1,6 +1,6 @@
 <?php
   include("settings.php");
-  remove_cookie_has_bought();
+  remove_session_has_bought();
 ?>
 <!doctype html>
 <html lang="it">

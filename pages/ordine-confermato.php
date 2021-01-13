@@ -1,9 +1,12 @@
 <?php
   include("../settings.php");
-  if(isset($_GET['name'])) {$name = $_GET['name'];}
-  if(isset($_GET['title'])) {$title = $_GET['title'];}
-  if(isset($_GET['price'])) {$price = $_GET['price'];}
+
   $_SESSION['has_bought'] = "has_bought";
+  
+  if(isset($_GET['name'])) {$name = $_GET['name'];}
+  if(isset($_GET['title_product'])) {$title_product = $_GET['title_product'];}
+  if(isset($_GET['price'])) {$price = $_GET['price'];}
+
 ?>
 
 <!doctype html>
@@ -14,21 +17,20 @@
     <?php include('../shared/meta.php'); ?>
   </head>
   <body>
-
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
-        // fbq('track', 'Purchase', {currency: "EUR", value: <?php echo $price; ?>});
+        fbq('track', 'Purchase ' , {currency: "EUR", value: <?php echo $price; ?>});
       </script>
     <?php } ?>
-
     <div class="text-gray-600">
       <div class="max-w-screen-sm bg-white mx-auto px-3">
         <h1 class="text-center text-2xl font-bold pt-12">
           <span class="inline-block border-b-4 border-gray-600 pb-3">Grazie <?php echo $name ?> il tuo ordine è in fase di analisi.</span>
         </h1>
+
         <p class="bg-yellow-300 text-yellow-900 my-6 p-3 text-center rounded-md">Un operatore telefonico ti richiamerà a breve
           o nelle prossime ore per confermare i tuoi dati per la spedizione del
-          prodotto: <strong><?php echo $title ?></strong>
+          prodotto.
         </p>
         <h2 class="text-center font-extrabold text-xl leading-tight my-3">
           Ultimo passo per ottenere il massimo dal tuo acquisto

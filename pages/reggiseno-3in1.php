@@ -1,7 +1,6 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  add_cookie_has_bought();
   redirect_has_bought();
 
   $title_product = "Reggiseno Lovely bra 3 in 1";
@@ -63,6 +62,7 @@
             Da oggi c’è il reggiseno senza cuciture e senza ferretti
             di cui ti innamorerai!
           </h1>
+
 
           <p class="p-3">
             Il suo design innovativo avvolge il tuo seno e
@@ -175,6 +175,7 @@
                   <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-03.jpg" class="mx-auto" alt="volumizza il tuo seno in 3 differenti livelli">
                 </div>
               </div>
+              <iframe class="w-full my-6" height="349" src="https://www.youtube.com/embed/YHTAoKEDwFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -197,7 +198,7 @@
           <div class="bg-gray-100 py-4">
             <div class="max-w-screen-md mx-auto px-3">
               <h2 class="text-center text-2xl font-bold pt-12">
-                <span class="inline-block pb-3 uppercase">SEMPLICE, FUNZIONALE, adatto a tutti!</span>
+                <span class="inline-block pb-3 uppercase">SEMPLICE, FUNZIONALE, adatto a tutte le donne!</span>
               </h2>
               <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1-donna.jpg" class="mx-auto max-w-xs " alt="Cinturini">
 
@@ -251,7 +252,9 @@
               </table>
             </div>
           </div>
-
+          <div class="max-w-screen-sm mx-auto px-3">
+            <?php include("../shared/progress-short.php") ?>
+          </div>
           <div class="bg-pink-700 text-white py-4">
             <div class="max-w-screen-md mx-auto px-3">
               <p class="text-center">Ancora per pochi giorni LOVELY BRA è in offerta</p>

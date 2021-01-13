@@ -1,9 +1,7 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  add_cookie_has_bought();
-  redirect_has_bought();
-
+  
   $title_product = "Senti piú 30x";
   isUpsell();
   if ($upsell == true) {

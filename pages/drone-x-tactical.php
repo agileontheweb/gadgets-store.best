@@ -1,12 +1,10 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  add_cookie_has_bought();
   redirect_has_bought();
-
   $title_product = "Drone X Tactical";
-  isUpsell();
-  if ($upsell == true) {
+
+  if (isUpsell()) {
     $name = $_GET['name'];
     $surname = $_GET['surname'];
     $phone = $_GET['phone'];
@@ -31,7 +29,7 @@
   $extra = null;
   $upsell_page = "smartwatch-xwatch6.php?upsell";
 
-  if ($upsell == true) {
+  if (isUpsell()) {
     sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
   }else{
     passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
@@ -95,7 +93,7 @@
           </div>
           <p class="mx-auto text-center my-6">
             <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-              <?php if ($upsell == true) { ?>
+              <?php if (isUpsell()) { ?>
                 Aggiungi all'ordine
           		<?php }else { ?>
                 Ordina Ora
@@ -141,7 +139,7 @@
             </div>
             <p class="mx-auto text-center my-6">
               <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                <?php if ($upsell == true) { ?>
+                <?php if (isUpsell()) { ?>
                   Aggiungi all'ordine
                 <?php }else { ?>
                   Ordina Ora
@@ -188,7 +186,7 @@
               </div>
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  <?php if ($upsell == true) { ?>
+                  <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
                     Ordina Ora
@@ -210,7 +208,7 @@
 
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  <?php if ($upsell == true) { ?>
+                  <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
                     Ordina Ora
@@ -225,7 +223,7 @@
 
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  <?php if ($upsell == true) { ?>
+                  <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
                     Ordina Ora
@@ -270,7 +268,7 @@
 
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  <?php if ($upsell == true) { ?>
+                  <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
                     Ordina Ora
@@ -298,7 +296,7 @@
 
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  <?php if ($upsell == true) { ?>
+                  <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
                     Ordina Ora
@@ -309,7 +307,7 @@
 
             <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
             	<div class="relative block flex flex-col md:flex-row items-center">
-                <?php if (!$upsell == true) { ?>
+                <?php if (!isUpsell()) { ?>
                   <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4">
               	    <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
               	      <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
@@ -322,7 +320,7 @@
                       <div class="block flex items-center p-8 pt-0  uppercase">
 
                         <button type="submit" class="text-center btn-submit-to-forms mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
-                          <?php if ($upsell == true) { ?>
+                          <?php if (isUpsell()) { ?>
                             Aggiungi all'ordine
                          <?php }else { ?>
                             Ordina Subito
@@ -427,7 +425,7 @@
                   </div>
                   <div class="block flex items-center p-8  uppercase">
                     <button type="submit" class="btn-submit-to-forms text-center mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
-                      <?php if ($upsell == true) { ?>
+                      <?php if (isUpsell()) { ?>
                         Aggiungi all'ordine
                      <?php }else { ?>
                         Ordina Subito
@@ -436,7 +434,7 @@
                   </div>
                 </div>
 
-                <?php if (!$upsell == true) { ?>
+                <?php if (!isUpsell()) { ?>
                   <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
                     <div class="bg-white  block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
                       <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">

@@ -1,12 +1,11 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  add_cookie_has_bought();
   redirect_has_bought();
 
   $title_product = "Smartwatch X-W 6.0";
-  isUpsell();
-  if ($upsell == true) {
+
+  if (isUpsell() == true) {
     $name = $_GET['name'];
     $surname = $_GET['surname'];
     $phone = $_GET['phone'];
@@ -14,7 +13,6 @@
     $city = $_GET['city'];
     $zipcode = $_GET['zipcode'];
   }
-
 
   $url_product_api = "bgood_xwatch6.0";
   $selector = true;
@@ -30,9 +28,9 @@
   $price = "18.00";
   $img = $projectPath . $projectPathImg . "xw60-sceglistile.jpg";
   $extra = " - Colore e cinturini potrai deciderli al telefono.";
-  $upsell_page = "drone-x-tactical.php?upsell";
+  $upsell_page = "";
 
-  if ($upsell === true) {
+  if (isUpsell() == true) {
     sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
   }else{
     passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
@@ -60,7 +58,7 @@
         $text_price = "Lo smartwatch in sconto 50% acquista a soli €59.90!";
         include("upsell_message.php");
       ?>
-      <form action="smartwatch-xwatch6.php" method="post">
+      <form action="" method="post">
 
         <div class="max-w-screen-md mx-auto px-3">
           <h1 class="text-center text-2xl font-bold pt-12">
@@ -100,7 +98,7 @@
           </div>
           <p class="mx-auto text-center my-6">
             <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-              <?php if ($upsell == true) { ?>
+              <?php if (isUpsell() == true) { ?>
                 Aggiungi all'ordine
               <?php }else { ?>
                 Ordina Ora
@@ -217,7 +215,7 @@
 
             <p class="mx-auto text-center my-6">
               <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                <?php if ($upsell == true) { ?>
+                <?php if (isUpsell() == true) { ?>
                   Aggiungi all'ordine
                 <?php }else { ?>
                   Ordina Ora
@@ -253,7 +251,7 @@
 
               <p class="mx-auto text-center">
                 <button type="submit" class="font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  <?php if ($upsell == true) { ?>
+                  <?php if (isUpsell() == true) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
                     Clicca qui per ordinare
@@ -288,7 +286,7 @@
                 <h2 class="text-center p-3 font-bold text-2xl text-red-600">Acquista a 59.90€ anziché 119€!</h2>
                 <p class="mx-auto text-center">
                   <button type="submit" class="font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                    <?php if ($upsell == true) { ?>
+                    <?php if (isUpsell() == true) { ?>
                       Aggiungi all'ordine
                     <?php }else { ?>
                       Clicca qui per compilare il modulo d'acquisto

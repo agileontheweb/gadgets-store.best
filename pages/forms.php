@@ -1,8 +1,8 @@
 <?php
   include("../settings.php");
   class FORMS {};
-
   redirect_has_bought();
+
 
   if(isset($_GET['title_product'])) {
     $title_product = $_GET['title_product'];
