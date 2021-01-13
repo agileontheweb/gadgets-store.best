@@ -24,7 +24,7 @@
 	}
 
 	function howmanybuyer($peopleBuy){
-		echo "A partire dal <span class='text-blue-400'>" . date(" m ") . ucfirst(strftime('%B')) . date(" Y ") . " più di  " . $peopleBuy . " persone </span> hanno acquistato questo prodotto";
+		echo "A partire dal <span class='font-bold underline'>" . date(" m ") . ucfirst(strftime('%B')) . date(" Y ") . " più di  " . $peopleBuy . " persone </span> hanno acquistato questo prodotto";
 	}
 	function isADSimage(){
 		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
@@ -201,9 +201,24 @@
 	}
 
 	function fixedNavbar(){
-		echo "fixed";
-		if(class_exists('LANDING') || class_exists('FORMS')){
-			echo "relative";
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		$fb_params = "fbclid";
+		if (strpos($url, $fb_params) == true && class_exists('LANDING')) {
+			echo " fixed top-0";
+		}elseif(class_exists('LANDING') || class_exists('FORMS')){
+			echo " relative";
+		}else{
+			echo "fixed ";
+		}
+	}
+
+	function addMarginTop(){
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		$fb_params = "fbclid";
+		if (strpos($url, $fb_params) == true && class_exists('LANDING')) {
+			echo " mt-10";
+		}else{
+			echo "mt-0 ";
 		}
 	}
 
@@ -219,7 +234,6 @@
 		}
 		if (strpos($url, $upsell_params) == true && class_exists('LANDING')) {
 			echo "hidden";
-			$message = "Landing page mettere timer";
 		}
 	}
 

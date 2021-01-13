@@ -3,6 +3,7 @@
   class LANDING {};
   redirect_has_bought();
   $title_product = "Reggiseno Lovely bra 3 in 1";
+  $average_rating = "4.78 / 5";
   isUpsell();
 
   if (isUpsell() == true) {
@@ -54,25 +55,15 @@
 
     <?php include("../shared/navbar.php") ?>
 
-    <div>
+    <div class="">
       <form action="reggiseno-3in1.php" method="post">
+        <?php include('valutazione_media.php'); ?>
         <div class="max-w-screen-md mx-auto px-3">
-          <div class="text-center font-bold text-red-500 mt-4">
-            <?php howmanybuyer(1732)?>.
-          </div>
-          <h1 class="text-center text-2xl font-bold pt-12">
+          <h1 class="text-center text-2xl font-bold pt-0">
             Sei stanca di quegli scomodi ferretti, che ti stringono e irritano la tua pelle?
             Da oggi c’è il reggiseno senza cuciture e senza ferretti
             di cui ti innamorerai!
           </h1>
-
-
-          <p class="p-3">
-            Il suo design innovativo avvolge il tuo seno e
-            lo <strong>sostiene senza stringere e irritare la tua pelle</strong>.
-            Grazie alle spalline più larghe di un normale reggiseno, Lovely Bra è
-            super comodo e non lascia quei fastidiosi segni sul tuo corpo!
-          </p>
 
           <?php if(isADSimage()){?>
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
@@ -80,7 +71,13 @@
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
           <?php } ?>
 
-
+          <p class="p-3">
+            Il suo design innovativo avvolge il tuo seno e
+            lo <strong>sostiene senza stringere e irritare la tua pelle</strong>.
+            Grazie alle spalline più larghe di un normale reggiseno, Lovely Bra è
+            super comodo e non lascia quei fastidiosi segni sul tuo corpo!
+          </p>
+          
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6">
             <div class="flex-1 text-center uppercase font-bold border">
               <h3 class="p-3 text-xl text-center">
@@ -99,6 +96,9 @@
             </div>
           </div>
           <h2 class="text-center p-3 font-bold text-2xl text-red-600">Acquista 3 pezzi a soli €59.90</h2>
+          <div class="text-center">
+            <?php howmanybuyer(1732)?>.
+          </div>
           <div class="max-w-screen-sm mx-auto px-3">
             <?php include("../shared/progress-short.php") ?>
           </div>
@@ -264,13 +264,11 @@
             <div class="max-w-screen-sm mx-auto px-3">
               <?php include("../shared/progress-short.php") ?>
             </div>
-            <div class="text-center font-bold text-red-500 mt-4">
+            <div class="text-center mt-4">
               <?php howmanybuyer(1732)?>.
+              <?php include('valutazione_media.php'); ?>
             </div>
           </div>
-
-
-
           <div class="bg-pink-700 text-white py-4">
             <div class="max-w-screen-md mx-auto px-3">
               <p class="text-center">Ancora per pochi giorni LOVELY BRA è in offerta</p>

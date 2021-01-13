@@ -10,6 +10,7 @@
 		<?php messageTop(); ?>
 	</div>
 
+
 	<nav class="flex p-1 <?php showNavBar();?>">
 		  <a class="flex navbar-brand cursor-pointer" href="<?php echo $projectPath ?>">
 	     <img src="<?php echo $projectPath ?>/img/logo.png" class="w-14 h-14 md:w-16 md:h-16">
