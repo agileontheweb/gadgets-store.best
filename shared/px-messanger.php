@@ -19,7 +19,7 @@
   <!-- Your Chat Plugin code -->
   <div class="fb-customerchat"
     attribution=setup_tool
-    page_id="100436285316093"
+    page_id="<?php echo $px_messanger ?>"
 logged_in_greeting="Ciao come possiamo aiutarti?"
 logged_out_greeting="Ciao come possiamo aiutarti?">
   </div>

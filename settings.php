@@ -9,6 +9,7 @@
 	$px_analytics = "G-EX9QLYLTWM";
 	$px_hotjar = "2176744";
 	$px_facebook = "148028286826820";
+	$px_messanger = "100436285316093";
 	$visited_newsletter_page = "";
 
 	session_start();
@@ -238,6 +239,7 @@
 			if($selector == true){
 				$selectors = "selector=$selector&selector_1=$selector_1&selector_1_value=$selector_1_value&selector_2=$selector_2&selector_2_value=$selector_2_value&selector_3=$selector_3&selector_3_value=$selector_3_value";
 			}
+
 			$custom_params = "&$selectors&title_product=$title_product&url_product_api=$url_product_api&privacy=$privacy&quantity=$quantity&price=$price&img=$img&extra=$extra&upsell_page=$upsell_page";
 			header("location: forms.php?$custom_params");
 
