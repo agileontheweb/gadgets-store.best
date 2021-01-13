@@ -5,7 +5,7 @@
 
   $title_product = "Reggiseno Lovely bra 3 in 1";
   isUpsell();
-  if ($upsell == true) {
+  if (isUpsell() == true) {
     $name = $_GET['name'];
     $surname = $_GET['surname'];
     $phone = $_GET['phone'];
@@ -30,7 +30,7 @@
   $extra = null;
   $upsell_page = "";
 
-  if ($upsell == true) {
+  if (isUpsell() == true) {
     sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
   }else{
     passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
@@ -70,7 +70,13 @@
             Grazie alle spalline più larghe di un normale reggiseno, Lovely Bra è
             super comodo e non lascia quei fastidiosi segni sul tuo corpo!
           </p>
-          <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
+
+          <?php if(isADSimage()){?>
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
+          <?php }else{ ?>
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
+          <?php } ?>
+
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6">
             <div class="flex-1 text-center uppercase font-bold border">
@@ -247,11 +253,11 @@
                     <td class="p-3 text-center"><i class="fas fa-check"></i></td>
                     <td class="p-3 text-center"><i class="fas fa-times"></i></td>
                   </tr>
-
                 </tbody>
               </table>
             </div>
           </div>
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
           <div class="max-w-screen-sm mx-auto px-3">
             <?php include("../shared/progress-short.php") ?>
           </div>
