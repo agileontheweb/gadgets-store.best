@@ -2,9 +2,9 @@
   include("../settings.php");
   class LANDING {};
   redirect_has_bought();
-
   $title_product = "Reggiseno Lovely bra 3 in 1";
   isUpsell();
+  
   if (isUpsell() == true) {
     $name = $_GET['name'];
     $surname = $_GET['surname'];

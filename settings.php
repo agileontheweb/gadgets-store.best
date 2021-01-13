@@ -2,6 +2,7 @@
 	ini_set('display_errors', '1');
 	ini_set('display_startup_errors', '1');
 	error_reporting(E_ALL);
+	setlocale(LC_ALL, 'it_IT');
 	$brand_name = "Gadgets Store";
 	$brand_url = "https://gadgets-store.best/";
 	$brand_slogan = "Prodotti Scontati e in Promozione";
@@ -22,6 +23,9 @@
 		$projectPathImg = "dist/img/prodotti/";
 	}
 
+	function howmanybuyer($peopleBuy){
+		echo "A partire dal <span class='text-blue-400'>" . date(" m ") . ucfirst(strftime('%B')) . date(" Y ") . " più di  " . $peopleBuy . " persone </span> hanno acquistato questo prodotto";
+	}
 	function isADSimage(){
 		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 		if (strpos($url, "ads-1") == true || strpos($url, "ads-2") == true || strpos($url, "ads-3") == true) {
