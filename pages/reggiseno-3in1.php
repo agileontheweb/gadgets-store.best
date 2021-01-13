@@ -4,7 +4,7 @@
   redirect_has_bought();
   $title_product = "Reggiseno Lovely bra 3 in 1";
   isUpsell();
-  
+
   if (isUpsell() == true) {
     $name = $_GET['name'];
     $surname = $_GET['surname'];
@@ -57,6 +57,9 @@
     <div>
       <form action="reggiseno-3in1.php" method="post">
         <div class="max-w-screen-md mx-auto px-3">
+          <div class="text-center font-bold text-red-500 mt-4">
+            <?php howmanybuyer(1732)?>.
+          </div>
           <h1 class="text-center text-2xl font-bold pt-12">
             Sei stanca di quegli scomodi ferretti, che ti stringono e irritano la tua pelle?
             Da oggi c’è il reggiseno senza cuciture e senza ferretti
@@ -258,10 +261,16 @@
               <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
             </div>
 
+            <div class="max-w-screen-sm mx-auto px-3">
+              <?php include("../shared/progress-short.php") ?>
+            </div>
+            <div class="text-center font-bold text-red-500 mt-4">
+              <?php howmanybuyer(1732)?>.
+            </div>
           </div>
-          <div class="max-w-screen-sm mx-auto px-3">
-            <?php include("../shared/progress-short.php") ?>
-          </div>
+
+
+
           <div class="bg-pink-700 text-white py-4">
             <div class="max-w-screen-md mx-auto px-3">
               <p class="text-center">Ancora per pochi giorni LOVELY BRA è in offerta</p>
@@ -276,6 +285,9 @@
                 <span class="block py-3">🚚 Spedizione gratuita</span>
               </p>
             </div>
+          </div>
+          <div class="max-w-screen-md mx-auto px-3 mt-10">
+            <?php include("faq.php") ?>
           </div>
         </div>
       </form>
