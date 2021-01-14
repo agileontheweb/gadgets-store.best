@@ -92,7 +92,7 @@
             <?php include("../shared/progress-short.php") ?>
           </div>
           <p class="mx-auto text-center my-6">
-            <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+            <button type="submit" class="btn-animate btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
               <?php if (isUpsell()) { ?>
                 Aggiungi all'ordine
           		<?php }else { ?>
@@ -185,7 +185,7 @@
                 </div>
               </div>
               <p class="mx-auto text-center my-6">
-                <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+                <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
@@ -267,7 +267,7 @@
               </div>
 
               <p class="mx-auto text-center my-6">
-                <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+                <button type="submit" class="btn-animate btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
@@ -424,7 +424,7 @@
                     <img class="mx-auto" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-kit.png" alt="Drone Kit">
                   </div>
                   <div class="block flex items-center p-8  uppercase">
-                    <button type="submit" class="btn-submit-to-forms text-center mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
+                    <button type="submit" class="btn-animate btn-submit-to-forms font-bold text-center mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
                       <?php if (isUpsell()) { ?>
                         Aggiungi all'ordine
                      <?php }else { ?>
