@@ -93,7 +93,7 @@
         che si trova nella barra degli indirizzi del tuo browser,
         questo garantisce che i tuoi dati vengano inviati in
         totale sicurezza agli operatori telefonici che si incaricheranno di richiamarti per
-        accertarsi che tu sia una persona reale, conferamre i dati per l'invio del prodotto. Puoi leggere per approfondire l’argomento sulla
+        accertarsi che tu sia una persona reale e confermare i dati per l'invio del prodotto. Puoi leggere per approfondire l’argomento sulla
         <a href="<?php echo $privacy?>" class="underline" target="blank">Privacy Policy e Cookie Policy</a> oltre alle Condizioni per la Vendita Online
       </div>
     </div>
