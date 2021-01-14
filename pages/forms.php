@@ -63,8 +63,9 @@
             Compila il modulo qui sopra e non preoccuparti di altro, una opertatrice
             telefonica si incaricherà di chiamarti non appena possibile.
           </p>
+          <?php include("icon-shipping.php") ?>
           <p class="text-center">
-            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>operatore-telefonico.jpg" class="img-fluid w-full my-3" class="Giovanni" width="640" height="640">
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>operatore-telefonico.jpg" class="w-full">
           </p>
         </div>
       </div>

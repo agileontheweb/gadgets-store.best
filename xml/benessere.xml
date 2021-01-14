@@ -21,6 +21,23 @@
     <offer>Promo 3x1</offer>
     <prezzo>€59.90</prezzo>
     <produttore>https://www.ilmontestore.sm/</produttore>
+
+    <recensione category="reggisenolovelybra3in1">
+      <name>Aggiungere</name>
+      <img>recensione-elisa-giordani.jpg</img>
+      <description>Aggiungere!!</description>
+    </recensione>
+    <recensione category="reggisenolovelybra3in1">
+      <name>Aggiungere</name>
+      <img>recensione-marcella-guardigli.jpg</img>
+      <description>Aggiungere!!!</description>
+    </recensione>
+    <recensione category="reggisenolovelybra3in1">
+      <name>Aggiungere</name>
+      <img>recensione-alessandra-derossi.jpg</img>
+      <description>Aggiungere!!</description>
+    </recensione>
+
   </record>
 
   <record>
@@ -32,6 +49,22 @@
     <offer>Sconto 70%</offer>
     <prezzo>€69.00</prezzo>
     <produttore>https://advmarket.shop</produttore>
+
+    <recensione category="footenergy">
+      <name>Elisa Giordani</name>
+      <img>recensione-elisa-giordani.jpg</img>
+      <description>Io lavoro in piedi e senza muovermi molto, e sento sempre le gambe pesanti e gonfie!! a fine serata non vedevo l’ora di stendermi con le gambe in alto!! Ma da quando ho provato questo tappetino per i piedi, tutte le gambe sono migliorate: le sento più leggere, e sono meno gonfie!! Insomma non ne faccio più a meno!!</description>
+    </recensione>
+    <recensione category="footenergy">
+      <name>Marcella Guardigli</name>
+      <img>recensione-marcella-guardigli.jpg</img>
+      <description>Arrivato un paio di giorni fa: l’ho usato alla sera, a fine giornata, devo dire che, grazie all’aiuto della microcircolazione, sento le gambe meno gonfie e più leggere!! Continuerò ad usarlo!!!</description>
+    </recensione>
+    <recensione category="footenergy">
+      <name>Alessandra De Rossi</name>
+      <img>recensione-alessandra-derossi.jpg</img>
+      <description>Di vantaggioso ha che lo puoi portare dove ti pare!! è comodo, compatto e pieghevole su se stesso, sta anche in borsa. Al mattino me lo porto in ufficio e, sotto la scrivania, lo uso: cosi quando mi alzo le mie gambe sono moto meno indolenzite e più rilassate!!</description>
+    </recensione>
   </record>
 
   <record>
