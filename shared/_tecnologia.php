@@ -68,8 +68,9 @@
 
 
   <div class="text-center py-12">
-    <a href="prodotti-tecnologia.php" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-4 px-8 border border-blue-500 hover:border-transparent rounded">
+    <a href="prodotti-tecnologia.php" class="border-2  p-3 rounded text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white">
     Vedi tutti
   </a>
+
   </div>
 </div>

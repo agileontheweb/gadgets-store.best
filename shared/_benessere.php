@@ -66,7 +66,7 @@
     </div>
   </div>
   <div class="text-center py-12">
-    <a href="prodotti-benessere.php" class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-4 px-8 border border-green-500 hover:border-transparent rounded">
+    <a href="prodotti-benessere.php" class="border-2  p-3 rounded text-green-500 border-green-500 hover:bg-green-500 hover:text-white">
     Vedi tutti
   </a>
   </div>

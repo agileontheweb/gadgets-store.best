@@ -64,7 +64,7 @@
     </div>
   </div>
   <div class="text-center py-12">
-    <a href="prodotti-bellezza.php" class="bg-transparent hover:bg-pink-500 text-pink-700 font-semibold hover:text-white py-4 px-8 border border-pink-500 hover:border-transparent rounded">
+    <a href="prodotti-bellezza.php" class="border-2  p-3 rounded text-pink-500 border-pink-500 hover:bg-pink-500 hover:text-white">
     Vedi tutti
   </a>
   </div>

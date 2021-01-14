@@ -63,7 +63,7 @@
     </div>
   </div>
   <div class="text-center py-12">
-    <a href="prodotti-casa.php" class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-4 px-8 border border-gray-500 hover:border-transparent rounded">
+    <a href="prodotti-casa.php" class="border-2  p-3 rounded text-gray-500 border-gray-500 hover:bg-gray-500 hover:text-white">
     Vedi tutti
   </a>
   </div>
