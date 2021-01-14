@@ -1,62 +1,105 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>http://gadgets-store.best/</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://gadgets-store.best/benessere-salute.php</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://gadgets-store.best/prodotti-casa.php</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://gadgets-store.best/prodotti-bellezza.php</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://gadgets-store.best/prodotti-tecnologia.php</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://gadgets-store.best/cosa-e-gadgets-store.php</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://gadgets-store.best/cookie-policy.php</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://gadgets-store.best/disclaimer.php</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://gadgets-store.best/contatti.php</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://gadgets-store.best/spirulina/</loc>
-  <lastmod>2019-12-15T18:38:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://gadgets-store.best/</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/prodotti-tecnologia.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/prodotti-bellezza.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/prodotti-benessere.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/prodotti-casa.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/newsletter.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/pages/drone-x-tactical.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/pages/smartwatch-xwatch6.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/pages/reggiseno-3in1.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/pages/footenergy.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/cosa-e-gadgets-store.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/cookie-policy.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/disclaimer.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/contatti.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/assistenza.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/pages/sentipiu30x.php</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gadgets-store.best/pages/</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
