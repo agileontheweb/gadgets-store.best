@@ -216,9 +216,9 @@
 		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 		$fb_params = "fbclid";
 		if (strpos($url, $fb_params) == true && class_exists('LANDING')) {
-			echo " mt-10";
+			echo " mt-20";
 		}else{
-			echo "mt-0 ";
+			echo "mt-10 ";
 		}
 	}
 
