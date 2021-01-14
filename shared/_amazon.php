@@ -17,7 +17,7 @@
              <img src="<?php echo $projectPath?><?php echo $projectPathImg?><?php echo $list[$i]->image ?>" alt="<?php echo $list[$i]->name ?>">
             </div>
             <div class="mt-8 text-center">
-              <h1 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h1>
+              <h3 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h3>
               <p class="text-gray-600"><?php echo $list[$i]->description ?></p>
               <a href="<?php echo $list[$i]->link ?>" class="block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none" target="_blank" rel="nofollow">
                 Vedi

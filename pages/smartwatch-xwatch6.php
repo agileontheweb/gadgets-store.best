@@ -316,7 +316,7 @@
               </h2>
               <?#php include("recensioni.php") ?>
               <p class="mx-auto text-center">
-                <button type="submit" class="btn-animate btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+                <button type="submit" class="btn-animate btn-submit-to-forms font-bold_tecno inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   <?php if ($upsell == true) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>

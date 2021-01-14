@@ -1,7 +1,7 @@
 <div class="bg-gray-900 py-6 px-6">
-  <h2 class="text-center text-2xl font-bold pt-3 text-white">
+  <h3 class="text-center text-2xl font-bold pt-3 text-white">
     Ricevi le migliori promozioni del momento!
-  </h2>
+  </h3>
 
   <p class="text-white text-center py-3">
     Iscriviti alla nostra Newsletter e risparmia fino <strong>il 75%</strong> su tanti prodotti!

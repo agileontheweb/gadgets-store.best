@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <title>Prodotti per il benessere - Gadgets Store </title>
-    <meta name="description" content="" >
+    <meta name="description" content="I migliori prodotti per il tuo benssere sul mercato in sconto al 50%. Scopri tutte le offerte del giorno. Spedizione gratuita. Pagamento alla consegna. Promozioni valide fino esaurimento scorte. Affrettati!">
     <?php include('shared/meta.php'); ?>
   </head>
   <body class="bg-green-100">
@@ -28,7 +28,7 @@
                <img src="<?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>" alt="<?php echo $list[$i]->name ?>" width="600" height="600">
               </div>
               <div class="mt-8 text-center">
-                <h1 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h1>
+                <h2 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h2>
                 <p class="text-gray-600"><?php echo $list[$i]->description ?></p>
                 <?php
                   if(empty($list[$i]->linkaffiliate)){
