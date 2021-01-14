@@ -52,7 +52,7 @@
 		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 		if ($httpcode == 200){
-		
+
 			if(!empty($upsell_page)){
 				header("Location: $upsell_page?upsell&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
 			}else{
@@ -78,36 +78,37 @@
 		<input type="hidden" name="price" id="price" value="<?php echo $price;?>">
 		<input type="hidden" name="upsell_page" id="upsell_page" value="<?php echo $upsell_page;?>">
 		<input type="hidden" name="url_for_facebook_event_purchase" id="url_for_facebook_event_purchase" value="<?php echo $url_for_facebook_event_purchase;?>">
+
 		<div class="form-group py-3">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nome</label>
-			<input type="text" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" value="<?php echo $name; ?>" required="required"/ placeholder="Scrivi il tuo nome">
+			<input type="text" name="name" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" value="<?php echo $name; ?>" required="required"/ placeholder="Scrivi il tuo nome">
 		</div>
 
 		<div class="form-group py-3">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="surname">Cognome</label>
-			<input type="text" name="surname" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" value="<?php echo $surname; ?>" required="required"/ placeholder="Scrivi il tuo cognome">
+			<input type="text" name="surname" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" value="<?php echo $surname; ?>" required="required"/ placeholder="Scrivi il tuo cognome">
 		</div>
 
 		<div class="form-group py-3">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Telefono (Meglio Cellulare)</label>
-			<input type="number" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" value="<?php echo $phone; ?>" required="required" placeholder="Scrivi il tuo telefono"/>
+			<input type="number" name="phone" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" value="<?php echo $phone; ?>" required="required" placeholder="Scrivi il tuo telefono"/>
 		</div>
 
 		<div class="form-group py-3">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="address">Indirizzo e n. civico</label>
-			<input type="text" name="address" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" value="<?php echo $address ?>" required="required"  placeholder="Scrivi via e numero"/>
+			<input type="text" name="address" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" value="<?php echo $address ?>" required="required"  placeholder="Scrivi via e numero"/>
 		</div>
 
 		<div class="flex flex-wrap -mx-3 form-group py-3">
 			<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
 				<label class="block text-gray-700 text-sm font-bold mb-2" for="city">Città</label>
-				<input type="text" name="city" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" value="<?php echo $city; ?>" required="required"/  placeholder="Scrivi la città">
+				<input type="text" name="city" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" value="<?php echo $city; ?>" required="required"/  placeholder="Scrivi la città">
 			</div>
 			<div class="w-full md:w-1/2 px-3">
 				<label class="block text-gray-700 text-sm font-bold mb-2" for="zipcode">CAP</label>
 				<input type="number"
 								name="zipcode"
-								class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent"
+								class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
 								value="<?php echo $zipcode; ?>"
 								oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
 								maxlength = "5"
