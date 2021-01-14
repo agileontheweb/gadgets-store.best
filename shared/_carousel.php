@@ -8,7 +8,7 @@
     </div>
     <div class="carousel-item">
       <div class="bg-black d-block bg-no-repeat bg-center h-96 bg-cover" style="background-image: url(<?php echo $projectPath?><?php echo $projectPathImg?>banner-home-casa.jpg);"></div>
-      <h5 class="text-2xl font-extrabold p-3 absolute bottom-6 left-1 right-1 max-w-lg mx-auto text-center">
+      <h5 class="bg-black text-white text-2xl font-extrabold p-3 absolute bottom-6 left-1 right-1 max-w-lg mx-auto text-center">
         Iscriviti alla Newsletter e ricevi sconti su tanti Gadgets!
       </h5>
     </div>
