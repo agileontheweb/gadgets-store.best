@@ -5,6 +5,7 @@
   $title_product = "Reggiseno Lovely bra 3 in 1";
   $average_rating = "4.78 / 5";
   $xml = simplexml_load_file("../xml/benessere.xml") or die("Error: Cannot create object");
+  $id="reggiseno3x1";
   isUpsell();
 
   if (isUpsell() == true) {
@@ -42,8 +43,8 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <title>Il reggiseno innovativo 3 in 1 che adorerari per tutta la vita | <?php echo $brand_name; ?>  <?php echo $brand_slogan; ?></title>
-    <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
+    <title>Il reggiseno innovativo 3 in 1 che adorerari per tutta la vita | <?php echo $brand_slogan; ?></title>
+    <meta name="description" content="In offerta Speciale l'innovativo reggiseno 3 in 1. Comodo perchè senza ferretti, rivoluzionario effetto push-up con funzione contenitiva." >
     <?php include('../shared/meta.php'); ?>
   </head>
   <body class="landing-page">
@@ -103,12 +104,11 @@
             <?php include("../shared/progress-short.php") ?>
           </div>
           <p class="mx-auto text-center my-6">
-            <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+            <button type="submit" class="btn-animate btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
               Ordina Ora
             </button>
             <span class="block py-3">Spedizione gratuita</span>
           </p>
-
         </div>
 
         <div class="bg-gray-100 py-4">
@@ -268,7 +268,6 @@
             <div class="max-w-screen-md mx-auto px-3 mt-4">
               <?php howmanybuyer(973)?>.
               <?php include('valutazione_media.php'); ?>
-              <?php include('recensioni.php'); ?>
             </div>
           </div>
           <?php include("icon-shipping.php") ?>
@@ -280,7 +279,7 @@
                   COSA ASPETTI? APPROFITTA DELLA SUPER PROMO 3 LOVELY BRA A 59.90€!</span>
               </h2>
               <p class="mx-auto text-center">
-                <button type="submit" class="font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+                <button type="submit" class="btn-animate font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   Clicca qui per compilare il modulo d'acquisto
                 </button>
                 <span class="block py-3">🚚 Spedizione gratuita</span>

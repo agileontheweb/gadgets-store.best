@@ -12,6 +12,18 @@
     <produttore>https://webshopitaly.sm/</produttore>
   </record>
 
+  <record id="ecofrost">
+    <name>Eco Frost</name>
+    <description>Piastra che permette di scongelare gli alimenti in maniera semplice, veloce e naturale.</description>
+    <image>ecofrost.jpg</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/DbO</linkaffiliate>
+    <link></link>
+    <offer>Promo 2x1</offer>
+    <prezzo>€69.90</prezzo>
+    <produttore>https://www.ilmontestore.sm</produttore>
+  </record>
+
+
   <record>
     <name>Suola Clean</name>
     <description>Copri scarpe che ti farà risparmiare tempo e denaro nella pulizia dei pavimenti.</description>

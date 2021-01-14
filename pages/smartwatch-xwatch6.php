@@ -4,6 +4,8 @@
   redirect_has_bought();
   $average_rating = "4.18 / 5";
   $title_product = "Smartwatch X-W 6.0";
+  $xml = simplexml_load_file("../xml/tecnologia.xml") or die("Error: Cannot create object");
+  $id="xw6.0";
 
   if (isUpsell() == true) {
     $name = $_GET['name'];

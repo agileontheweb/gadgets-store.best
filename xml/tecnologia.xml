@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<products status = "ok">
+<products>
   <record>
       <name>Ti Mappo</name>
       <description>Avrai la posizione di qualsiasi oggetto sempre a portata di smartphone.</description>
@@ -27,11 +27,11 @@
     <produttore>https://www.amazon.com</produttore>
   </record>
 
-  <record>
+  <record id="drone">
     <name>Drone</name>
     <description>X Tactical è progettato con estrema precisione con un'alta qualità di ripresa.</description>
     <image>drone-1.jpg</image>
-    <linkaffiliate></linkaffiliate>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/DbK</linkaffiliate>
     <link>drone-x-tactical.php</link>
     <offer>Sconto 50%</offer>
     <prezzo>da €99.00</prezzo>
@@ -42,11 +42,11 @@
     <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
-  <record>
+  <record id="xw6.0">
     <name>XW6.0</name>
     <description>Smartwatch performante e intuitivo, avrai tutto ciò che ti occorre a portata di mano.</description>
     <image>xw60.jpg</image>
-    <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqD</linkaffiliate> -->
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqD</linkaffiliate>
     <link>smartwatch-xwatch6.php</link>
     <url_api_product>bgood_xwatch6.0</url_api_product>
     <offer>Sconto 50%</offer>
@@ -86,17 +86,6 @@
     <offer>Sconto 50%</offer>
     <prezzo>€59.00</prezzo>
     <produttore>https://advmarket.shop/</produttore>
-  </record>
-
-  <record>
-      <name>Senti Più 30x</name>
-      <description>L’amplificatore di suoni da inserire direttamente nel tuo orecchio.</description>
-      <image>sentipiu30x.jpg</image>
-      <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr9</linkaffiliate> -->
-      <link>sentipiu30x.php</link>
-      <offer>Sconto 30%</offer>
-      <prezzo>€69.90</prezzo>
-      <produttore>https://webshopitaly.sm</produttore>
   </record>
 
   <record>

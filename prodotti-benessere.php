@@ -31,7 +31,7 @@
                 <h2 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h2>
                 <p class="text-gray-600"><?php echo $list[$i]->description ?></p>
                 <?php
-                  if(empty($list[$i]->linkaffiliate)){
+                  if(!empty($list[$i]->linkaffiliate) && !empty($list[$i]->link)){
                     $value = $projectPath ."pages/" .$list[$i]->link;
                     $target = false;
                   }else{

@@ -13,7 +13,7 @@
         $i++;
       ?>
       <?php
-        if(empty($list[$i]->linkaffiliate)){
+        if(!empty($list[$i]->linkaffiliate) && !empty($list[$i]->link)){
           $value = $projectPath ."pages/" .$list[$i]->link;
           $target = false;
         }else{

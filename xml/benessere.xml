@@ -12,11 +12,11 @@
     <produttore>https://benesserestore.net/</produttore>
   </record>
 
-  <record>
+  <record id="reggiseno3x1">
     <name>Reggiseno 3 in 1</name>
     <description>Lovely bra è il Reggiseno ad effetto push-up più comodo sul mercato.</description>
     <image>reggiseno3in1.jpg</image>
-    <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZW</linkaffiliate> -->
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZW</linkaffiliate>
     <link>reggiseno-3in1.php</link>
     <offer>Promo 3x1</offer>
     <prezzo>€59.90</prezzo>
@@ -40,11 +40,11 @@
 
   </record>
 
-  <record>
+  <record id="footenergy">
     <name>Foot Energy</name>
     <description>Tappetino per i piedi a impulsi magnetici che sollecitano e stimolano i muscoli.</description>
     <image>footenergy-1.jpg</image>
-    <!-- <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZX</linkaffiliate> -->
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZX</linkaffiliate>
     <link>footenergy.php</link>
     <offer>Sconto 70%</offer>
     <prezzo>€69.00</prezzo>
@@ -65,6 +65,17 @@
       <img>recensione-alessandra-derossi.jpg</img>
       <description>Di vantaggioso ha che lo puoi portare dove ti pare!! è comodo, compatto e pieghevole su se stesso, sta anche in borsa. Al mattino me lo porto in ufficio e, sotto la scrivania, lo uso: cosi quando mi alzo le mie gambe sono moto meno indolenzite e più rilassate!!</description>
     </recensione>
+  </record>
+
+  <record id="sentipiu">
+      <name>Senti Più 30x</name>
+      <description>L’amplificatore di suoni da inserire direttamente nel tuo orecchio.</description>
+      <image>sentipiu30x.jpg</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr9</linkaffiliate>
+      <link>sentipiu30x.php</link>
+      <offer>Sconto 30%</offer>
+      <prezzo>€69.90</prezzo>
+      <produttore>https://webshopitaly.sm</produttore>
   </record>
 
   <record>

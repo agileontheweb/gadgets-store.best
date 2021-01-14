@@ -4,6 +4,8 @@
   redirect_has_bought();
   $title_product = "Drone X Tactical";
   $average_rating = "4.92 / 5";
+  $xml = simplexml_load_file("../xml/tecnologia.xml") or die("Error: Cannot create object");
+  $id="drone";
 
   if (isUpsell()) {
     $name = $_GET['name'];

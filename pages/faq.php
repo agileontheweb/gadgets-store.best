@@ -2,6 +2,34 @@
   <span class="inline-block pb-3">Domande Frequenti</span>
 </h2>
 <div class="accordion" id="accordionExample">
+
+  <div class="card">
+    <div class="card-header" id="faq-0">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left font-bold" type="button" data-toggle="collapse" data-target="#collapse-0" aria-expanded="true" aria-controls="collapse-0">
+          Come acquistare?
+        </button>
+      </h2>
+    </div>
+
+    <?php
+    $getAffiliateLink = "";
+    foreach($xml->children() as $record) {
+      if($record->attributes()->id == $id ){
+        $getAffiliateLink = $record->linkaffiliate;
+      }
+    }
+    ?>
+
+    <div id="collapse-0" class="collapse show" aria-labelledby="faq-0" data-parent="#accordionExample">
+      <div class="card-body">
+        <p>Per ordinare <?php echo $title_product ?> è necessario <button type="submit" class="underline font-bold text-blue-500">compilare il modulo</button>
+          su questo sito autorizzato alla vendita di questo prodotto, oppure acquistare <a href="<?php echo $getAffiliateLink; ?>" class="underline font-bold text-blue-500" target="blank">dal sito ufficiale.</a></p>
+        <i class="block text-sm mt-2">Devi inserire i tuoi dati anagrafici, l’indirizzo di spedizione, ed un recapito telefonico. Dopo averlo inviato, un operatore del servizio clienti provvederà a richiamarti in breve tempo per verificare insieme a te i dati inseriti e procedere all’invio del prodotto.</i>
+      </div>
+    </div>
+  </div>
+
   <div class="card">
     <div class="card-header" id="faq-1">
       <h2 class="mb-0">
@@ -11,13 +39,14 @@
       </h2>
     </div>
 
-    <div id="collapse-1" class="collapse show" aria-labelledby="faq-1" data-parent="#accordionExample">
+    <div id="collapse-1" class="collapse" aria-labelledby="faq-1" data-parent="#accordionExample">
       <div class="card-body">
         Quasi tutti i prodotti all'interno di questo sito <strong>incudono le spese di spedizione completamente gratuite!</strong>
         Se la consegna è gratuita verrà segnalato nella pagina.
       </div>
     </div>
   </div>
+
   <div class="card">
     <div class="card-header" id="faq-2">
       <h2 class="mb-0">

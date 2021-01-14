@@ -1,10 +1,14 @@
 <?php
   include("../settings.php");
   class LANDING {};
-  
+  redirect_has_bought();
   $title_product = "Senti piú 30x";
+  $average_rating = "4.30 / 5";
+  $xml = simplexml_load_file("../xml/benessere.xml") or die("Error: Cannot create object");
+  $id="sentipiu";
   isUpsell();
-  if ($upsell == true) {
+
+  if (isUpsell() == true) {
     $name = $_GET['name'];
     $surname = $_GET['surname'];
     $phone = $_GET['phone'];
@@ -12,7 +16,6 @@
     $city = $_GET['city'];
     $zipcode = $_GET['zipcode'];
   }
-
 
   $url_product_api = "dmc_sentipiù30x";
   $selector = false;
@@ -30,7 +33,7 @@
   $extra = null;
   $upsell_page = "";
 
-  if ($upsell == true) {
+  if (isUpsell() == true) {
     sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
   }else{
     passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
@@ -44,35 +47,65 @@
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body>
-
+  <body class="landing-page">
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
         fbq('track', '<?php echo $title ?> Page');
       </script>
     <?php } ?>
 
-    <form action="sentipiu30x.php" method="post"></form>
-
     <?php include("../shared/navbar.php") ?>
-    <div class="px-3">
-      <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
-        <span class="inline-block border-b-4 border-gray-600 pb-3">Senti più 30X</span>
-      </h1>
+    <div class="">
+      <form action="sentipiu30x.php" method="post"></form>
+        <?php include('valutazione_media.php'); ?>
+        <div class="max-w-screen-md mx-auto px-3">
+          <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
+            <span class="inline-block border-b-4 border-gray-600 pb-3">Senti più 30X</span>
+          </h1>
 
-      <div class="max-w-screen-md mx-auto">
+          <?php if(isADSimage()){?>
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-1-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
+          <?php }else{ ?>
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-1.jpg" alt="sentipiu" class="mx-auto w-full">
+          <?php } ?>
+
         <p class="p-3">
           Con <strong>Senti più 30x</strong> torni a sentire i suoni che ami!
           La risata di tuo nipote, una bella canzone di un tempo o un film in
           televisione ci rendono felici e meritano di essere sentiti bene!
         </p>
 
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6">
+          <div class="flex-1 text-center uppercase font-bold border">
+            <h3 class="p-3 text-xl text-center">
+              SSSSS
+            </h3>
+          </div>
+          <div class="flex-1 text-center uppercase font-bold border">
+            <h3 class="p-3 text-xl text-center">
+              EEEEE
+            </h3>
+          </div>
+          <div class="flex-1 text-center uppercase font-bold border">
+            <h3 class="p-3 text-xl text-center">
+              GGGG
+            </h3>
+          </div>
+        </div>
+
+        <h2 class="text-center p-3 font-bold text-2xl text-red-600">Acquista 3 pezzi a soli €59.90</h2>
+        <div class="text-center">
+          <?php howmanybuyer(832)?>.
+        </div>
+        <div class="max-w-screen-sm mx-auto px-3">
+          <?php include("../shared/progress-short.php") ?>
+        </div>
         <p class="mx-auto text-center my-6">
-          <a href="#" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+          <button type="submit" class="btn-animate btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
             Ordina Ora
-          </a>
+          </button>
+          <span class="block py-3">Spedizione gratuita</span>
         </p>
-        <img src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-1.jpg" alt="Senti più" class="mx-auto">
       </div>
 
       <div class="bg-blue-500 text-white py-4">
@@ -178,6 +211,7 @@
         </div>
 
         <div class="bg-white py-4">
+
           <div class="max-w-screen-md mx-auto px-3">
             <h2 class="text-center text-2xl font-bold pt-12 text-gray-600">
               <span class="inline-block border-b-4 border-gray-600 pb-3 uppercase">Non lasciarti sfuggire quest'occasione</span>
@@ -186,7 +220,7 @@
               Ancora per pochi giorni è in offerta a soli 69.90€ invece che 99.90€! Compila il modulo sottostante con i tuoi dati e attiva la promozione. La spedizione è gratuita e paghi direttamente alla consegna.
             </p>
           </div>
-
+          <?php include("icon-shipping.php") ?>
           <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
           	<div class="relative block flex flex-col md:flex-row items-center">
           	  <div class="max-w-sm mx-auto">
@@ -208,13 +242,14 @@
                   </div>
                 </div>
               </div>
-
-
-
           </div>
         </div>
+
       </div>
     </div>
+  </div>
+  <div class="max-w-screen-md mx-auto px-3 mt-10">
+    <?php include("faq.php") ?>
   </div>
   <?php include("../shared/footer.php") ?>
   </body>
