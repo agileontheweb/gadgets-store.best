@@ -104,7 +104,7 @@
                 Ordina Ora
               <?php }?>
             </button>
-            <span class="block py-3">Spedizione gratuita</span>
+            <span class="block py-3">🚚 Spedizione gratuita</span>
           </p>
 
         </div>
@@ -305,13 +305,16 @@
             </div>
           </div>
 
+          <div class="max-w-screen-md mx-auto px-3 mt-10">
+            <?php include("faq.php") ?>
+          </div>
 
           <div class="bg-gray-100 py-4">
             <div class="max-w-screen-md mx-auto px-3">
               <h2 class="text-center text-2xl font-bold pt-12">
                 <span class="inline-block pb-3 uppercase">SEMPLICE, FUNZIONALE, intuitivo, adatto a tutti!</span>
               </h2>
-              <?php include("recensioni.php") ?>
+              <?#php include("recensioni.php") ?>
               <p class="mx-auto text-center">
                 <button type="submit" class="btn-animate btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   <?php if ($upsell == true) { ?>
@@ -326,6 +329,7 @@
           </div>
         </div>
       </form>
+
     </div>
   </div>
   <?php include("../shared/footer.php") ?>

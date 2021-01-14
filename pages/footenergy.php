@@ -3,6 +3,7 @@
   class LANDING {};
   redirect_has_bought();
   $title_product = "Foot Energy";
+  $average_rating = "4.88 / 5";
   isUpsell();
 
   if (isUpsell() == true) {
@@ -45,7 +46,6 @@
     <?php include('../shared/meta.php'); ?>
   </head>
   <body class="landing-page">
-
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
         fbq('trackCustom', 'PageView Foot Energy');
@@ -58,25 +58,24 @@
       <form action="" method="post">
         <?php include('valutazione_media.php'); ?>
         <div class="max-w-screen-md mx-auto px-3">
-          <div class="text-center font-bold text-red-500 mt-4">
-            <?php howmanybuyer(973)?>.
-          </div>
           <h1 class="text-center text-2xl font-bold pt-6">
             Soffri di piedi e gambe gonfie? Dopo poche ore le senti già pesanti e affaticate? Hai problemi di circolazione?
           </h1>
+
+          <?php if(isADSimage()){?>
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-1-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
+          <?php }else{ ?>
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-1.jpg" alt="Foot Energy" class="mx-auto w-full">
+          <?php } ?>
 
           <p class="p-3">
             Utilizzando Foot Energy ogni giorno potrai notare subito i
             benefici sul tuo corpo. <strong>I muscoli delle gambe saranno più rilassati
             e forti</strong>, la circolazione sanguigna migliorerà e <strong>non avvertirai più
             quella sgradevole sensazione di gonfiore e pesantezza a gambe e piedi</strong>.
-            Prendersi cura del proprio corpo non è mai stato così rilassante!
           </p>
-          <?php if(isADSimage()){?>
-            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-1-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
-          <?php }else{ ?>
-            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-1.jpg" alt="Foot Energy" class="mx-auto w-full">
-          <?php } ?>
+
+          <h3 class="p-3 font-bold text-center text-2xl">Prendersi cura del proprio corpo non è mai stato così rilassante!</h3>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6">
             <div class="flex-1 text-center uppercase font-bold border">
@@ -88,7 +87,7 @@
             <div class="flex-1 text-center uppercase font-bold border">
               <h3 class="p-3 text-xl text-center">
                 MIGLIORA IL TONO MUSCOLARE
-                <!-- miglioramento della circolazione sanguigna -->
+            #    <!-- miglioramento della circolazione sanguigna -->
               </h3>
             </div>
             <div class="flex-1 text-center uppercase font-bold border">
@@ -99,8 +98,11 @@
             </div>
           </div>
           <h2 class="text-center p-3 font-bold text-2xl text-red-600">
-            Solo per oggi il MASSAGGIATORE PER PIEDI “EMS”  €69.00 invece di <strike>€230.00</strike>
+            Solo per oggi il MASSAGGIATORE PER PIEDI “EMS” a €69.00 invece di <strike>€197.00</strike>
           </h2>
+          <div class="text-center">
+            <?php howmanybuyer(1732)?>.
+          </div>
           <div class="max-w-screen-sm mx-auto px-3">
             <?php include("../shared/progress-short.php") ?>
           </div>
@@ -142,7 +144,7 @@
               <div class="flex-1 text-center p-6  bg-white text-black">
                 <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-5.jpg" alt="3 strati di materiale resistente" class="mx-auto">
                 <h3 class="font-bold uppercase py-3">Materiale di alta qualità</h3>
-              </div>
+              #</div>
             </div>
 
             <p class="p-3 mt-4 text-center text-2xl">
@@ -153,7 +155,7 @@
               <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                 Ordina Ora
               </button>
-              <h2 class="text-center p-3 font-bold text-2xl text-red-600">Solo per oggi €69.00 invece di <strike>€230.00</strike></h2>
+              <h2 class="text-center p-3 font-bold text-2xl text-red-600">Solo per oggi €69.00 invece di <strike>€197.00</strike></h2>
             </p>
           </div>
 
@@ -184,7 +186,7 @@
                   <h3 class="p-3 text-xl text-center">
                     Simula la sensazione di stimolare, massaggiare e
                     rilassare piedi, caviglie, tendini di Achille e muscoli del polpaccio.
-                  </h3>
+                  #</h3>
                   <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-7.jpg" class="mx-auto" alt="volumizza il tuo seno in 3 differenti livelli">
                 </div>
               </div>
@@ -195,7 +197,7 @@
             <div class="max-w-screen-md mx-auto px-3">
               <h2 class="text-center text-2xl font-bold pt-2">
                 <span class="inline-block pb-3 uppercase">
-                  COSA ASPETTI? APPROFITTA DELLA SUPER PROMO a €69.00 invece di <strike>€230.00</strike>!</span>
+                  COSA ASPETTI? APPROFITTA DELLA SUPER PROMO a €69.00 invece di <strike>€197.00</strike>!</span>
               </h2>
               <p class="mx-auto text-center">
                 <button type="submit" class="font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
@@ -209,23 +211,27 @@
           <div class="bg-gray-100 py-4">
             <div class="max-w-screen-md mx-auto px-3">
               <h2 class="text-center text-2xl font-bold pt-12">
-                <span class="inline-block pb-3 uppercase">RILASSA LE TUE TENSIONI MUSCOLARI E MIGLIORA LA CIRCOLAZIONE SANGUIGNA</span>
+                <span class="inline-block uppercase">RILASSA LE TUE TENSIONI MUSCOLARI E MIGLIORA LA CIRCOLAZIONE SANGUIGNA</span>
               </h2>
+              <p class="text-center p-3 mb-6 font-bold italic">Adatto anche per tutta la famiglia!</p>
               <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-8.jpg" class="mx-auto" alt="Cinturini">
             </div>
             <div class="max-w-screen-sm mx-auto px-3">
               <?php include("../shared/progress-short.php") ?>
+              <div class="text-center mt-4">
+                <?php howmanybuyer(973)?>.
+                <?php include('valutazione_media.php'); ?>
+                <?php include('recensioni.php'); ?>
+              </div>
             </div>
-            <div class="text-center font-bold text-red-500 mt-4">
-              <?php howmanybuyer(973)?>.
-            </div>
-          </div>
 
+          </div>
+          <?php include("icon-shipping.php") ?>
           <div class="bg-blue-700 text-white py-4">
             <div class="max-w-screen-md mx-auto px-3">
               <h2 class="text-center text-2xl font-bold pt-2">
                 <span class="inline-block pb-3 uppercase">
-                  COSA ASPETTI? APPROFITTA DELLA SUPER PROMO a €69.00 invece di <strike>€230.00</strike>!</span>
+                  COSA ASPETTI? APPROFITTA DELLA SUPER PROMO a €69.00 invece di <strike>€197.00</strike>!</span>
               </h2>
               <p class="mx-auto text-center">
                 <button type="submit" class="font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
@@ -234,6 +240,9 @@
                 <span class="block py-3">🚚 Spedizione gratuita</span>
               </p>
             </div>
+          </div>
+          <div class="max-w-screen-md mx-auto px-3 mt-10">
+            <?php include("faq.php") ?>
           </div>
         </div>
       </form>

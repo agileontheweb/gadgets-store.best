@@ -59,7 +59,6 @@
         $text_price = "Incredibile! Risparmia 99.00€ acquista a soli 169€!";
         include("upsell_message.php");
       ?>
-
       <form action="drone-x-tactical.php" method="post" accept-charset="utf-8" role="form">
         <?php include('valutazione_media.php'); ?>
         <div class="hidden">
@@ -76,7 +75,7 @@
         </div>
 
         <div class="max-w-screen-md mx-auto">
-           <h1 class="text-center text-2xl font-bold pt-12 text-gray-600">
+           <h1 class="text-center text-2xl font-bold pt-6">
              <span class="inline-block border-b-4 border-gray-600 pb-3">IL NUOVO DRONE MILITARE</span>
            </h1>
           <p class="p-3">
@@ -140,7 +139,7 @@
               </div>
             </div>
             <p class="mx-auto text-center my-6">
-              <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+              <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                 <?php if (isUpsell()) { ?>
                   Aggiungi all'ordine
                 <?php }else { ?>
@@ -209,7 +208,7 @@
               <img src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-3.png" class="mx-auto" alt="Drone">
 
               <p class="mx-auto text-center my-6">
-                <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+                <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
@@ -224,7 +223,7 @@
               <img src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-4.png" class="mx-auto" alt="Drone">
 
               <p class="mx-auto text-center my-6">
-                <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+                <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
@@ -297,7 +296,7 @@
               </div>
 
               <p class="mx-auto text-center my-6">
-                <button type="submit" class="btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+                <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   <?php if (isUpsell()) { ?>
                     Aggiungi all'ordine
                   <?php }else { ?>
@@ -318,10 +317,10 @@
                         <h3 class="text-sm text-gray-500 text-center text-red-600 pb-6 font-bold">Sconto 50%</h3>
                         <img class="mx-auto" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-5.png" alt="Drone">
                       </div>
-                      <p class="text-center mt-4">Spedizione Gratuita</p>
+                      <p class="text-center mt-4">🚚 Spedizione gratuita</p>
                       <div class="block flex items-center p-8 pt-0  uppercase">
 
-                        <button type="submit" class="text-center btn-submit-to-forms mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
+                        <button type="submit" class="btn-submit-to-forms font-bold text-center mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
                           <?php if (isUpsell()) { ?>
                             Aggiungi all'ordine
                          <?php }else { ?>
@@ -446,7 +445,7 @@
                       <h3 class="text-sm text-gray-500 text-center pb-6 text-red-600 pb-6 font-bold">Risparmi €39.00</h3>
                       <img class="mx-auto" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-5.png" alt="Drone">
                       <div class="block flex items-center p-8  uppercase">
-                        <button type="submit" class="text-center btn-submit-to-forms mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
+                        <button type="submit" class="text-center btn-submit-to-forms font-bold mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
                           Ordina Subito
                         </button>
                       </div>
@@ -457,6 +456,9 @@
           </div>
         </div>
       </form>
+    </div>
+    <div class="max-w-screen-md mx-auto px-3 mt-10">
+      <?php include("faq.php") ?>
     </div>
   </div>
   <?php include("../shared/footer.php") ?>

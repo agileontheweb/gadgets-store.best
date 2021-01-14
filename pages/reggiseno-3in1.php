@@ -4,6 +4,7 @@
   redirect_has_bought();
   $title_product = "Reggiseno Lovely bra 3 in 1";
   $average_rating = "4.78 / 5";
+  $xml = simplexml_load_file("../xml/benessere.xml") or die("Error: Cannot create object");
   isUpsell();
 
   if (isUpsell() == true) {
@@ -46,7 +47,6 @@
     <?php include('../shared/meta.php'); ?>
   </head>
   <body class="landing-page">
-
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
         fbq('trackCustom', 'PageView Reggiseno 3in1 Page');
@@ -77,7 +77,7 @@
             Grazie alle spalline più larghe di un normale reggiseno, Lovely Bra è
             super comodo e non lascia quei fastidiosi segni sul tuo corpo!
           </p>
-          
+
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6">
             <div class="flex-1 text-center uppercase font-bold border">
               <h3 class="p-3 text-xl text-center">
@@ -264,11 +264,14 @@
             <div class="max-w-screen-sm mx-auto px-3">
               <?php include("../shared/progress-short.php") ?>
             </div>
-            <div class="text-center mt-4">
-              <?php howmanybuyer(1732)?>.
+
+            <div class="max-w-screen-md mx-auto px-3 mt-4">
+              <?php howmanybuyer(973)?>.
               <?php include('valutazione_media.php'); ?>
+              <?php include('recensioni.php'); ?>
             </div>
           </div>
+          <?php include("icon-shipping.php") ?>
           <div class="bg-pink-700 text-white py-4">
             <div class="max-w-screen-md mx-auto px-3">
               <p class="text-center">Ancora per pochi giorni LOVELY BRA è in offerta</p>
