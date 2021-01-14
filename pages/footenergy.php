@@ -4,6 +4,7 @@
   redirect_has_bought();
   $title_product = "Foot Energy";
   $average_rating = "4.88 / 5";
+  $xml = simplexml_load_file("../xml/benessere.xml") or die("Error: Cannot create object");
   isUpsell();
 
   if (isUpsell() == true) {
