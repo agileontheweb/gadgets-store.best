@@ -3,6 +3,7 @@
   class LANDING {};
   redirect_has_bought();
   $title_product = "Drone X Tactical";
+  $average_rating = "4.92 / 5";
 
   if (isUpsell()) {
     $name = $_GET['name'];
@@ -60,6 +61,7 @@
       ?>
 
       <form action="drone-x-tactical.php" method="post" accept-charset="utf-8" role="form">
+        <?php include('valutazione_media.php'); ?>
         <div class="hidden">
           <div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
           <input type="hidden" name="fingerprint" id="fingerprint" value="">

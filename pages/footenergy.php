@@ -56,6 +56,7 @@
 
     <div>
       <form action="" method="post">
+        <?php include('valutazione_media.php'); ?>
         <div class="max-w-screen-md mx-auto px-3">
           <div class="text-center font-bold text-red-500 mt-4">
             <?php howmanybuyer(973)?>.

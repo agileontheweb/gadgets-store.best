@@ -2,7 +2,7 @@
   include("../settings.php");
   class LANDING {};
   redirect_has_bought();
-
+  $average_rating = "4.18 / 5";
   $title_product = "Smartwatch X-W 6.0";
 
   if (isUpsell() == true) {
@@ -59,7 +59,7 @@
         include("upsell_message.php");
       ?>
       <form action="" method="post">
-
+        <?php include('valutazione_media.php'); ?>
         <div class="max-w-screen-md mx-auto px-3">
           <h1 class="text-center text-2xl font-bold pt-12">
               Che tu sia uno sportivo, una manager, un ragazzo, una madre di famiglia,
