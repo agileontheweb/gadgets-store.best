@@ -25,7 +25,8 @@
       <div class="card-body">
         <p>Per ordinare <?php echo $title_product ?> è necessario <button type="submit" class="underline font-bold text-blue-500">compilare il modulo</button>
           su questo sito autorizzato alla vendita di questo prodotto, oppure acquistare <a href="<?php echo $getAffiliateLink; ?>" class="underline font-bold text-blue-500" target="blank">dal sito ufficiale.</a></p>
-        <i class="block text-sm mt-2">Devi inserire i tuoi dati anagrafici, l’indirizzo di spedizione, ed un recapito telefonico. Dopo averlo inviato, un operatore del servizio clienti provvederà a richiamarti in breve tempo per verificare insieme a te i dati inseriti e procedere all’invio del prodotto.</i>
+        <i class="block text-sm mt-2">Devi inserire i tuoi dati anagrafici, l’indirizzo di spedizione, ed un recapito telefonico. Dopo l'invio del modulo
+          di acquisto un operatore del servizio clienti provvederà a richiamarti in breve tempo per verificare insieme a te i dati inseriti e procedere all’invio del prodotto.</i>
       </div>
     </div>
   </div>
