@@ -30,8 +30,8 @@
   $quantity = 1;
   $price = "16.00";
   $img = $projectPath . $projectPathImg . "fornetto-tognana-entrambi.jpg";
-  $extra = null;
-  $upsell_page = "affilacoltelli-nippo.php?upsell";
+  $extra = "<mark>Fornirai all'operatrice telefonica il formato della pentola (rettangolare o rotonda)</mark>";
+  $upsell_page = "ups-affilacoltelli-nippo.php?upsell";
 
   if (isUpsell() == true) {
     sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
@@ -97,14 +97,13 @@
             </div>
           </div>
           <h2 class="text-center p-3 font-bold text-2xl text-red-600">
-            L'offerta è limitata , fino ad esaurimento scorte !
             Acquista a soli <span class="font-bold text-green-600">€69.90</span> invece di <strike>€89.90</strike>
           </h2>
           <div class="text-center">
             <?php howmanybuyer(1429)?>.
           </div>
           <div class="max-w-screen-sm mx-auto px-3">
-            <?php include("../shared/progress-short.php") ?>
+            <?#php include("../shared/progress-short.php") ?>
           </div>
           <p class="mx-auto text-center my-6">
             <button type="submit" class="btn-animate btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
@@ -158,11 +157,10 @@
           </div>
 
             <p class="mx-auto text-center my-6">
-              <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
+              <button type="submit" class="btn-animate btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                 Ordina Ora
               </button>
               <h2 class="text-center p-3 font-bold text-2xl text-red-600">
-                L'offerta è limitata , fino ad esaurimento scorte !
                 Acquista a soli <span class="font-bold text-green-600">€69.90</span> invece di <strike>€89.90</strike>
               </h2>
             </p>
@@ -204,7 +202,7 @@
               <p class="text-center">Ancora per pochi giorni...</p>
               <h2 class="text-center text-2xl font-bold pt-2">
                 <span class="inline-block pb-3 uppercase">
-                  Promozione limitata fino ad esaurimento scorte! Acquista a soli €69.90 invece di <strike>€89.90</strike></span>
+                  Acquista a soli €69.90 invece di <strike>€89.90</strike></span>
               </h2>
               <p class="mx-auto text-center">
                 <button type="submit" class="font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
@@ -284,7 +282,7 @@
             </div>
 
             <div class="max-w-screen-sm mx-auto px-3">
-              <?php include("../shared/progress-short.php") ?>
+              <?#php include("../shared/progress-short.php") ?>
             </div>
 
             <div class="max-w-screen-md mx-auto px-3 mt-4 text-center">
@@ -299,10 +297,10 @@
               <p class="text-center">Ancora per pochi giorni il Fornetto 10in1 è in offerta</p>
               <h2 class="text-center text-2xl font-bold pt-2">
                 <span class="inline-block pb-3 uppercase">
-                  Promozione limitata fino ad esaurimento scorte! Acquista a soli €69.90 invece di <strike>€89.90</strike>
+                  Acquista a soli €69.90 invece di <strike>€89.90</strike>
                 </span>
               </h2>
-              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-entrambi.jpg" alt="Tognana 2 padelle" class="mx-auto w-full">
+              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-entrambi.jpg" alt="Tognana 2 padelle" class="mx-auto w-ful md:max-w-md">
               <p class="mx-auto text-center">
                 <button type="submit" class="btn-animate font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   Clicca qui per compilare il modulo d'acquisto

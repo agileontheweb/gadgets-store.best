@@ -47,7 +47,7 @@
   <body class="landing-page">
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
-        fbq('trackCustom', 'PageView Fornetto 10in1 Page');
+        fbq('track', 'Purchase ' , {currency: "EUR", value: <?php echo $price; ?>});
       </script>
     <?php } ?>
 

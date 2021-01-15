@@ -26,8 +26,6 @@
 		$url_product_api = $_POST["url_product_api"];
 		$upsell_page = $_POST["upsell_page"];
 		$url_for_facebook_event_purchase = $_POST["url_for_facebook_event_purchase"];
-
-
 		sendRequest($title_product, $price, $name, $surname, $phone, $quantity, $address, $zipcode, $city, $url_product_api, $upsell_page, $url_for_facebook_event_purchase);
 	}
 
@@ -50,11 +48,9 @@
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 		$output = curl_exec($ch);
 		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
 		if ($httpcode == 200){
-
 			if(!empty($upsell_page)){
-				header("Location: $upsell_page?upsell&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
+				header("Location: $upsell_page?upsell&$url_for_facebook_event_purchase&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode");
 			}else{
 				header("Location: ordine-confermato.php?$url_for_facebook_event_purchase&price=$price&name=$name");
 			}
@@ -127,6 +123,7 @@
 			</div>
 		<?php }else{ ?>
 			<input type="hidden" name="quantity" value="<?php echo $quantity; ?>">
+			<?php echo $extra; ?>
 		<?php } ?>
 
 		<!-- <div class="d-flex align-items-center" data-toggle="lightbox">

@@ -6,7 +6,7 @@ $(document).ready(function(){
     $('#myCarousel').carousel();
   }
 
-  if($("body").hasClass("landing-page")){
+  if($("body").hasClass("landing-page") || $(".progress-short").lenght >= 0){
     showProgressBarRemaingPieces();
   }
 

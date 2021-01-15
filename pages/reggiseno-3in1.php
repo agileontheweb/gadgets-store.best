@@ -266,7 +266,7 @@
             </div>
 
             <div class="max-w-screen-md mx-auto px-3 mt-4">
-              <?php howmanybuyer(973)?>.
+              <?php howmanybuyer(1732)?>.
               <?php include('valutazione_media.php'); ?>
             </div>
           </div>

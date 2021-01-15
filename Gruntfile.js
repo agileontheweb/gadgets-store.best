@@ -56,8 +56,8 @@ module.exports = function(grunt) {
 
 	//create default task
 	//grunt.registerTask("default", ["concat"], ["imagemin"]);
-	// grunt.registerTask("default", ["concat"]);
-	grunt.registerTask("default", ["imagemin"]);
+	 grunt.registerTask("default", ["concat"]);
+	//grunt.registerTask("default", ["imagemin"]);
 //	grunt.registerTask("default", ["cssmin"]);
 
 };

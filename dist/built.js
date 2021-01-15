@@ -296,14 +296,15 @@ function countDown(){
 	});
 };
 
-
+$(document).ready(function(){
   gdprCookie();
   countDown();
+
   if($('#myCarousel').lenght >= 0){
     $('#myCarousel').carousel();
   }
 
-  if($("body").hasClass("landing-page")){
+  if($("body").hasClass("landing-page") || $(".progress-short").lenght >= 0){
     showProgressBarRemaingPieces();
   }
 
@@ -315,6 +316,25 @@ function countDown(){
     }, { threshold: [0] });
     observer.observe(document.querySelector(".progress-short"));
   }
+
+  const btns = document.querySelectorAll('.btn-animate');
+
+  observer1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        console.log('in the view');
+        $(".btn-animate").addClass("animate__animated animate__wobble");
+      } else {
+        $(".btn-animate").removeClass("animate__animated animate__wobble");
+        console.log('out of view');
+      }
+    });
+  });
+
+  btns.forEach(btn => {
+    observer1.observe(btn);
+  });
+
 
   function animateProgressBar(){
     flag=true;
@@ -338,3 +358,4 @@ function countDown(){
     $(".loadingpage").show();
     $('form').submit();
   });
+});

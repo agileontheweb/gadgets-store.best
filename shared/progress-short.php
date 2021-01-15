@@ -1,4 +1,4 @@
-<div class="relative p-3 my-3 progress-short mx-auto text-center">
+<div class="relative p-3 my-3 mx-auto text-center progress-short">
   <p class="font-semibold text-center inline-block">
     Disponibilità giornaliera: 100 pezzi
   </p>
