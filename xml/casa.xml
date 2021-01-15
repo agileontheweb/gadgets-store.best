@@ -23,6 +23,17 @@
     <produttore>https://www.ilmontestore.sm</produttore>
   </record>
 
+  <record id="fornetoo10in1">
+    <name>Fornetto 10in1</name>
+    <description>Tognana vi presenta la nuova linea di padella 10in1.</description>
+    <image>fornetto-tognana-rettangolare.jpg</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/DcB</linkaffiliate>
+    <link>padella-tognana-fornetto10in1.php</link>
+    <offer>Sconto 20%</offer>
+    <prezzo>€69.90</prezzo>
+    <produttore>https://italoshop.it/</produttore>
+  </record>
+
 
   <record>
     <name>Suola Clean</name>
