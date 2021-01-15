@@ -1,8 +1,9 @@
 <?php
   include("../settings.php");
+  redirect_has_bought();
 
   $_SESSION['has_bought'] = "has_bought";
-  
+
   if(isset($_GET['name'])) {$name = $_GET['name'];}
   if(isset($_GET['title_product'])) {$title_product = $_GET['title_product'];}
   if(isset($_GET['price'])) {$price = $_GET['price'];}

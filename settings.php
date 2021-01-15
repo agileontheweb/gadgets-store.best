@@ -14,6 +14,7 @@
 	$visited_newsletter_page = "";
 	$store_link_upsell = "";
 	session_start();
+	$upsell = false;
 
 	if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
 		$projectPath = "http://localhost:8888/gadgets-store.best/";
@@ -72,38 +73,30 @@
 		}
 
 		if (isset($_SESSION['has_bought_upsell']) == true && class_exists('FORMS')) {
-			echo "DEVI RIMANDARE ALLA UPSELL";
 			$url = $_SESSION['store_link_upsell'];
+			$_SESSION['has_bought_upsell_2_time'] = "has_bought_upsell_2_time";
 			header("Location: $url");
 		}
 
-		if (isset($_SESSION['has_bought']) == true ) {
-	    $expireAfter = 1;
-	    header("Location: ordine-confermato.php?$url_for_facebook_event_purchase&price=$price&name=$name");
-	    if(isset($_SESSION['last_action'])){
-	      $secondsInactive = time() - $_SESSION['last_action'];
-	      $expireAfterSeconds = $expireAfter * 60;
-	      if($secondsInactive >= $expireAfterSeconds){
-	        session_unset();
-	        session_destroy();
-	        unset($_SESSION['has_bought']);
-	      }
-	    }
-	  }
-	  $_SESSION['last_action'] = time();
+		if (isset($_SESSION['has_bought_upsell_2_time']) == true && class_exists('UPSELL') ||
+				isset($_SESSION['has_bought_upsell']) == true && class_exists('UPSELL')) {
+			header("Location: ordine-confermato.php?$url_for_facebook_event_purchase&price=$price&name=$name");
+		}
 	}
 
 	function remove_session_has_bought(){
 		unset($_SESSION['has_bought']);
 		unset($_SESSION['has_bought_upsell']);
-		unset($_SESSION['last_action']);
+		unset($_SESSION['has_bought_upsell_2_time']);
 	}
 
-	$upsell = false;
+
 
 	function colorBarTop(){
 		if (class_exists('LANDING') || class_exists('FORMS')) {
 			$bg_color = "bg-red-500";
+		}elseif (class_exists('UPSELL')){
+			$bg_color = "bg-red-800";
 		}else{
 			$bg_color = "bg-blue-500";
 		}
@@ -194,6 +187,8 @@
 	function messageTop(){
 		if (class_exists('LANDING') || class_exists('FORMS')) {
 			$message = 'QUESTA OFFERTA SCADE TRA: <div class="inline-block ml-1 count-down font-bold"><span class="clock"></span></div>';
+		}elseif(class_exists('UPSELL')){
+			$message = "<span class='pl-3'>❌ ATTENZIONE NON CHIUDERE QUESTA PAGINA ❌</span>";
 		}else{
 			$message = "🚚 <span class='pl-3'>Spedizione Gratuita su tanti prodotti</span>";
 		}
@@ -258,7 +253,7 @@
 	}
 
 	function showFacebook(){
-		if(class_exists('LANDING') || class_exists('FORMS')){
+		if(class_exists('LANDING') || class_exists('FORMS') || class_exists('UPSELL')){
 			echo "hidden";
 		}
 	}
