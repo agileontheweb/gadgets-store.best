@@ -16,6 +16,13 @@
     <name>Reggiseno 3 in 1</name>
     <description>Lovely bra è il Reggiseno ad effetto push-up più comodo sul mercato.</description>
     <image>reggiseno3in1.jpg</image>
+    <average_rating>4.78 / 5</average_rating>
+    <form_short>false</form_short>
+    <url_product_api>dmc_lovelybra3in1</url_product_api>
+    <privacy>https://www.ilmontestore.sm/privacy-policy</privacy>
+    <quantity>1</quantity>
+    <price_affiliate>18.00</price_affiliate>
+    <extra></extra>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZW</linkaffiliate>
     <link>reggiseno-3in1.php</link>
     <offer>Promo 3x1</offer>
@@ -44,10 +51,17 @@
     <name>Foot Energy</name>
     <description>Tappetino per i piedi a impulsi magnetici che sollecitano e stimolano i muscoli.</description>
     <image>footenergy-1.jpg</image>
+    <average_rating>4.98 / 5</average_rating>
+    <form_short>false</form_short>
+    <url_product_api>nst_footenergy</url_product_api>
+    <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
+    <quantity>1</quantity>
+    <price_affiliate>17.00</price_affiliate>
+    <extra></extra>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZX</linkaffiliate>
     <link>footenergy.php</link>
     <offer>Sconto 70%</offer>
-    <prezzo>€69.00</prezzo>
+    <prezzo>€69.90</prezzo>
     <produttore>https://advmarket.shop</produttore>
 
     <recensione category="footenergy">
@@ -70,12 +84,20 @@
   <record id="sentipiu">
       <name>Senti Più 30x</name>
       <description>L’amplificatore di suoni da inserire direttamente nel tuo orecchio.</description>
-      <image>sentipiu30x.jpg</image>
+      <image>sentipiu-1.jpg</image>
+      <average_rating>4.48 / 5</average_rating>
+      <form_short>false</form_short>
+      <url_product_api>dmc_sentipiù30x</url_product_api>
+      <privacy>https://www.dmcshop.it/privacy-policy/</privacy>
+      <quantity>1</quantity>
+      <price_affiliate>18.00</price_affiliate>
+      <extra></extra>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr9</linkaffiliate>
       <link>sentipiu30x.php</link>
       <offer>Sconto 30%</offer>
       <prezzo>€69.90</prezzo>
       <produttore>https://webshopitaly.sm</produttore>
+
   </record>
 
   <record>
