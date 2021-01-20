@@ -56,7 +56,7 @@
 
     <?php include("../shared/navbar.php") ?>
 
-    <div class="">
+    <div class="text-xl leading-relaxed">
       <form action="padella-tognana-fornetto10in1.php" method="post">
         <?php include('valutazione_media.php'); ?>
         <div class="max-w-screen-md mx-auto px-3">
@@ -116,10 +116,8 @@
         <div class="bg-gray-100 py-4">
           <div class="max-w-screen-md mx-auto px-3">
             <p class="p-1 text-center text-2xl">
-              Che tu sia un genitore o un single
-              questo è il prodotto per esprimere tutta la tua creatività
-              in cucina.
-              <strong>Inoltre è adatto per ogni occasione e ogni stagione.</strong>
+              Esprimi tutta la tua creatività in cucina.
+              <strong>Adatto per ogni occasione e ogni stagione.</strong>
            </p>
 
             <h2 class="text-center text-2xl font-bold pt-12">
@@ -216,7 +214,7 @@
           <div class="bg-gray-100 py-4">
             <div class="max-w-screen-md mx-auto px-3">
               <h2 class="text-center text-2xl font-bold pt-12">
-                <span class="inline-block pb-3 uppercase">SEMPLICE e FUNZIONALE, adatto a giovani e famiglie!</span>
+                <span class="inline-block pb-3 uppercase">SEMPLICE, FUNZIONALE + SPAZIO !</span>
               </h2>
 
               <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-strati.jpg" class="mx-auto max-w-xs " alt="Fornetto Strati">
