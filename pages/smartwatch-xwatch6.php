@@ -2,41 +2,22 @@
   include("../settings.php");
   class LANDING {};
   redirect_has_bought();
-  $average_rating = "4.18 / 5";
-  $title_product = "Smartwatch X-W 6.0";
-  $xml = simplexml_load_file("../xml/tecnologia.xml") or die("Error: Cannot create object");
-  $id="xw6.0";
+  $path_xml = "../xml/tecnologia.xml";
+  $id_temp="xw6.0";
+  $upsell_page = "";
 
-  if (isUpsell() == true) {
-    $name = $_GET['name'];
-    $surname = $_GET['surname'];
-    $phone = $_GET['phone'];
-    $address = $_GET['address'];
-    $city = $_GET['city'];
-    $zipcode = $_GET['zipcode'];
-  }
-
-  $url_product_api = "bgood_xwatch6.0";
   $selector = true;
   $selector_1 = "1 XW6.0 €59.90";
   $selector_2 = "2 XW6.0 €79.90";
   $selector_3 = "3 XW6.0 €99.90";
-  $selector_1_value = "1";
-  $selector_2_value = "2";
-  $selector_3_value = "3";
+  $selector_value_1 = "1";
+  $selector_value_2 = "2";
+  $selector_value_3 = "3";
   $quantity_upsell = "1";
-  $privacy = "https://www.ilmontestore.sm/privacy-policy/";
-  $quantity = null;
-  $price = "18.00";
-  $img = $projectPath . $projectPathImg . "xw60-sceglistile.jpg";
-  $extra = " - Colore e cinturini potrai deciderli al telefono.";
-  $upsell_page = "";
 
-  if (isUpsell() == true) {
-    sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
-  }else{
-    passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
-  }
+  include("../inc/get_product_data.php");
+  include("../inc/is_upsell.php");
+
 ?>
 
 <!doctype html>

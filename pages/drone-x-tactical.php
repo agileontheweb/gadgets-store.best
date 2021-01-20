@@ -2,42 +2,12 @@
   include("../settings.php");
   class LANDING {};
   redirect_has_bought();
-  $title_product = "Drone X Tactical";
-  $average_rating = "4.92 / 5";
-  $xml = simplexml_load_file("../xml/tecnologia.xml") or die("Error: Cannot create object");
-  $id="drone";
-
-  if (isUpsell()) {
-    $name = $_GET['name'];
-    $surname = $_GET['surname'];
-    $phone = $_GET['phone'];
-    $address = $_GET['address'];
-    $city = $_GET['city'];
-    $zipcode = $_GET['zipcode'];
-  }
-
-  $url_product_api = "bgood_xdrone";
-  $selector = true;
-  $selector_1 = "1 Tactical Drone €99.00";
-  $selector_2 = "2 Tactical Drone €159.00";
-  $selector_3 = "1 Kit completo €169.00";
-  $selector_1_value = "1";
-  $selector_2_value = "2";
-  $selector_3_value = "1k";
-  $quantity_upsell = "1k";
-  $privacy = "https://www.ilmontestore.sm/privacy-policy/";
-  $quantity = null;
-  $price = "20.00";
-  $img = $projectPath . $projectPathImg . "drone-3.png";
-  $extra = null;
+  $path_xml = "../xml/tecnologia.xml";
+  $id_temp="drone";
   $upsell_page = "smartwatch-xwatch6.php?upsell";
-
-  if (isUpsell()) {
-    sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
-  }else{
-    passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
-  }
-
+  $quantity_upsell = "1k";
+  
+  include("../inc/get_product_data.php");
 ?>
 
 <!doctype html>

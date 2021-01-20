@@ -2,43 +2,13 @@
   include("../settings.php");
   class LANDING {};
   redirect_has_bought();
-  $title_product = "Rigenera Pro";
-  $average_rating = "4.90 / 5";
-  $xml = simplexml_load_file("../xml/casa.xml") or die("Error: Cannot create object");
-  $id="rigenerapro";
-  isUpsell();
 
-  if (isUpsell() == true) {
-    $name = $_GET['name'];
-    $surname = $_GET['surname'];
-    $phone = $_GET['phone'];
-    $address = $_GET['address'];
-    $city = $_GET['city'];
-    $zipcode = $_GET['zipcode'];
-  }
+  $path_xml = "../xml/casa.xml";
+  $id_temp="rigenerapro";
+  $upsell_page = ""; //spostare in xml?
 
-  $url_product_api = "dmc_rigenerapro2x1";
-  $selector = false;
-  $selector_1 = null;
-  $selector_2 = null;
-  $selector_3 = null;
-  $selector_1_value = null;
-  $selector_2_value = null;
-  $selector_3_value = null;
-  $quantity_upsell = null;
-  $privacy = "https://webshopitaly.sm/documenti/2-privacy-policy";
-  $quantity = 2 ;
-  $price = "17.00";
-  $img = $projectPath . $projectPathImg . "rigenera-pro.jpg";
-  $extra = "";
-  $upsell_page = "";
-
-  if (isUpsell() == true) {
-    sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
-  }else{
-    passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
-  }
-
+  include("../inc/get_product_data.php");
+  include("../inc/is_upsell.php");
  ?>
 <!doctype html>
 <html lang="it">
@@ -57,7 +27,7 @@
     <?php include("../shared/navbar.php") ?>
 
     <div class="text-xl leading-relaxed">
-      <form action="padella-tognana-fornetto10in1.php" method="post">
+      <form action="" method="post">
         <?php include('valutazione_media.php'); ?>
         <div class="max-w-screen-md mx-auto px-3">
           <h1 class="text-center text-2xl pt-0 mb-6">

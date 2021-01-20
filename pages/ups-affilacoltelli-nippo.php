@@ -4,6 +4,8 @@
   redirect_has_bought();
 
   $title_product = "Affila Coltelli Nippo";
+  $form_short = $_GET['form_short'];
+
   isUpsell();
   if (isUpsell() == true) {
     $name = $_GET['name'];
@@ -19,9 +21,9 @@
   $selector_1 = null;
   $selector_2 = null;
   $selector_3 = null;
-  $selector_1_value = null;
-  $selector_2_value = null;
-  $selector_3_value = null;
+  $selector_value_1 = null;
+  $selector_value_2 = null;
+  $selector_value_3 = null;
   $quantity_upsell = null;
   $privacy = "https://webshopitaly.sm/documenti/2-privacy-policy";
   $quantity = 1;
@@ -31,9 +33,9 @@
   $upsell_page = "";
 
   if (isUpsell() == true) {
-    sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price);
+    sendFormsUpsell($title_product,$name,$surname,$phone,$address,$city,$zipcode,$url_product_api,$quantity_upsell,$price,$form_short);
   }else{
-    passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_1_value,$selector_2_value,$selector_3_value,$privacy,$quantity,$price,$img,$extra,$upsell_page);
+    passDataForms($title_product,$url_product_api,$selector,$selector_1,$selector_2,$selector_3,$selector_value_1,$selector_value_2,$selector_value_3,$privacy,$quantity,$price,$img,$extra,$upsell_page,$form_short);
   }
 
  ?>
