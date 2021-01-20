@@ -2,6 +2,39 @@ module.exports = function(grunt) {
 	const mozjpeg = require('imagemin-mozjpeg');
 
 	grunt.initConfig({
+		rsync: {
+
+			options: {
+				args: ["--verbose"],
+				exclude: [".git*","*.scss","node_modules"],
+				recursive: true
+			},
+
+			dist: {
+					options: {
+							src: "/",
+							dest: "/"
+					}
+			},
+
+			stage: {
+					options: {
+							src: "/",
+							dest: "/home/alespcql/dev.gadgets-store.best/",
+							host: "alespcql@185.61.154.214",
+							delete: true // Careful this option could cause data loss, read the docs!
+					}
+			},
+			
+			prod: {
+					options: {
+							src: "/",
+							dest: "/home/alespcql/www/gadgets-store.best/",
+							host: "alespcql@185.61.154.214",
+							delete: true // Careful this option could cause data loss, read the docs!
+					}
+			},
+
     concat: {
       dist: {
         src: [

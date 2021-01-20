@@ -22,11 +22,10 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-ftp-push": "^1.2.1",
     "gulp-imagemin": "^7.1.0"
   },
   "dependencies": {
-    "autoprefixer": "^10.2.1",
-    "postcss": "^8.2.4",
-    "tailwindcss": "^2.0.2"
+    "grunt-rsync": "^3.0.0"
   }
 }
