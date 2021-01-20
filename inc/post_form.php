@@ -18,9 +18,11 @@ function passDataForms(
                   ){
 
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if(!isset($selector)){
-      $selectors = "selector=$selector&selector_1=$selector_1&selector_value_1=$selector_value_1&selector_2=$selector_2&selector_value_2=$selector_value_2&selector_3=$selector_3&selector_value_3=$selector_value_3";
+    if(isset($selector_1)){
+      $selector = "true";
     }
+    $selectors = "selector=$selector&selector_1=$selector_1&selector_value_1=$selector_value_1&selector_2=$selector_2&selector_value_2=$selector_value_2&selector_3=$selector_3&selector_value_3=$selector_value_3";
+
     $custom_params = "&$selectors&title_product=$title_product&url_product_api=$url_product_api&privacy=$privacy&quantity=$quantity&price=$price&img=$img&extra=$extra&upsell_page=$upsell_page&form_short=$form_short";
     header("Location: forms.php?$custom_params");
   }

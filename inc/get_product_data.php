@@ -13,8 +13,16 @@ foreach($xml->children() as $product) {
     $product_image = $product->image;
     $img = $projectPath . $projectPathImg . $product_image;
 
+
     foreach($product->children() as $selector) {
-      if(!isset($selector)){
+      if($selector->attributes()->selector){
+        $selector_value_1 = $selector->selector_value_1;
+        $selector_value_2 = $selector->selector_value_2;
+        $selector_value_3 = $selector->selector_value_3;
+        $selector_1 =  $selector->selector_1;
+        $selector_2 =  $selector->selector_2;
+        $selector_3 =  $selector->selector_3;
+      }else{
         $selector = null;
         $selector_1 = null;
         $selector_2 = null;
@@ -23,18 +31,8 @@ foreach($xml->children() as $product) {
         $selector_value_2 = null;
         $selector_value_3 = null;
         $quantity_upsell = null;
-      }else{
-        #$selector = true;
-        $selector_value_1 = $selector->selector_value_1;
-        $selector_value_2 = $selector->selector_value_2;
-        $selector_value_3 = $selector->selector_value_3;
-        $selector_1 =  $selector->selector_1;
-        $selector_2 =  $selector->selector_2;
-        $selector_3 =  $selector->selector_3;
       }
     }
   }
 }
-
-include("is_upsell.php");
 ?>

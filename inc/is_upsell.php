@@ -1,7 +1,5 @@
 <?php
 
-
-
 isUpsell();
 
 if (isUpsell() == true) {

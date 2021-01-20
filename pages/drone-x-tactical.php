@@ -4,9 +4,10 @@
   redirect_has_bought();
   $path_xml = "../xml/tecnologia.xml";
   $id_temp="drone";
-  $upsell_page = "smartwatch-xwatch6.php?upsell";
-  $quantity_upsell = "1k";
+  $upsell_page = "";
+  #$quantity_upsell = "1k";
   include("../inc/get_product_data.php");
+  include("../inc/is_upsell.php");
 ?>
 
 <!doctype html>
