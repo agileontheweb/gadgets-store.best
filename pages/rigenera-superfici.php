@@ -17,7 +17,7 @@
     <meta name="description" content="RIGENERA PRO è Composto da resine disciolte in acqua e alcool. L'alcool  presente permette all'acqua di evaporare subito così da lasciare sulle superfici solo le resine che ridonano loro spessore." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body class="landing-page">
+  <body class="landing-page text-xl">
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
         fbq('trackCustom', 'PageView Rigenera Pro');

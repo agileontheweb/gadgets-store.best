@@ -17,7 +17,7 @@ include("../inc/is_upsell.php");
     <meta name="description" content="In offerta Speciale l'innovativo reggiseno 3 in 1. Comodo perchè senza ferretti, rivoluzionario effetto push-up con funzione contenitiva." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body class="landing-page">
+  <body class="landing-page text-xl">
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
         fbq('trackCustom', 'PageView Reggiseno 3in1 Page');

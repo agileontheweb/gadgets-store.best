@@ -1,19 +1,11 @@
 <?php
   include("../settings.php");
   class LANDING {};
+
   redirect_has_bought();
   $path_xml = "../xml/tecnologia.xml";
   $id_temp="xw6.0";
   $upsell_page = "";
-
-  $selector = true;
-  $selector_1 = "1 XW6.0 €59.90";
-  $selector_2 = "2 XW6.0 €79.90";
-  $selector_3 = "3 XW6.0 €99.90";
-  $selector_value_1 = "1";
-  $selector_value_2 = "2";
-  $selector_value_3 = "3";
-  $quantity_upsell = "1";
 
   include("../inc/get_product_data.php");
   include("../inc/is_upsell.php");
@@ -27,7 +19,7 @@
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body class="landing-page">
+  <body class="landing-page text-xl">
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
         fbq('trackCustom', 'PageView XW6.0 Page');

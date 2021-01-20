@@ -16,7 +16,7 @@
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body class="landing-page">
+  <body class="landing-page text-xl">
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
         fbq('trackCustom', 'PageView Foot Energy');

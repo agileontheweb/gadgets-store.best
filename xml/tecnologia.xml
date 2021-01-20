@@ -62,7 +62,7 @@
     <description>Smartwatch performante e intuitivo, avrai tutto ciò che ti occorre a portata di mano.</description>
     <image>xw60-sceglistile.jpg</image>
     <average_rating>4.88 / 5</average_rating>
-    <form_short>false</form_short>
+    <form_short>true</form_short>
     <url_product_api>bgood_xdrone</url_product_api>
     <privacy>https://www.ilmontestore.sm/privacy-policy</privacy>
     <quantity>null</quantity>
@@ -76,6 +76,16 @@
     <selector>true</selector>
     <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
     <produttore>https://www.ilmontestore.sm</produttore>
+
+    <selector selector="selector">
+      <selector_1>1 XW6.0 €59.90</selector_1>
+      <selector_2>2 XW6.0 €79.90</selector_2>
+      <selector_3>3 XW6.0 €99.90</selector_3>
+      <selector_value_1>1</selector_value_1>
+      <selector_value_2>2</selector_value_2>
+      <selector_value_3>3</selector_value_3>
+      <quantity_upsell>1</quantity_upsell>
+    </selector>
   </record>
 
   <record>

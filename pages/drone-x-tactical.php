@@ -17,7 +17,7 @@
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body class="landing-page">
+  <body class="landing-page text-xl">
 
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
@@ -93,9 +93,9 @@
             </p>
             <iframe height="349" class="w-full my-6" src="https://www.youtube.com/embed/r_f9QHMw0VY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+            <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 text-base">
               <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-mike-freizer.png" alt="Mike Freizer">
-              <div class="text-center space-y-2 sm:text-left text-black">
+              <div class="space-y-2 sm:text-left text-black">
                 <div class="space-y-0.5">
                   <p class="text-lg font-semibold">
                     MIKE FREIZER

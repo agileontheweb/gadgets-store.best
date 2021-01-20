@@ -46,7 +46,7 @@
     <meta name="description" content="In offerta Speciale l'innovativa padella della nuova linea Tognana in sconto 20%. Corpo in alluminio pressofuso con uno strato interno realizzato in microsfere di porcellana." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body class="landing-page">
+  <body class="landing-page text-xl">
     <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
       <script>
         fbq('track', 'Purchase ' , {currency: "EUR", value: <?php echo $price; ?>});
