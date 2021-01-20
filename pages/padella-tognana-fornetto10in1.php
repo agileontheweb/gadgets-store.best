@@ -28,7 +28,9 @@
 
     <div class="text-xl leading-relaxed">
       <form action="padella-tognana-fornetto10in1.php" method="post">
+
         <?php include('valutazione_media.php'); ?>
+
         <div class="max-w-screen-md mx-auto px-3">
           <h1 class="text-center text-2xl pt-0 mb-6">
             Finalmente!! Tognana presenta <span class="font-bold">la nuova linea di padelle 10in1</span>,
@@ -69,12 +71,15 @@
           <h2 class="text-center p-3 font-bold text-2xl text-red-600">
             Acquista a soli <span class="font-bold text-green-600">€69.90</span> invece di <strike>€89.90</strike>
           </h2>
+
           <div class="text-center">
-            <?php howmanybuyer(1429)?>.
+            <?php howmanybuyer(1429) ?>.
           </div>
+
           <div class="max-w-screen-sm mx-auto px-3">
-            <?#php include("../shared/progress-short.php") ?>
+            <?php include("../shared/progress-short.php") ?>
           </div>
+
           <p class="mx-auto text-center my-6">
             <button type="submit" class="btn-animate btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
               Ordina Ora

@@ -14,8 +14,9 @@
 
     <?php
     $getAffiliateLink = "";
+
     foreach($xml->children() as $record) {
-      if($record->attributes()->id == $id ){
+      if($record->attributes()->id == $id_temp ){
         $getAffiliateLink = $record->linkaffiliate;
       }
     }

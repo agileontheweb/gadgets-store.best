@@ -6,7 +6,6 @@
   $id_temp="drone";
   $upsell_page = "smartwatch-xwatch6.php?upsell";
   $quantity_upsell = "1k";
-  
   include("../inc/get_product_data.php");
 ?>
 
@@ -24,7 +23,6 @@
         fbq('trackCustom', 'PageView Drone X Tactical Page');
       </script>
     <?php } ?>
-
     <?php include("../shared/navbar.php") ?>
     <div>
       <?php
