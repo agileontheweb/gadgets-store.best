@@ -7,7 +7,7 @@ $(document).ready(function(){
   }
 
   if($("body").hasClass("landing-page") || $(".progress-short").lenght >= 0){
-    showProgressBarRemaingPieces();
+    // showProgressBarRemaingPieces();
   }
 
   function showProgressBarRemaingPieces(){
