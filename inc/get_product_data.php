@@ -9,10 +9,11 @@ foreach($xml->children() as $product) {
     $privacy = $product->privacy;
     $quantity = $product->quantity;
     $price = $product->price_affiliate;
+    $price = $product->prezzo;
     $extra = $product->extra;
     $product_image = $product->image;
     $img = $projectPath . $projectPathImg . $product_image;
-
+    $upsell_page = $product->upsell_page;
 
     foreach($product->children() as $selector) {
       if($selector->attributes()->selector){

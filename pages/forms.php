@@ -3,38 +3,14 @@
   class FORMS {};
   redirect_has_bought();
 
-  if(isset($_GET['form_short'])) {
-    $form_short = $_GET['form_short'];
-  }
-
-  if(isset($_GET['title_product'])) {
-    $title_product = $_GET['title_product'];
-  }
-
-  $url_product_api = $_GET['url_product_api'];
-  $price = $_GET['price'];
-
-
-  if(isset($_GET['selector'])) {
-    $selector = $_GET['selector'];
-  }else{
-    $selector = false;
-  }
-
-  if($selector == true){
-    $selector_1 = $_GET['selector_1'];
-    $selector_2 = $_GET['selector_2'];
-    $selector_3 = $_GET['selector_3'];
-    $selector_value_1 = $_GET['selector_value_1'];
-    $selector_value_2 = $_GET['selector_value_2'];
-    $selector_value_3 = $_GET['selector_value_3'];
-  }
-
-  $quantity = $_GET['quantity'];
-  $privacy = $_GET['privacy'];
-  $extra = $_GET['extra'];
+  $title_product = $_GET['title_product'];
   $upsell_page = $_GET['upsell_page'];
-  ?>
+  $img = $_GET['img'];
+
+  if(isset($_GET['form_short'])) {
+  	$form_short = $_GET['form_short'];
+  }
+?>
 
 <!doctype html>
 <html lang="it">
@@ -85,4 +61,3 @@
     <?php include("../shared/px-hotjar.php") ?>
   </body>
 </html>
-<?PHP echo $form_short; ?>

@@ -1,11 +1,9 @@
 <?php
   include("../settings.php");
   class LANDING {};
-
   redirect_has_bought();
   $path_xml = "../xml/tecnologia.xml";
   $id_temp="xw6.0";
-  $upsell_page = "";
 
   include("../inc/get_product_data.php");
   include("../inc/is_upsell.php");

@@ -1,30 +1,19 @@
 <?php
+
 function passDataForms(
-                  $title_product,
-                  $form_short,
-                  $url_product_api,
-                  $selector_1,
-                  $selector_2,
-                  $selector_3,
-                  $selector_value_1,
-                  $selector_value_2,
-                  $selector_value_3,
-                  $privacy,
-                  $quantity,
-                  $price,
-                  $img,
-                  $extra,
-                  $upsell_page
-                  ){
+                  $title_product, $form_short, $url_product_api, $selector_1, $selector_2, $selector_3,
+                  $selector_value_1, $selector_value_2, $selector_value_3, $privacy, $quantity, $img,
+                  $extra, $price, $upsell_page){
 
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if(isset($selector_1)){
-      $selector = "true";
-    }
-    $selectors = "selector=$selector&selector_1=$selector_1&selector_value_1=$selector_value_1&selector_2=$selector_2&selector_value_2=$selector_value_2&selector_3=$selector_3&selector_value_3=$selector_value_3";
+      if(isset($selector_1)){
+        $selector = "true";
+      }
 
-    $custom_params = "&$selectors&title_product=$title_product&url_product_api=$url_product_api&privacy=$privacy&quantity=$quantity&price=$price&img=$img&extra=$extra&upsell_page=$upsell_page&form_short=$form_short";
-    header("Location: forms.php?$custom_params");
+      $selectors = "selector=$selector&selector_1=$selector_1&selector_value_1=$selector_value_1&selector_2=$selector_2&selector_value_2=$selector_value_2&selector_3=$selector_3&selector_value_3=$selector_value_3";
+
+      $custom_params = "&img=$img&$selectors&title_product=$title_product&url_product_api=$url_product_api&privacy=$privacy&quantity=$quantity&price=$price&extra=$extra&upsell_page=$upsell_page&form_short=$form_short";
+      header("Location: forms.php?$custom_params");
   }
 }
 
@@ -53,8 +42,10 @@ function sendFormsUpsell(
     $address = $_POST["address"];
     $city = $_POST["city"];
     $zipcode = $_POST["zipcode"];
-    $quantity_upsell = $_POST["quantity"];
+    $quantity = $_POST["quantity"];
     $price = $_POST['price'];
+    $upsell_page = $_POST['upsell_page'];
+
 
     $url = "https://network.worldfilia.net/manager/inventory/buy/$url_product_api.json";
     $ch = curl_init($url);
@@ -62,7 +53,7 @@ function sendFormsUpsell(
         'source_id' => '07ff46bb6597',
         'name' => $name . " " . $surname,
         'phone' => $phone,
-        'quantity' => $quantity_upsell,
+        'quantity' => $quantity,
         'address' => $address,
         'zipcode' => $zipcode,
         'city' => $city

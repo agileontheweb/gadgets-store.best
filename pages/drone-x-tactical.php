@@ -4,10 +4,10 @@
   redirect_has_bought();
   $path_xml = "../xml/tecnologia.xml";
   $id_temp="drone";
-  $upsell_page = "";
-  #$quantity_upsell = "1k";
+
   include("../inc/get_product_data.php");
   include("../inc/is_upsell.php");
+
 ?>
 
 <!doctype html>
@@ -24,13 +24,16 @@
         fbq('trackCustom', 'PageView Drone X Tactical Page');
       </script>
     <?php } ?>
+
     <?php include("../shared/navbar.php") ?>
+    
     <div>
       <?php
         $text_price = "Incredibile! Risparmia 99.00€ acquista a soli 169€!";
         include("upsell_message.php");
       ?>
-      <form action="drone-x-tactical.php" method="post" accept-charset="utf-8" role="form">
+
+      <form action="" method="post" accept-charset="utf-8" role="form">
         <?php include('valutazione_media.php'); ?>
         <div class="hidden">
           <div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>

@@ -45,6 +45,7 @@
     <url_api_product>bgood_xdrone</url_api_product>
     <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
     <produttore>https://www.ilmontestore.sm</produttore>
+    <upsell_page>smartwatch-xwatch6.php</upsell_page>
 
     <selector selector="selector">
       <selector_1>1 Tactical Drone €99.00</selector_1>
@@ -62,20 +63,21 @@
     <description>Smartwatch performante e intuitivo, avrai tutto ciò che ti occorre a portata di mano.</description>
     <image>xw60-sceglistile.jpg</image>
     <average_rating>4.88 / 5</average_rating>
-    <form_short>true</form_short>
+    <form_short>false</form_short>
     <url_product_api>bgood_xdrone</url_product_api>
     <privacy>https://www.ilmontestore.sm/privacy-policy</privacy>
     <quantity>null</quantity>
-    <price_affiliate>18.00</price_affiliate>
-    <extra> - Colore e cinturini potrai deciderli al telefono.</extra>
+    <!-- <price_affiliate>18.00</price_affiliate> -->
+    <!-- <extra> - Colore e cinturini potrai deciderli al telefono.</extra> -->
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqD</linkaffiliate>
     <link>smartwatch-xwatch6.php</link>
     <offer>Sconto 50%</offer>
-    <prezzo>€59.90</prezzo>
+    <!-- <prezzo>€59.90</prezzo> -->
     <url_api_product>bgood_xwatch6</url_api_product>
     <selector>true</selector>
     <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
     <produttore>https://www.ilmontestore.sm</produttore>
+    <upsell_page>drone-x-tactical.php</upsell_page>
 
     <selector selector="selector">
       <selector_1>1 XW6.0 €59.90</selector_1>

@@ -23,7 +23,7 @@
 
 		if (isset($_SESSION['has_bought_upsell_2_time']) == true && class_exists('UPSELL')) {
 			echo "arrivo da form sono in upsell devo rimandare ad ordine confermato";
-			#header("Location: ordine-confermato.php?$url_for_facebook_event_purchase&price=$price&name=$name");
+			header("Location: ordine-confermato.php?$url_for_facebook_event_purchase&price=$price&name=$name");
 		}
 	}
 
