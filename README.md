@@ -17,14 +17,16 @@
 # Aggiungendo i paramentri: progress_short (mostro la quantità di pezzi rimasta)
 
 ##### PROGRESS SHORT #####
-# Questo scala durante la giornata usando la funzione remainingPieces()
+# Questo scala la quantità "fake" durante la giornata usando la funzione remainingPieces()
 
 ##### STAGING #####
 # Prima di mettere in produzione le prove si fanno attraverso il sotto dominio dev.nomesito.com
 # Usare Grunt per generare e fare il Push sul server
+# Vengono concatenati i js e minificati.
 
 ##### PRODUZIONE #####
-# Prima di mettere in produzione eseguire grunt default per generare le immagini compresse
+# Prima di mettere in produzione le prove si fanno attraverso il sotto dominio nomesito.com
+# Usare Grunt per generare e fare il Push sul server
 
 ##### ADS #####
 # Aggiungendo nel url i parametri fbclid si disattivano parti di template, quelle per non fare uscire

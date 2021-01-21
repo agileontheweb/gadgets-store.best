@@ -24,14 +24,19 @@
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-imagemin": "^4.0.0",
     "grunt-ftp-push": "^1.2.1",
+    "grunt-image-resize": "^1.0.0",
     "gulp-imagemin": "^7.1.0"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.2.3",
     "grunt-rsync": "^3.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "tailwindcss": "^2.0.2"
   },
   "ssh_hostname": "185.61.154.214",
-	"ssh_user": "alespcql",
-	"ssh_port": "21098",
-	"development_dir": "/home/alespcql/dev.gadgets-store.best/",
-	"production_dir": "/home/alespcql/gadgets-store.best/"
+  "ssh_user": "alespcql",
+  "ssh_port": "21098",
+  "development_dir": "/home/alespcql/dev.gadgets-store.best/",
+  "production_dir": "/home/alespcql/gadgets-store.best/"
 }
