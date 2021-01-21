@@ -2,6 +2,7 @@
 $img = $_GET['img'];
 $extra = $_GET["extra"];
 $upsell_page = $_GET["upsell_page"];
+
 $name = "";
 $surname = "";
 $phone = "";
@@ -63,6 +64,8 @@ include("../inc/send_form_worldfilia.php");
 	<input type="hidden" name="price" id="price" value="<?php echo $price;?>">
 	<input type="hidden" name="img" id="img" value="<?php echo $img;?>">
 	<input type="hidden" name="upsell_page" id="upsell_page" value="<?php echo $upsell_page;?>">
+	<input type="hidden" name="upsell_page_landing" id="upsell_page_landing" value="<?php echo $upsell_page_landing;?>">
+
 	<input type="hidden" name="url_for_facebook_event_purchase" id="url_for_facebook_event_purchase" value="<?php echo $url_for_facebook_event_purchase;?>">
 
 	<div class="form-group py-3">

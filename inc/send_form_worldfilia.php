@@ -1,5 +1,5 @@
 <?php
-  
+
 // $extra = $_GET["extra"];
 // $upsell_page = $_GET["upsell_page"];
 // $name = "";
@@ -8,7 +8,7 @@
 // $address = "";
 // $city = "";
 // $zipcode = "";
-// $title_product = $_GET['title_product'];
+ // $upsell_page_landing = $_GET['upsell_page_landing'];
 // $form_short = $_GET['form_short'];
 // $upsell_page = $_GET['upsell_page'];
 //
@@ -52,7 +52,8 @@ function sendRequest($title_product, $price, $name, $surname, $phone, $quantity,
   // $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
   // if ($httpcode == 200){
     if(!empty($upsell_page)){
-      header("Location: $upsell_page?upsell&$url_for_facebook_event_purchase&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode&form_short=$form_short");
+      $upsell_page_landing = "true";
+      header("Location: $upsell_page?upsell&$url_for_facebook_event_purchase&upsell_page_landing=$upsell_page_landing&title_product=$title_product&price=$price&name=$name&surname=$surname&phone=$phone&address=$address&city=$city&zipcode=$zipcode&form_short=$form_short");
     }else{
       header("Location: ordine-confermato.php?$url_for_facebook_event_purchase&price=$price&name=$name");
     }

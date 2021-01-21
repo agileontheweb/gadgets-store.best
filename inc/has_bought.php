@@ -2,7 +2,9 @@
 
 	function redirect_has_bought(){
 		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-		if (strpos($url, "upsell?upsell") == true ) {
+		$x = "upsell_page_landing=true";
+		$y = "upsell?upsell";
+		if (strpos($url, $x) == true ) {
 
 			if(isset($_SESSION['has_bought_upsell']) == true){
 				echo "has_bought_upsell è gia settato ";

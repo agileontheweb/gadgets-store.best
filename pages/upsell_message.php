@@ -2,6 +2,7 @@
 
 if(isset($_GET['name'])) {
   $name = $_GET['name'];
+  
 }
 ?>
 <div class="px-3 <?php echo showHideUpsell(false); ?> bg-green-100 py-16">

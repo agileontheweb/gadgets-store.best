@@ -1,4 +1,5 @@
 <?php
+$upsell_page_landing = "";
 function isUpsell(){
   $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
   if (strpos($url, "upsell") == true) {
@@ -15,7 +16,7 @@ if (isUpsell() == true) {
   $address = $_GET['address'];
   $city = $_GET['city'];
   $zipcode = $_GET['zipcode'];
-  #$upsell_page = $_GET['upsell_page'];
+
 }
 
 if (isUpsell() == true) {
@@ -26,7 +27,6 @@ if (isUpsell() == true) {
   passDataForms($title_product, $form_short, $url_product_api, $selector_1, $selector_2, $selector_3,
                 $selector_value_1, $selector_value_2, $selector_value_3, $privacy, $quantity, $img,
                 $extra, $price, $upsell_page);
-  
 }
 
 function showHideUpsell($toggle){

@@ -28,7 +28,8 @@ function sendFormsUpsell(
                   $zipcode,
                   $url_product_api,
                   $quantity_upsell,
-                  $price
+                  $price,
+                  $upsell_page
                   ){
 
 
@@ -45,6 +46,7 @@ function sendFormsUpsell(
     $quantity = $_POST["quantity"];
     $price = $_POST['price'];
     $upsell_page = $_POST['upsell_page'];
+
 
 
     $url = "https://network.worldfilia.net/manager/inventory/buy/$url_product_api.json";
