@@ -18,7 +18,7 @@
     <?php include('../shared/meta.php'); ?>
   </head>
   <body class="landing-page">
-    <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
+    <?php if(!$is_localhost) {?>
       <script>
         fbq('trackCustom', 'PageView Fornetto 10in1 Page');
       </script>
@@ -39,9 +39,9 @@
           </h1>
 
           <?php if(isADSimage()){?>
-            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-rettangolare-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-rettangolare-<?php changeADSimage()?>.jpg"  class="mx-auto w-full" width="640" height="640">
           <?php }else{ ?>
-            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-rettangolare.jpg" alt="Smartwatch" class="mx-auto w-full">
+            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-rettangolare.jpg" alt="Fornetto Tognana" class="mx-auto w-full"  width="640" height="640">
           <?php } ?>
 
           <p class="py-3">
@@ -111,19 +111,19 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-white">
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-safe-cooking.jpg" alt="Strato in microsfere di porcellana che garantisce un'antiaderenza superiore" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-safe-cooking.jpg" alt="Strato in microsfere di porcellana che garantisce un'antiaderenza superiore" class="mx-auto" width="340" height="340">
                 <h3 class="font-bold uppercase py-3">Strato in microsfere di porcellana che garantisce un'antiaderenza superiore</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-resistente.jpg" alt="Resistente fino a 100.000 cicli di abrasione con utensili metallici" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-resistente.jpg" alt="Resistente fino a 100.000 cicli di abrasione con utensili metallici" class="mx-auto"  width="340" height="340">
                 <h3 class="font-bold uppercase py-3">Resistente fino a 100.000 cicli di abrasione con utensili metallici.</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-soft-touch.jpg" alt="Manico in bakelite con design elegante, raffinato e brevettato. Finitura marmorea e inserti effetto acciaio satinato" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-soft-touch.jpg" alt="Manico in bakelite con design elegante, raffinato e brevettato. Finitura marmorea e inserti effetto acciaio satinato" class="mx-auto"  width="340" height="340">
                 <h3 class="font-bold uppercase py-3">Manico in bakelite con design elegante, raffinato e brevettato. Finitura marmorea e inserti effetto acciaio satinato.</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-induction.jpg" alt="Performance eccellenti ad alte temperature anche su piano a induzione" class="mx-auto">
+                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-induction.jpg" alt="Performance eccellenti ad alte temperature anche su piano a induzione" class="mx-auto"  width="340" height="340">
                 <h3 class="font-bold uppercase py-3">Performance eccellenti ad alte temperature anche su piano a induzione.</h3>
               </div>
             </div>
@@ -157,13 +157,13 @@
                   <h3 class="p-3 text-xl text-center">
                     <strong>Fornetto Rettangolare</strong> 30cmx22cm alto 7.50cm.
                   </h3>
-                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-rettangolare.jpg" class="mx-auto" alt="Fornetto Tognana rettangolare">
+                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-rettangolare.jpg" class="mx-auto" alt="Fornetto Tognana rettangolare"  width="640" height="640">
                 </div>
                 <div class="flex-1 text-center p-6 border">
                   <h3 class="p-3 text-xl text-center">
                     <strong>Fornetto rotondo</strong> da 30cmX30cm.
                   </h3>
-                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-tondo.jpg" class="mx-auto" alt="Fornetto Tognana tondo">
+                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-tondo.jpg" class="mx-auto" alt="Fornetto Tognana tondo" width="640" height="640">
                 </div>
               </div>
               <iframe class="w-full my-6" height="349" src="https://www.youtube.com/embed/KCZFo8uEZz0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -192,7 +192,7 @@
                 <span class="inline-block pb-3 uppercase">SEMPLICE, FUNZIONALE + SPAZIO !</span>
               </h2>
 
-              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-strati.jpg" class="mx-auto max-w-xs " alt="Fornetto Strati">
+              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-strati.jpg" class="mx-auto max-w-xs " alt="Fornetto Strati"  width="640" height="920">
               <h2 class="text-center text-2xl font-bold pt-12">
                 9 STRATI CHE RENDONO UNICO IL FORNETTO TOGNANA
               </h2>
@@ -273,7 +273,7 @@
                   Acquista a soli €69.90 invece di <strike>€89.90</strike>
                 </span>
               </h2>
-              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-entrambi.jpg" alt="Tognana 2 padelle" class="mx-auto w-ful md:max-w-md">
+              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>fornetto-tognana-entrambi.jpg" alt="Tognana 2 padelle" class="mx-auto w-ful md:max-w-md"  width="500" height="360">
               <p class="mx-auto text-center">
                 <button type="submit" class="btn-animate font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   Clicca qui per compilare il modulo d'acquisto

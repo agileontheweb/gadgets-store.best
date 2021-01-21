@@ -25,11 +25,12 @@ module.exports = function(grunt) {
 		  },
 		  target: {
 		    files: {
-		      'dist/built.css': [
-										'bower_components/bootstrap/dist/css/bootstrap.css',
-										'css/GDPR-cookie.css',
-										'css/tailwind.css'
-										]
+		      			'dist/built.css': [
+								'bower_components/bootstrap/dist/css/bootstrap.css',
+								'bower_components/animate.css/animate.min.css',
+								'css/GDPR-cookie.css',
+								'css/tailwind.css'
+								]
 		    }
 		  }
 		},
@@ -37,8 +38,7 @@ module.exports = function(grunt) {
 		imagemin: {
 			static: {
 					options: {
-							optimizationLevel: 3,
-							svgoPlugins: [{removeViewBox: false}],
+							optimizationLevel: 7,
 							use: [mozjpeg()] // Example plugin usage
 					},
 					files: [{
@@ -47,6 +47,25 @@ module.exports = function(grunt) {
 							src: ['**/*.{png,jpg,gif}'],
 							dest: 'dist/img/prodotti'
 					}]
+			}
+		},
+
+		image_resize: {
+			resize: {
+				options: {
+					width: 640,
+					quality: 1,
+					upscale: false,
+					//BUG: keep this on true or will generate fucked up images
+					crop: true,
+					overwrite: true
+				},
+				files: [{
+					expand: true,
+					cwd: 'dist/img/prodotti',
+					src: ['**/*.{png,jpeg,jpg,gif}'],
+					dest: 'dist/img/prodotti'
+				}]
 			}
 		},
 
@@ -59,8 +78,15 @@ module.exports = function(grunt) {
 					"--verbose",
 					"-e 'ssh -p <%= pkg.ssh_port %>'",
 				],
-				include: ["dist/*"],
-				exclude: ["css","img/prodotti","package.json","node_modules","README.md",".git*",],
+				include: ["dist/img/*"],
+				exclude: ["css",
+									"img/prodotti",
+									"package.json",
+									"node_modules",
+									"bower_components",
+									"README.md",
+									".DS_Store",
+									".git*",],
 				recursive: true,
 			},
 			dev: {
@@ -78,10 +104,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-image-resize');
 	grunt.loadNpmTasks('grunt-rsync');
 
 	//create default task
-	// grunt.registerTask("default", ["concat","cssmin","imagemin"]);
-	//grunt.registerTask('default', 'Build for upload to development', ["concat","cssmin","imagemin"]);
-	grunt.registerTask('default', 'Build and upload to development', ["rsync:dev"]);
+	grunt.registerTask("compress_image", ["imagemin"]);
+	grunt.registerTask('compress_js_css', 'Compress Js and Css', ["concat","cssmin"]);
+	grunt.registerTask('push_dev', 'Build and upload to development', ["rsync:dev"]);
 };
