@@ -12,9 +12,8 @@
     <?php include('shared/meta.php'); ?>
   </head>
   <body>
-
-    <?php if( !in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
-      <?#php include("shared/px-messanger.php") ?>
+    <?#php include("shared/px-messanger.php") ?>
+    <?php if(!$is_dev || !$is_localhost) {?>
       <script>
         fbq('track', 'Home Page');
       </script>

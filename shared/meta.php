@@ -17,9 +17,9 @@
 <meta property="og:image"              content="<?php echo $projectPath ?>img/fb-share-image-facebook.jpg" />
 
 <?php
-if( !in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
-	include('px-facebook.php');
-	include('px-analytics.php');
-	include("px-hotjar.php");
-}
+	if(!$is_localhost or !$is_dev) {
+		include('px-facebook.php');
+		include('px-analytics.php');
+		include("px-hotjar.php");
+	}
 ?>

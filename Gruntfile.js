@@ -2,38 +2,7 @@ module.exports = function(grunt) {
 	const mozjpeg = require('imagemin-mozjpeg');
 
 	grunt.initConfig({
-		rsync: {
-
-			options: {
-				args: ["--verbose"],
-				exclude: [".git*","*.scss","node_modules"],
-				recursive: true
-			},
-
-			dist: {
-					options: {
-							src: "/",
-							dest: "/"
-					}
-			},
-
-			stage: {
-					options: {
-							src: "/",
-							dest: "/home/alespcql/dev.gadgets-store.best/",
-							host: "alespcql@185.61.154.214",
-							delete: true // Careful this option could cause data loss, read the docs!
-					}
-			},
-			
-			prod: {
-					options: {
-							src: "/",
-							dest: "/home/alespcql/www/gadgets-store.best/",
-							host: "alespcql@185.61.154.214",
-							delete: true // Careful this option could cause data loss, read the docs!
-					}
-			},
+		pkg: grunt.file.readJSON('package.json'),
 
     concat: {
       dist: {
@@ -79,6 +48,29 @@ module.exports = function(grunt) {
 							dest: 'dist/img/prodotti'
 					}]
 			}
+		},
+
+		rsync: {
+			options: {
+				args: [
+					//"--dry-run",
+					//"--progress",
+					"--delete",		// !!!! PAY ATTENTION TO THE 'dest' BELOW. If set wrongly --delete can fuck all your data !!!!
+					"--verbose",
+					"-e 'ssh -p <%= pkg.ssh_port %>'",
+				],
+				include: ["dist/*"],
+				exclude: ["css","img/prodotti","package.json","node_modules","README.md",".git*",],
+				recursive: true,
+			},
+			dev: {
+				options: {
+					src: ["dist","img","js","pages","shared","xml","inc","*.php"],
+					//src: ['/'],
+					dest: "<%= pkg.development_dir %>",
+					host: "<%= pkg.ssh_user %>@<%= pkg.ssh_hostname %>"
+				},
+			}
 		}
 	});
 
@@ -86,11 +78,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-rsync');
 
 	//create default task
-	//grunt.registerTask("default", ["concat"], ["imagemin"]);
-	 grunt.registerTask("default", ["concat"]);
-	//grunt.registerTask("default", ["imagemin"]);
-//	grunt.registerTask("default", ["cssmin"]);
-
+	// grunt.registerTask("default", ["concat","cssmin","imagemin"]);
+	//grunt.registerTask('default', 'Build for upload to development', ["concat","cssmin","imagemin"]);
+	grunt.registerTask('default', 'Build and upload to development', ["rsync:dev"]);
 };

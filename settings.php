@@ -4,6 +4,12 @@
 	error_reporting(E_ALL);
 	setlocale(LC_ALL, 'it_IT');
 
+	if(!in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
+		$is_localhost = "false";
+	}else{
+		$is_localhost = "true";
+	}
+
 	include("inc/branding_setting.php");
 	include("inc/ads_change_image.php");
 	include("inc/extra.php");
