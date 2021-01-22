@@ -4,7 +4,7 @@
   <record id="rigenerapro">
     <name>Rigenera Pro</name>
     <description>L’unico liquido rigenerante raccomandato dai professionisti.</description>
-    <image>rigenera-pro.jpg</image>
+    <image>rigenera-pro</image>
     <average_rating>4.98 / 5</average_rating>
     <form_short>true</form_short>
     <url_product_api>dmc_rigenerapro2x1</url_product_api>
@@ -22,7 +22,7 @@
   <record id="fornetoo10in1">
     <name>Fornetto 10in1</name>
     <description>Tognana vi presenta la nuova linea di padella 10in1.</description>
-    <image>fornetto-tognana-entrambi.jpg</image>
+    <image>fornetto-tognana-entrambi</image>
     <average_rating>4.98 / 5</average_rating>
     <form_short>false</form_short>
     <url_product_api>cnitalia_tognana</url_product_api>
@@ -40,7 +40,7 @@
   <record id="ecofrost">
     <name>Eco Frost</name>
     <description>Piastra che permette di scongelare gli alimenti in maniera semplice, veloce e naturale.</description>
-    <image>ecofrost.jpg</image>
+    <image>ecofrost</image>
     <average_rating>4.98 / 5</average_rating>
     <form_short>false</form_short>
     <url_product_api>cnitalia_tognana</url_product_api>
@@ -59,7 +59,7 @@
   <record id="suolaclean">
     <name>Suola Clean</name>
     <description>Copri scarpe che ti farà risparmiare tempo e denaro nella pulizia dei pavimenti.</description>
-    <image>suolaclean.jpg</image>
+    <image>suolaclean</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csc</linkaffiliate>
     <link></link>
     <offer>Promo 2x1</offer>
@@ -70,7 +70,7 @@
   <record id="setcopper5in1">
     <name>Set Copper 5 in 1</name>
     <description>Prepara gustose ricette senza dover acquistare costose padelle diverse.</description>
-    <image>setcopper.jpg</image>
+    <image>setcopper</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CA6</linkaffiliate>
     <link></link>
     <offer>Offerta speciale</offer>
@@ -84,7 +84,7 @@
   <record id="yardhands">
     <name>Yard Hands</name>
     <description>I primi guanti pensati per renderti facile e veloce fare giardinaggio.</description>
-    <image>guantogiardino.jpg</image>
+    <image>guantogiardino</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csa</linkaffiliate>
     <link></link>
     <offer>Promo 2x1</offer>
@@ -95,7 +95,7 @@
   <record id="nofumogrill">
     <name>No Fumo Grill</name>
     <description>Griglia Elettrica, superficie in pietra antiaderente, anti graffo e facile da pulire.</description>
-    <image>grigliazerofumo.jpg</image>
+    <image>grigliazerofumo</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqO</linkaffiliate>
     <link></link>
     <offer>Sconto 50%</offer>
@@ -106,7 +106,7 @@
   <record id="supervapor">
       <name>SUPER VAPOR</name>
       <description>Scopa a vapore.Lava e igienizza la casa eliminando il 99% dei germi e dei batteri.</description>
-      <image>supervapor.jpg</image>
+      <image>supervapor</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqP</linkaffiliate>
       <link></link>
       <offer>Offerta Lancio</offer>
@@ -117,7 +117,7 @@
   <record id="airlover">
       <name>AIR LOVER</name>
       <description>Purificatore d'aria portatile senza fili. Batteria agli ioni di Litio ricaricabile.</description>
-      <image>airlove.jpg</image>
+      <image>airlove</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZV</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
@@ -128,7 +128,7 @@
   <record id="vortex">
       <name>Vortex</name>
       <description>L'estrattore ad elevata velocità che riesce ad estrarre il 100% degli elementi nutritivi dagli alimenti.</description>
-      <image>estrattore.jpg</image>
+      <image>estrattore</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crj</linkaffiliate>
       <link></link>
       <offer>Sconto 70%</offer>
@@ -139,7 +139,7 @@
   <record id="smartlens">
       <name>Smart Lens</name>
       <description>Microscopio tascabile che va applicato alla fotocamera posteriore dello smartphone.</description>
-      <image>smart-lens.jpg</image>
+      <image>smart-lens</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crk</linkaffiliate>
       <link></link>
       <prezzo>€49.00</prezzo>
@@ -149,7 +149,7 @@
   <record id="macchinacucire">
       <name>Macchina da cucire portatile</name>
       <description>Leggera e compatta, adatta a tutti i tipi di tessuto, facile.</description>
-      <image>sewwhiz.jpg</image>
+      <image>sewwhiz</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr8</linkaffiliate>
       <link></link>
       <offer>Sconto 30%</offer>
@@ -160,7 +160,7 @@
   <record id="xwater">
     <name>X Water</name>
     <description>Filtro rivoluzionario capace di eliminare ogni impurità e sostanza chimica nociva dall'acqua e renderla potabile.</description>
-    <image>rubinetto.jpg</image>
+    <image>rubinetto</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crm</linkaffiliate>
     <link></link>
     <prezzo>€59.00</prezzo>

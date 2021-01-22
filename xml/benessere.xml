@@ -4,7 +4,7 @@
   <record>
     <name>Spirulina</name>
     <description>integratore alimentare che aiuta ad attaccare l'adipe, a perdere peso</description>
-    <image>spirulina.jpg</image>
+    <image>spirulina</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csn</linkaffiliate>
     <link></link>
     <offer>Promo 4x1</offer>
@@ -15,7 +15,7 @@
   <record id="reggiseno3x1">
     <name>Reggiseno 3 in 1</name>
     <description>Lovely bra è il Reggiseno ad effetto push-up più comodo sul mercato.</description>
-    <image>reggiseno3in1.jpg</image>
+    <image>reggiseno3in1</image>
     <average_rating>4.78 / 5</average_rating>
     <form_short>false</form_short>
     <url_product_api>dmc_lovelybra3in1</url_product_api>
@@ -50,7 +50,7 @@
   <record id="footenergy">
     <name>Foot Energy</name>
     <description>Tappetino per i piedi a impulsi magnetici che sollecitano e stimolano i muscoli.</description>
-    <image>footenergy-1.jpg</image>
+    <image>footenergy-1</image>
     <average_rating>4.98 / 5</average_rating>
     <form_short>false</form_short>
     <url_product_api>nst_footenergy</url_product_api>
@@ -66,17 +66,17 @@
 
     <recensione category="footenergy">
       <name>Elisa Giordani</name>
-      <img>recensione-elisa-giordani.jpg</img>
+      <img>recensione-elisa-giordani</img>
       <description>Io lavoro in piedi e senza muovermi molto, e sento sempre le gambe pesanti e gonfie!! a fine serata non vedevo l’ora di stendermi con le gambe in alto!! Ma da quando ho provato questo tappetino per i piedi, tutte le gambe sono migliorate: le sento più leggere, e sono meno gonfie!! Insomma non ne faccio più a meno!!</description>
     </recensione>
     <recensione category="footenergy">
       <name>Marcella Guardigli</name>
-      <img>recensione-marcella-guardigli.jpg</img>
+      <img>recensione-marcella-guardigli</img>
       <description>Arrivato un paio di giorni fa: l’ho usato alla sera, a fine giornata, devo dire che, grazie all’aiuto della microcircolazione, sento le gambe meno gonfie e più leggere!! Continuerò ad usarlo!!!</description>
     </recensione>
     <recensione category="footenergy">
       <name>Alessandra De Rossi</name>
-      <img>recensione-alessandra-derossi.jpg</img>
+      <img>recensione-alessandra-derossi</img>
       <description>Di vantaggioso ha che lo puoi portare dove ti pare!! è comodo, compatto e pieghevole su se stesso, sta anche in borsa. Al mattino me lo porto in ufficio e, sotto la scrivania, lo uso: cosi quando mi alzo le mie gambe sono moto meno indolenzite e più rilassate!!</description>
     </recensione>
   </record>
@@ -84,7 +84,7 @@
   <record id="sentipiu">
       <name>Senti Più 30x</name>
       <description>L’amplificatore di suoni da inserire direttamente nel tuo orecchio.</description>
-      <image>sentipiu-1.jpg</image>
+      <image>sentipiu-1</image>
       <average_rating>4.48 / 5</average_rating>
       <form_short>false</form_short>
       <url_product_api>dmc_sentipiù30x</url_product_api>
@@ -103,7 +103,7 @@
   <record>
       <name>Keto Slim</name>
       <description>integratore naturale che aiuta a perdere adipe e massa grassa in maniera sana e senza sforzo.</description>
-      <image>ketoslim.jpg</image>
+      <image>ketoslim</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cso</linkaffiliate>
       <link></link>
       <offer>Sconto 40%</offer>
@@ -114,7 +114,7 @@
   <record>
       <name>GLUTEI FIT</name>
       <description>La prima crema naturale che rassoda e aiuta a ridisegnare i glutei.</description>
-      <image>gluteifit.jpg</image>
+      <image>gluteifit</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csp</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
@@ -125,7 +125,7 @@
   <record>
     <name>Penna Agopuntura Elettronica</name>
     <description>Promuove la circolazione sanguigna nella pelle e mantiene la salute.</description>
-    <image>penna-agopuntura.jpg</image>
+    <image>penna-agopuntura</image>
     <linkaffiliate>https://amzn.to/386EsMF</linkaffiliate>
     <link></link>
     <offer>Amazon</offer>
@@ -140,7 +140,7 @@
   <record>
     <name>NECK RING</name>
     <description>Massaggiatore innovativo che massaggia in profondità.</description>
-    <image>neckringplus.jpg</image>
+    <image>neckringplus</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crv</linkaffiliate>
     <link></link>
     <offer>Sconto 30%</offer>
@@ -151,7 +151,7 @@
   <record>
       <name>WHITE PRO</name>
       <description>formula a base di carbone bio-attivo che permette di sbiancare i denti recuperando fino a 14 toni di bianco.</description>
-      <image>whitepro.jpg</image>
+      <image>whitepro</image>
       <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csr</linkaffiliate>
       <link></link>
       <offer>Sconto 40%</offer>
@@ -162,7 +162,7 @@
   <record>
       <name>Foltina Plus</name>
       <description>Valido alleato per arrestare la caduta dei capelli.</description>
-      <image>foltina.jpg</image>
+      <image>foltina</image>
       <linkaffiliate>https://colorecapelli.net/foltina-plus/</linkaffiliate>
       <link></link>
       <offer>Promo 2x1</offer>
@@ -173,7 +173,7 @@
   <record>
     <name>Kallo Kill</name>
     <description>Piedi lisci e morbidi eliminando per sempre calli e duroni.</description>
-    <image>callokiller.jpg</image>
+    <image>callokiller</image>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crg</linkaffiliate>
     <link></link>
     <prezzo>€49.00</prezzo>
@@ -183,7 +183,7 @@
   <record>
     <name>Stop Germ</name>
     <description>Sanitizzante per spazzolini da denti a luce UV. Uccide il 99,9% dei batteri nocivi.</description>
-    <image>stopgerm.jpg</image>
+    <image>stopgerm</image>
     <prezzo>€49.00</prezzo>
     <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crl</linkaffiliate>
     <produttore>https://advmarket.shop</produttore>

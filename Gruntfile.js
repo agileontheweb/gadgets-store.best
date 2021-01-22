@@ -78,12 +78,12 @@ module.exports = function(grunt) {
 					"-e 'ssh -p <%= pkg.ssh_port %>'",
 				],
 				include: ["dist/*"],
-				exclude: ["css","img/prodotti","package.json","node_modules","README.md",".git*",],
+				exclude: ["img/prodotti","package.json","node_modules","README.md",".git*",],
 				recursive: true,
 			},
 			dev: {
 				options: {
-					src: ["dist","img","js","pages","shared","xml","inc","*.php"],
+					src: ["dist","img","css","js","pages","shared","xml","inc","*.php"],
 					//src: ['/'],
 					dest: "<%= pkg.development_dir %>",
 					host: "<%= pkg.ssh_user %>@<%= pkg.ssh_hostname %>"

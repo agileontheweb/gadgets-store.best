@@ -19,9 +19,9 @@
   </head>
   <body class="landing-page">
     <?php if(!$is_localhost) {?>
-      <!-- <script>
+      <script>
         fbq('trackCustom', 'PageView Fornetto 10in1 Page');
-      </script> -->
+      </script>
     <?php } ?>
 
     <?php include("../shared/navbar.php") ?>
