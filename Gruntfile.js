@@ -35,36 +35,35 @@ module.exports = function(grunt) {
 		  }
 		},
 
+		responsive_images: {
+			dev: {
+				options: {
+					engine: 'gm',
+					sizes: [{width: 320, name: 'small'},
+									{width: 640, name: 'medium'},
+									{width: 800, name: 'large' }
+									]
+				},
+			 files: [{
+				expand: true,
+				src: ['**/*.jpg'],
+				cwd: 'img/prodotti',
+				dest: 'dist/img/prodotti_responsive'
+				}],
+			}
+	  },
+
 		imagemin: {
 			static: {
-					options: {
-							optimizationLevel: 7,
-							use: [mozjpeg()] // Example plugin usage
-					},
-					files: [{
-							expand: true,
-							cwd: 'img/prodotti/',
-							src: ['**/*.{png,jpg,gif}'],
-							dest: 'dist/img/prodotti'
-					}]
-			}
-		},
-
-		image_resize: {
-			resize: {
 				options: {
-					width: 640,
-					quality: 1,
-					upscale: false,
-					//BUG: keep this on true or will generate fucked up images
-					crop: true,
-					overwrite: true
+						optimizationLevel: 7,
+						use: [mozjpeg()] // Example plugin usage
 				},
 				files: [{
-					expand: true,
-					cwd: 'dist/img/prodotti',
-					src: ['**/*.{png,jpeg,jpg,gif}'],
-					dest: 'dist/img/prodotti'
+						expand: true,
+						cwd: 'dist/img/prodotti_responsive',
+						src: ['**/*.{png,jpg,gif}'],
+						dest: 'dist/img/prodotti_compress'
 				}]
 			}
 		},
@@ -78,15 +77,8 @@ module.exports = function(grunt) {
 					"--verbose",
 					"-e 'ssh -p <%= pkg.ssh_port %>'",
 				],
-				include: ["dist/img/*"],
-				exclude: ["css",
-									"img/prodotti",
-									"package.json",
-									"node_modules",
-									"bower_components",
-									"README.md",
-									".DS_Store",
-									".git*",],
+				include: ["dist/*"],
+				exclude: ["css","img/prodotti","package.json","node_modules","README.md",".git*",],
 				recursive: true,
 			},
 			dev: {
@@ -95,9 +87,9 @@ module.exports = function(grunt) {
 					//src: ['/'],
 					dest: "<%= pkg.development_dir %>",
 					host: "<%= pkg.ssh_user %>@<%= pkg.ssh_hostname %>"
-				},
+				}
 			}
-		}
+		},
 	});
 
 	//load concat plugin
@@ -106,9 +98,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-image-resize');
 	grunt.loadNpmTasks('grunt-rsync');
+	grunt.loadNpmTasks('grunt-responsive-images');
 
 	//create default task
-	grunt.registerTask("compress_image", ["imagemin"]);
 	grunt.registerTask('compress_js_css', 'Compress Js and Css', ["concat","cssmin"]);
+	grunt.registerTask("responsive_images", ["responsive_images"]);
+	grunt.registerTask("imagemin",  ["imagemin"]);
 	grunt.registerTask('push_dev', 'Build and upload to development', ["rsync:dev"]);
+
 };
