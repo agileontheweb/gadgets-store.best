@@ -10,8 +10,8 @@
 		$is_localhost = "true";
 	}
 
-
 	include("inc/branding_setting.php");
+
 
 	$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
@@ -30,6 +30,18 @@
 		$projectPathImg = "dist/img/prodotti/";
     $is_localhost = 0;
   }
+
+	$fullpath = $projectPath . $projectPathImg;
+
+	function generateImageSize($fullpath, $image, $alt){
+
+    echo "<img src=" . $fullpath . $image . ".jpg
+					srcset='" . $fullpath . $image. "-small.jpg 320w,"
+										. $fullpath . $image. "-medium.jpg 640w,"
+										. $fullpath . $image. "-large.jpg 1200w'
+										alt='".$alt."' class='mx-auto' width='640' height='640'>";
+  }
+
 
 	include("inc/ads_change_image.php");
 	include("inc/extra.php");

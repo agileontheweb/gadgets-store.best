@@ -2,7 +2,6 @@
 $img = $_GET['img'];
 $extra = $_GET["extra"];
 $upsell_page = $_GET["upsell_page"];
-
 $name = "";
 $surname = "";
 $phone = "";
@@ -54,7 +53,11 @@ include("../inc/send_form_worldfilia.php");
 		<strong>La Spedizione è gratuita.</strong>
 	</p>
 
-	<img src="<?php echo $img?>" class="mx-auto">
+	<?php
+		#$fullpath = $projectPath . $projectPathImg;
+		generateImageSize(null, $img, "Fornetti Tognana tondo e rettangolare");
+	?>
+
 	<div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
 	<input type="hidden" name="fingerprint" id="fingerprint" value="">
 	<input type="hidden" name="source_id" id="source_id" value="07ff46bb6597">
