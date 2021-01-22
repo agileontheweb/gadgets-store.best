@@ -12,20 +12,4 @@
   $store_link_upsell = "";
   $upsell = 0;
   $is_dev = 0;
-
-  $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-
-  if( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ))) {
-		$projectPath = "http://localhost:8888/" . $brand_url;
-		$projectPathImg = "img/prodotti/";
-    $is_localhost = 1;
-  }elseif(strpos($url, "dev.") == true) {;
-    $projectPath = "https://dev." . $brand_url;
-		$projectPathImg = "dist/img/prodotti/";
-    $is_dev = 1;
-  }else{
-    $projectPath = "https://" . $brand_url;
-		$projectPathImg = "dist/img/prodotti/";
-    $is_localhost = 0;
-  }
 ?>
