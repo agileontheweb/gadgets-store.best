@@ -21,8 +21,13 @@
 
 ##### STAGING #####
 # Prima di mettere in produzione le prove si fanno attraverso il sotto dominio dev.nomesito.com
-# Usare Grunt per generare e fare il Push sul server
+# Usare Grunt per generare:
 # Vengono concatenati i js e minificati.
+# Vengono concatenati i css e minificati
+# Vengono ridimensionate le immagini per la versione small medium large
+# Vengono ottimizzate le immagini per peso inferiore
+# Viene fatto il push in dev.nomesito.com
+# Viene fatto il push in nomesito.com
 
 ##### PRODUZIONE #####
 # Prima di mettere in produzione le prove si fanno attraverso il sotto dominio nomesito.com

@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 							'js/GDPR-cookie.js',
 							'js/countdown.js',
 							'js/main.js'],
-        dest: 'dist/built.js',
+        dest: 'dev/built.js',
       },
     },
 
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 		  },
 		  target: {
 		    files: {
-		      			'dist/built.css': [
+		      			'dev/built.css': [
 								'bower_components/bootstrap/dist/css/bootstrap.css',
 								'bower_components/animate.css/animate.min.css',
 								'css/GDPR-cookie.css',
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 				expand: true,
 				src: ['**/*.jpg'],
 				cwd: 'img/prodotti',
-				dest: 'dist/img/prodotti_responsive'
+				dest: 'dev/img/prodotti_responsive'
 				}],
 			}
 	  },
@@ -61,10 +61,30 @@ module.exports = function(grunt) {
 				},
 				files: [{
 						expand: true,
-						cwd: 'dist/img/prodotti_responsive',
+						cwd: 'dev/img/prodotti_responsive',
 						src: ['**/*.{png,jpg,gif}'],
-						dest: 'dist/img/prodotti_compress'
+						dest: 'dev/img'
 				}]
+			}
+		},
+
+	 	copy: {
+			main: {
+				expand: true,
+				src: 'xml/*',
+				dest: 'dev',
+			},
+ 		},
+
+		phpmin: {
+			default_options: {
+				options: {
+					singleline: true,
+					tabs: true,
+					multiline: true,
+					newline: true,
+				},
+				files: {'dev/': ['*.php','inc/*.php','pages/*.php','shared/*.php']}
 			}
 		},
 
@@ -77,13 +97,13 @@ module.exports = function(grunt) {
 					"--verbose",
 					"-e 'ssh -p <%= pkg.ssh_port %>'",
 				],
-				include: ["dist/*"],
+				include: ["dev/*"],
 				exclude: ["img/prodotti","package.json","node_modules","README.md",".git*",],
 				recursive: true,
 			},
 			dev: {
 				options: {
-					src: ["dist"],
+					src: ["dev/"],
 					//src: ["dist","img","css","js","pages","shared","xml","inc","*.php"],
 					dest: "<%= pkg.development_dir %>",
 					host: "<%= pkg.ssh_user %>@<%= pkg.ssh_hostname %>"
@@ -92,23 +112,7 @@ module.exports = function(grunt) {
 		},
 
 		clean: {
-		 tests: ['build']
-	 	},
-
-	 	copy: {
-			main: {
-				expand: true,
-				src: 'xml/*',
-				dest: 'dist',
-			},
- 		},
-
-
-		phpmin: {
-			default_options: {
-				options: {},
-				files: {'dist/': ['*.php','inc/*.php','pages/*.php','shared/*.php']}
-			}
+		 prodotti_compress: ['dev/img/prodotti_responsive']
 		},
 	});
 
@@ -126,9 +130,10 @@ module.exports = function(grunt) {
 
 	//create default task
 	grunt.registerTask('compress_js_css', 'Compress Js and Css', ["concat","cssmin"]);
-	grunt.registerTask("responsive_images", ["responsive_images"]);
-	grunt.registerTask("imagemin", ["imagemin"]);
-	grunt.registerTask('test', ['clean', 'phpmin','copy']);
+	grunt.registerTask("default", ["responsive_images","imagemin","clean:prodotti_compress"]);
+	//grunt.registerTask("imagemin", ["imagemin"]);
+	// grunt.registerTask("default", ['phpmin','copy','concat','cssmin', 'responsive_images','imagemin','clean:prodotti_compress']);
+	// grunt.registerTask('test', [ 'phpmin','copy','concat','cssmin']);
 	grunt.registerTask('push_dev', 'Build and upload to development', ["rsync:dev"]);
 
 };
