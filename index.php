@@ -13,7 +13,7 @@
   </head>
   <body>
     <?#php include("shared/px-messanger.php") ?>
-    <?php if(!$is_dev || !$is_localhost) {?>
+    <?php if(isset($env)=="prod"){?>
       <script>
         fbq('track', 'Home Page');
       </script>
