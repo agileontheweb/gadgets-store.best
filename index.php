@@ -24,7 +24,7 @@
       <h1 class="py-6 text-center text-3xl md:text-2xl px-3 border">
         Tanti <strong><?php echo $brand_slogan; ?></strong> da prendere al volo !
       </h1>
-      <?php include("shared/_carousel.php") ?>
+      <?#php include("shared/_carousel.php") ?>
       <?php include("shared/_tecnologia.php") ?>
       <?php include("shared/_ricevi_promozioni.php") ?>
       <?php include("shared/_bellezza.php") ?>
