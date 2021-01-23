@@ -83,11 +83,31 @@ module.exports = function(grunt) {
 			},
 			dev: {
 				options: {
-					src: ["dist","img","css","js","pages","shared","xml","inc","*.php"],
-					//src: ['/'],
+					src: ["dist"],
+					//src: ["dist","img","css","js","pages","shared","xml","inc","*.php"],
 					dest: "<%= pkg.development_dir %>",
 					host: "<%= pkg.ssh_user %>@<%= pkg.ssh_hostname %>"
 				}
+			}
+		},
+
+		clean: {
+		 tests: ['build']
+	 	},
+
+	 	copy: {
+			main: {
+				expand: true,
+				src: 'xml/*',
+				dest: 'dist',
+			},
+ 		},
+
+
+		phpmin: {
+			default_options: {
+				options: {},
+				files: {'dist/': ['*.php','inc/*.php','pages/*.php','shared/*.php']}
 			}
 		},
 	});
@@ -99,11 +119,16 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-image-resize');
 	grunt.loadNpmTasks('grunt-rsync');
 	grunt.loadNpmTasks('grunt-responsive-images');
+	grunt.loadNpmTasks('grunt-phpmin');
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+
 
 	//create default task
 	grunt.registerTask('compress_js_css', 'Compress Js and Css', ["concat","cssmin"]);
 	grunt.registerTask("responsive_images", ["responsive_images"]);
-	grunt.registerTask("imagemin",  ["imagemin"]);
+	grunt.registerTask("imagemin", ["imagemin"]);
+	grunt.registerTask('test', ['clean', 'phpmin','copy']);
 	grunt.registerTask('push_dev', 'Build and upload to development', ["rsync:dev"]);
 
 };
