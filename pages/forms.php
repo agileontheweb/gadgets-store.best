@@ -52,7 +52,9 @@
           </p>
           <?php include("icon-shipping.php") ?>
           <p class="text-center">
-            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>operatore-telefonico.jpg" class="w-full">
+            <?php
+              generateImageSize($fullpath, "operatore-telefonico", "Operatore telefonico");
+            ?>
           </p>
         </div>
       </div>
