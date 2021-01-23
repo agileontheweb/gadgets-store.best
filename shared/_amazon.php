@@ -2,7 +2,6 @@
   <h2 class="text-center text-2xl font-bold py-12 text-white">
     <span class="inline-block border-b-4 border-white pb-3">Amazon</span>
   </h2>
-
   <?php
     $xml = simplexml_load_file('xml/amazon.xml');
     $list = $xml->record;
@@ -14,13 +13,7 @@
         <div class="bg-white rounded-lg shadow-xl">
           <div class="p-12">
             <div>
-              <img src="<?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-medium.jpg"
-                  srcset="<?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-small.jpg 320w,
-                          <?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-medium.jpg 800w,
-                          <?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-large.jpg 1200w"
-                  alt="<?php echo $list[$i]->name ?>"
-                  width="400"
-                  height="400">
+              <?php generateImageSize($fullpath, $list[$i]->image, $list[$i]->name, $env); ?>
             </div>
             <div class="mt-8 text-center">
               <h3 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h3>

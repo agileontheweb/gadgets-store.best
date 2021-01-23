@@ -2,12 +2,10 @@
   <h2 class="text-center text-2xl font-bold py-12 text-green-600">
     <span class="inline-block border-b-4 border-green-600 pb-3">Benessere</span>
   </h2>
-
   <?php
     $xml = simplexml_load_file('xml/benessere.xml');
     $list = $xml->record;
   ?>
-
   <div class="flex overflow-x-auto max-w-screen-lg mx-auto">
     <?php for ($i = 0; $i < count($list); $i++) {
       while($i <= 5){
@@ -27,13 +25,7 @@
           <div class="p-12">
             <a href="<?php echo $value ?>" class="" <?php if($target == true){?> target="_blank" rel="nofollow" <?php }?>>
               <div>
-                <img src="<?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-medium.jpg"
-                    srcset="<?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-small.jpg 320w,
-                            <?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-medium.jpg 800w,
-                            <?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-large.jpg 1200w"
-                    alt="<?php echo $list[$i]->name ?>"
-                    width="300"
-                    height="300">
+                <?php generateImageSize($fullpath, $list[$i]->image, $list[$i]->name, $env); ?>
               </div>
 
               <div class="text-center pt-3">

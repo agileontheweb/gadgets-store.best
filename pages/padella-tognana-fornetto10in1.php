@@ -5,7 +5,6 @@
   $path_xml = "../xml/casa.xml";
   $id_temp="fornetoo10in1";
   $upsell_page = "ups-affilacoltelli-nippo.php?upsell";
-
   include("../inc/get_product_data.php");
   include("../inc/is_upsell.php");
  ?>
@@ -18,7 +17,7 @@
     <?php include('../shared/meta.php'); ?>
   </head>
   <body class="landing-page">
-    <?php if(!$is_localhost) {?>
+    <?php if(isset($env)=="prod") {?>
       <script>
         fbq('trackCustom', 'PageView Fornetto 10in1 Page');
       </script>
@@ -39,7 +38,7 @@
           </h1>
 
           <?php
-            generateImageSize($fullpath, "fornetto-tognana-rettangolare", "fornetto tognana rettangolare");
+            generateImageSize($fullpath, "fornetto-tognana-rettangolare", "fornetto tognana rettangolare", $env);
           ?>
 
 
@@ -110,19 +109,19 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-white">
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <?php generateImageSize($fullpath, "fornetto-tognana-safe-cooking", "Strato in microsfere di porcellana che garantisce un'antiaderenza superiore"); ?>
+                <?php generateImageSize($fullpath, "fornetto-tognana-safe-cooking", "Strato in microsfere di porcellana che garantisce un'antiaderenza superiore", $env); ?>
                 <h3 class="font-bold uppercase py-3">Strato in microsfere di porcellana che garantisce un'antiaderenza superiore</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <?php generateImageSize($fullpath, "fornetto-tognana-resistente", "Resistente fino a 100.000 cicli di abrasione con utensili metallici"); ?>
+                <?php generateImageSize($fullpath, "fornetto-tognana-resistente", "Resistente fino a 100.000 cicli di abrasione con utensili metallici", $env); ?>
                 <h3 class="font-bold uppercase py-3">Resistente fino a 100.000 cicli di abrasione con utensili metallici.</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <?php generateImageSize($fullpath, "fornetto-tognana-soft-touch", "Manico in bakelite con design elegante, raffinato e brevettato. Finitura marmorea e inserti effetto acciaio satinato"); ?>
+                <?php generateImageSize($fullpath, "fornetto-tognana-soft-touch", "Manico in bakelite con design elegante, raffinato e brevettato. Finitura marmorea e inserti effetto acciaio satinato", $env); ?>
                 <h3 class="font-bold uppercase py-3">Manico in bakelite con design elegante, raffinato e brevettato. Finitura marmorea e inserti effetto acciaio satinato.</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <?php generateImageSize($fullpath, "fornetto-tognana-induction", "Performance eccellenti ad alte temperature anche su piano a induzione"); ?>
+                <?php generateImageSize($fullpath, "fornetto-tognana-induction", "Performance eccellenti ad alte temperature anche su piano a induzione", $env); ?>
                 <h3 class="font-bold uppercase py-3">Performance eccellenti ad alte temperature anche su piano a induzione.</h3>
               </div>
             </div>
@@ -156,13 +155,13 @@
                   <h3 class="p-3 text-xl text-center">
                     <strong>Fornetto Rettangolare</strong> 30cmx22cm alto 7.50cm.
                   </h3>
-                  <?php generateImageSize($fullpath, "fornetto-tognana-rettangolare", "Fornetto Tognana rettangolare"); ?>
+                  <?php generateImageSize($fullpath, "fornetto-tognana-rettangolare", "Fornetto Tognana rettangolare", $env); ?>
                 </div>
                 <div class="flex-1 text-center p-6 border">
                   <h3 class="p-3 text-xl text-center">
                     <strong>Fornetto rotondo</strong> da 30cmX30cm.
                   </h3>
-                  <?php generateImageSize($fullpath, "fornetto-tognana-tondo", "Fornetto Tognana tondo"); ?>
+                  <?php generateImageSize($fullpath, "fornetto-tognana-tondo", "Fornetto Tognana tondo", $env); ?>
                 </div>
               </div>
               <!-- <iframe class="w-full my-6" height="349" src="https://www.youtube.com/embed/KCZFo8uEZz0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
@@ -190,7 +189,7 @@
               <h2 class="text-center text-2xl font-bold pt-12">
                 <span class="inline-block pb-3 uppercase">SEMPLICE, FUNZIONALE + SPAZIO !</span>
               </h2>
-              <?php generateImageSize($fullpath, "fornetto-tognana-strati", "Fornetto Strati"); ?>
+              <?php generateImageSize($fullpath, "fornetto-tognana-strati", "Fornetto Strati", $env); ?>
               <h2 class="text-center text-2xl font-bold pt-12">
                 9 STRATI CHE RENDONO UNICO IL FORNETTO TOGNANA
               </h2>
@@ -271,7 +270,7 @@
                   Acquista a soli €69.90 invece di <strike>€89.90</strike>
                 </span>
               </h2>
-              <?php generateImageSize($fullpath, "fornetto-tognana-entrambi", "Tognana 2 padelle"); ?>
+              <?php generateImageSize($fullpath, "fornetto-tognana-entrambi", "Tognana 2 padelle", $env); ?>
               <p class="mx-auto text-center">
                 <button type="submit" class="btn-animate font-bold btn-submit-to-forms inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   Clicca qui per compilare il modulo d'acquisto

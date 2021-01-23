@@ -27,13 +27,7 @@
         <div class="p-12">
           <a href="<?php echo $value ?>" class="" <?php if($target == true){?> target="_blank" rel="nofollow" <?php }?>>
             <div>
-              <img src="<?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-medium.jpg"
-                  srcset="<?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-small.jpg 320w,
-                          <?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-medium.jpg 800w,
-                          <?php echo $projectPath ?><?php echo $projectPathImg ?><?php echo $list[$i]->image ?>-large.jpg 1200w"
-                  alt="<?php echo $list[$i]->name ?>"
-                  width="300"
-                  height="300">
+              <?php generateImageSize($fullpath, $list[$i]->image, "fornetto tognana rettangolare", $env); ?>
             </div>
 
             <div class="text-center pt-3">
