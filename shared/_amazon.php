@@ -13,7 +13,7 @@
         <div class="bg-white rounded-lg shadow-xl">
           <div class="p-12">
             <div>
-              <?php generateImageSize($fullpath, $list[$i]->image, $list[$i]->name, $env); ?>
+              <?php generateImageSize($fullpath, $list[$i]->image,"jpg", $list[$i]->name, $env); ?>
             </div>
             <div class="mt-8 text-center">
               <h3 class="font-bold text-lg text-gray-700 mb-1 uppercase"><?php echo $list[$i]->name ?></h3>

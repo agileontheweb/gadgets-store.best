@@ -27,7 +27,7 @@
         <div class="p-12">
           <a href="<?php echo $value ?>" class="" <?php if($target == true){?> target="_blank" rel="nofollow" <?php }?>>
             <div>
-              <?php generateImageSize($fullpath, $list[$i]->image, "fornetto tognana rettangolare", $env); ?>
+              <?php generateImageSize($fullpath, $list[$i]->image, "jpg", "fornetto tognana rettangolare", $env); ?>
             </div>
 
             <div class="text-center pt-3">

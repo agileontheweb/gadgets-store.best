@@ -36,11 +36,13 @@ include("../inc/is_upsell.php");
             di cui ti innamorerai!
           </h1>
 
-          <?php if(isADSimage()){?>
+          <!-- <?php if(isADSimage()){?>
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
           <?php }else{ ?>
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
-          <?php } ?>
+          <?php } ?> -->
+
+          <?php generateImageSize($fullpath, "reggiseno3in1", "jpg", "Reggiseno", $env); ?>
 
           <p class="p-3">
             Il suo design innovativo avvolge il tuo seno e
@@ -95,27 +97,27 @@ include("../inc/is_upsell.php");
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-white">
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-04.jpg" alt="Spalline Larghe" class="mx-auto">
+                <?php generateImageSize($fullpath, "reggiseno-04", "jpg", "Spalline Larghe", $env); ?>
                 <h3 class="font-bold uppercase py-3">Spalline Larghe</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-05.jpg" alt="Tessuto leggero e traspirante" class="mx-auto">
+                <?php generateImageSize($fullpath, "reggiseno-05", "jpg", "Tessuto leggero e traspirante", $env); ?>
                 <h3 class="font-bold uppercase py-3">Tessuto leggero e traspirante</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-06.jpg" alt="Elastici contenitivi" class="mx-auto">
+                <?php generateImageSize($fullpath, "reggiseno-06", "jpg", "Elastici contenitivi", $env); ?>
                 <h3 class="font-bold uppercase py-3">Elastici contenitivi</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-07.jpg" alt="3 strati di materiale resistente" class="mx-auto">
+                <?php generateImageSize($fullpath, "reggiseno-07", "jpg", "3 strati di materiale resistente", $env); ?>
                 <h3 class="font-bold uppercase py-3">3 strati di materiale resistente</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-08.jpg" alt="Comoda chiusura laterale" class="mx-auto">
+                <?php generateImageSize($fullpath, "reggiseno-08", "jpg", "Comoda chiusura laterale", $env); ?>
                 <h3 class="font-bold uppercase py-3">Comoda chiusura laterale</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-09.jpg" alt="Fasche effetto push-up" class="mx-auto">
+                <?php generateImageSize($fullpath, "reggiseno-09", "jpg", "Fasche effetto push-up", $env); ?>
                 <h3 class="font-bold uppercase py-3">Fasche effetto push-up</h3>
               </div>
             </div>
@@ -145,13 +147,13 @@ include("../inc/is_upsell.php");
                   <h3 class="p-3 text-xl text-center">
                     Tessuto leggero e traspirante ti darà una sensazione di libertà e comfort assoluto.
                   </h3>
-                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-01.jpg" class="mx-auto" alt="leggero e traspirante">
+                  <?php generateImageSize($fullpath, "reggiseno-01", "jpg", "leggero e traspirante", $env); ?>
                 </div>
                 <div class="flex-1 text-center p-6 border">
                   <h3 class="p-3 text-xl text-center">
                     Ha anche un effetto push-up che volumizza il tuo seno in 3 differenti livelli!
                   </h3>
-                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno-03.jpg" class="mx-auto" alt="volumizza il tuo seno in 3 differenti livelli">
+                  <?php generateImageSize($fullpath, "reggiseno-03", "jpg", "volumizza il tuo seno in 3 differenti livelli", $env); ?>
                 </div>
               </div>
               <iframe class="w-full my-6" height="349" src="https://www.youtube.com/embed/YHTAoKEDwFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -179,7 +181,7 @@ include("../inc/is_upsell.php");
               <h2 class="text-center text-2xl font-bold pt-12">
                 <span class="inline-block pb-3 uppercase">SEMPLICE, FUNZIONALE, adatto a tutte le donne!</span>
               </h2>
-              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1-donna.jpg" class="mx-auto max-w-xs " alt="Cinturini">
+              <?php generateImageSize($fullpath, "reggiseno3in1-donna", "jpg", "Reggiseno donna", $env); ?>
 
               <table class="table-auto p-3 w-full mt-10">
 
@@ -228,7 +230,7 @@ include("../inc/is_upsell.php");
                   </tr>
                 </tbody>
               </table>
-              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>reggiseno3in1.jpg" alt="Smartwatch" class="mx-auto w-full">
+              <?php generateImageSize($fullpath, "reggiseno3in1", "jpg", "Reggiseno 3in1", $env); ?>
             </div>
 
             <div class="max-w-screen-sm mx-auto px-3">

@@ -25,7 +25,7 @@
         <div class="p-12">
           <a href="<?php echo $value ?>" <?php if($target == true){?> target="_blank" rel="nofollow" <?php }?>>
             <div>
-              <?php generateImageSize($fullpath, $list[$i]->image, $list[$i]->name, $env); ?>
+              <?php generateImageSize($fullpath, $list[$i]->image,"jpg", $list[$i]->name, $env); ?>
             </div>
             <div class="text-center pt-3">
               <?php if($list[$i]->offer){?>
