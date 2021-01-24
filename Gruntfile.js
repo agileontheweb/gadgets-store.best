@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 				},
 			 files: [{
 				expand: true,
-				src: ['**/*.jpg'],
+				src: ['**/*.jpg','**/*.png'],
 				cwd: 'img/prodotti',
 				dest: 'dist/img/prodotti_responsive'
 				}],
@@ -148,6 +148,7 @@ module.exports = function(grunt) {
 	// grunt.registerTask('test', [ 'phpmin','copy','concat','cssmin']);
 	// grunt.registerTask('test', ['cssmin']);
 //	grunt.registerTask('test', ['php2html']);
+	grunt.registerTask("default", ['responsive_images','imagemin','clean:prodotti_compress']);
 	// grunt.registerTask('push_dev', 'Build and upload to development', ["rsync:dev"]);
 
 };
