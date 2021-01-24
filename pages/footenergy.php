@@ -33,11 +33,12 @@
             Soffri di piedi e gambe gonfie? Dopo poche ore le senti già pesanti e affaticate? Hai problemi di circolazione?
           </h1>
 
-          <?php if(isADSimage()){?>
+          <?php generateImageSize($fullpath, "footenergy-1", "jpg", "Foot Energy", $env); ?>
+          <!-- <?php if(isADSimage()){?>
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-1-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
           <?php }else{ ?>
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-1.jpg" alt="Foot Energy" class="mx-auto w-full">
-          <?php } ?>
+          <?php } ?> -->
 
           <p class="p-3">
             Utilizzando Foot Energy ogni giorno potrai notare subito i
@@ -101,19 +102,19 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-white">
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-2.jpg" alt="Spalline Larghe" class="mx-auto">
+                <?php generateImageSize($fullpath, "footenergy-2", "jpg", "Foot Energy", $env); ?>
                 <h3 class="font-bold uppercase py-3">portatile e facile da usare</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-3.jpg" alt="Tessuto leggero e traspirante" class="mx-auto">
+                <?php generateImageSize($fullpath, "footenergy-3", "jpg", "Foot Energy", $env); ?>
                 <h3 class="font-bold uppercase py-3">15 livelli di intensità</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-4.jpg" alt="Elastici contenitivi" class="mx-auto">
+                <?php generateImageSize($fullpath, "footenergy-4", "jpg", "Foot Energy", $env); ?>
                 <h3 class="font-bold uppercase py-3">2 modalità selezionabili</h3>
               </div>
               <div class="flex-1 text-center p-6  bg-white text-black">
-                <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-5.jpg" alt="3 strati di materiale resistente" class="mx-auto">
+                <?php generateImageSize($fullpath, "footenergy-5", "jpg", "Foot Energy", $env); ?>
                 <h3 class="font-bold uppercase py-3">Materiale di alta qualità</h3>
               #</div>
             </div>
@@ -151,14 +152,14 @@
                   <h3 class="p-3 text-xl text-center">
                     Invia impulsi elettrici dall'unità di controllo rimovibile.
                   </h3>
-                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-6.jpg" class="mx-auto" alt="leggero e traspirante">
+                  <?php generateImageSize($fullpath, "footenergy-6", "jpg", "Foot Energy", $env); ?>
                 </div>
                 <div class="flex-1 text-center p-6 border">
                   <h3 class="p-3 text-xl text-center">
                     Simula la sensazione di stimolare, massaggiare e
                     rilassare piedi, caviglie, tendini di Achille e muscoli del polpaccio.
                   #</h3>
-                  <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-7.jpg" class="mx-auto" alt="volumizza il tuo seno in 3 differenti livelli">
+                  <?php generateImageSize($fullpath, "footenergy-7", "jpg", "Foot Energy", $env); ?>
                 </div>
               </div>
             </div>
@@ -185,7 +186,7 @@
                 <span class="inline-block uppercase">RILASSA LE TUE TENSIONI MUSCOLARI E MIGLIORA LA CIRCOLAZIONE SANGUIGNA</span>
               </h2>
               <p class="text-center p-3 mb-6 font-bold italic">Adatto anche per tutta la famiglia!</p>
-              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>footenergy-8.jpg" class="mx-auto" alt="Cinturini">
+              <?php generateImageSize($fullpath, "footenergy-8", "jpg", "Foot Energy", $env); ?>
             </div>
             <div class="max-w-screen-sm mx-auto px-3">
               <?php include("../shared/progress-short.php") ?>
