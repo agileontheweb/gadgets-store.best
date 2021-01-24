@@ -19,7 +19,7 @@
     <meta name="description" content="Acquista online le migliori offerte e promozioni del momento, non perdere tra le varie categorie di prodotti: Salute e Benessere, Tecnologia e Formazione, Idee regalo utili e divertenti." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body class="landing-page text-xl">
+  <body class="landing-page">
     <?php if(isset($env)=="prod") {?>
       <script>
         fbq('track', '<?php echo $title ?> Page');
@@ -35,35 +35,18 @@
             <span class="inline-block border-b-4 border-gray-600 pb-3">Senti più 30X</span>
           </h1>
 
-          <?php if(isADSimage()){?>
+          <?php generateImageSize($fullpath, "sentipiu-1", "jpg", "Senti più", $env); ?>
+          <!-- <?php if(isADSimage()){?>
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-1-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
           <?php }else{ ?>
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-1.jpg" alt="sentipiu" class="mx-auto w-full">
-          <?php } ?>
+          <?php } ?> -->
 
         <p class="p-3">
           Con <strong>Senti più 30x</strong> torni a sentire i suoni che ami!
           La risata di tuo nipote, una bella canzone di un tempo o un film in
           televisione ci rendono felici e meritano di essere sentiti bene!
         </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6">
-          <div class="flex-1 text-center uppercase font-bold border">
-            <h3 class="p-3 text-xl text-center">
-              SSSSS
-            </h3>
-          </div>
-          <div class="flex-1 text-center uppercase font-bold border">
-            <h3 class="p-3 text-xl text-center">
-              EEEEE
-            </h3>
-          </div>
-          <div class="flex-1 text-center uppercase font-bold border">
-            <h3 class="p-3 text-xl text-center">
-              GGGG
-            </h3>
-          </div>
-        </div>
 
         <h2 class="text-center p-3 font-bold text-2xl text-red-600">Acquista 3 pezzi a soli €59.90</h2>
         <div class="text-center">
@@ -153,7 +136,7 @@
               questo oggetto lo puoi avere con estrema facilità grazie al pagamento a domicilio
               in un paio di giorni.
             </p>
-            <img src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-2.jpg" class="mx-auto" alt="Senti più">
+            <?php generateImageSize($fullpath, "sentipiu-2", "jpg", "Senti più", $env); ?>
             <div class="grid grid-cols-3 gap-4 mt-6">
               <div class="flex-1 text-center p-6  bg-blue-500 text-white">
                 <h3 class="font-bold uppercase py-3">Amplifica fino a 30 volte</h3>
@@ -204,7 +187,7 @@
                 		<h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">1 Senti PIù 30x</h1>
                 	  <h2 class="text-sm text-gray-500 text-center">€ 69.90</h2>
                     <h3 class="text-sm text-gray-500 text-center text-red-600 pb-6 font-bold">Sconto 30%</h3>
-                    <img class="mx-auto" src="<?php echo $projectPath?><?php echo $projectPathImg?>sentipiu-3.jpg" alt="Senti piu">
+                    <?php generateImageSize($fullpath, "sentipiu-3", "jpg", "Senti più", $env); ?>
                   </div>
                   <p class="text-center mt-4">Spedizione Gratuita</p>
                   <div class="block flex items-center p-8 pt-0  uppercase">
@@ -216,7 +199,6 @@
               </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

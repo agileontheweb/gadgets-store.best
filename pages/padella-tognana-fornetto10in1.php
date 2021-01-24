@@ -27,9 +27,7 @@
 
     <div class="text-xl leading-relaxed">
       <form action="" method="post">
-
         <?php include('valutazione_media.php'); ?>
-
         <div class="max-w-screen-md mx-auto px-3">
           <h1 class="text-center text-2xl pt-0 mb-6">
             Finalmente!! Tognana presenta <span class="font-bold">la nuova linea di padelle 10in1</span>,
@@ -38,7 +36,7 @@
           </h1>
 
           <?php
-            generateImageSize($fullpath, "fornetto-tognana-rettangolare","jpg" , "fornetto tognana rettangolare", $env);
+            generateImageSize($fullpath, "fornetto-tognana-rettangolare","jpg" , "fornetto tognana rettangolare", $env, "md:max-w-md");
           ?>
 
           <p class="py-3">
@@ -188,7 +186,7 @@
               <h2 class="text-center text-2xl font-bold pt-12">
                 <span class="inline-block pb-3 uppercase">SEMPLICE, FUNZIONALE + SPAZIO !</span>
               </h2>
-              <?php generateImageSize($fullpath, "fornetto-tognana-strati", "jpg", "Fornetto Strati", $env); ?>
+              <?php generateImageSize($fullpath, "fornetto-tognana-strati", "jpg", "Fornetto Strati", $env,"md:max-w-md"); ?>
               <h2 class="text-center text-2xl font-bold pt-12">
                 9 STRATI CHE RENDONO UNICO IL FORNETTO TOGNANA
               </h2>

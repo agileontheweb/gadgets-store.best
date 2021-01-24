@@ -17,7 +17,7 @@
     <meta name="description" content="RIGENERA PRO è Composto da resine disciolte in acqua e alcool. L'alcool  presente permette all'acqua di evaporare subito così da lasciare sulle superfici solo le resine che ridonano loro spessore." >
     <?php include('../shared/meta.php'); ?>
   </head>
-  <body class="landing-page text-xl">
+  <body class="landing-page">
     <?php if(isset($env)=="prod") {?>
       <script>
         fbq('trackCustom', 'PageView Rigenera Pro');
@@ -36,11 +36,12 @@
             <span class="font-bold">pulisce e rigenera le superfici di tutti gli oggetti</span>.
           </h1>
 
-          <?php if(isADSimage()){?>
+          <!-- <?php if(isADSimage()){?>
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>rigenera-pro-<?php changeADSimage()?>.jpg"  class="mx-auto w-full">
           <?php }else{ ?>
             <img src="<?php echo $projectPath?><?php echo $projectPathImg?>rigenera-pro.jpg" alt="Smartwatch" class="mx-auto w-full">
-          <?php } ?>
+          <?php } ?> -->
+          <?php generateImageSize($fullpath, "rigenera-pro", "jpg", "rigenera pro", $env); ?>
 
           <p class="py-3">
             Il Made in Italy si riconosce ancora una volta! Tognana marca <strong>riconosciuta a livello Internazionale
