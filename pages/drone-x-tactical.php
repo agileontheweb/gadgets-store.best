@@ -4,10 +4,8 @@
   redirect_has_bought();
   $path_xml = "../xml/tecnologia.xml";
   $id_temp="drone";
-
   include("../inc/get_product_data.php");
   include("../inc/is_upsell.php");
-
 ?>
 
 <!doctype html>
@@ -19,14 +17,14 @@
   </head>
   <body class="landing-page text-xl">
 
-    <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
+    <?php if(isset($env)=="prod") {?>
       <script>
         fbq('trackCustom', 'PageView Drone X Tactical Page');
       </script>
     <?php } ?>
 
     <?php include("../shared/navbar.php") ?>
-    
+
     <div>
       <?php
         $text_price = "Incredibile! Risparmia 99.00€ acquista a soli 169€!";
@@ -60,7 +58,9 @@
             lo rendono un oggetto essenziale per ogni avventura!
           </p>
 
-          <img src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-1.png" alt="Drone">
+          <?php
+            generateImageSize($fullpath, "drone-1", "png", "drone", $env);
+          ?>
           <h2 class="text-center p-3 font-bold text-2xl text-red-600"> Risparmia 99.00€ acquista a soli 169€!</h2>
 
           <div class="max-w-screen-sm mx-auto px-3 <?php echo showHideUpsell(true); ?>">
@@ -97,7 +97,8 @@
             <iframe height="349" class="w-full my-6" src="https://www.youtube.com/embed/r_f9QHMw0VY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 text-base">
-              <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-mike-freizer.png" alt="Mike Freizer">
+              <?php generateImageSize($fullpath, "drone-mike-freizer","png", "drone", $env);?>
+              <!-- <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-mike-freizer.png" alt="Mike Freizer"> -->
               <div class="space-y-2 sm:text-left text-black">
                 <div class="space-y-0.5">
                   <p class="text-lg font-semibold">
@@ -132,7 +133,8 @@
                 <strong>XTactical Drone</strong> è il drone tra i più veloci
                 tra quelli della sua taglia, con una distanza massima di trasmissione fino a 100 metri.
               </p>
-              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-2.png" class="mx-auto" alt="Drone">
+              <?php generateImageSize($fullpath, "drone-2", "png", "drone", $env);?>
+              <!-- <img src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-2.png" class="mx-auto" alt="Drone"> -->
               <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 <div class="flex-1 text-center p-6  bg-gray-100">
                   <h3 class="font-bold uppercase py-3">Drone pieghevole</h3>

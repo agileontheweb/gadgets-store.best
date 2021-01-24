@@ -18,7 +18,7 @@ include("../inc/is_upsell.php");
     <?php include('../shared/meta.php'); ?>
   </head>
   <body class="landing-page text-xl">
-    <?php if(! in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {?>
+    <?php if(isset($env)=="prod") {?>
       <script>
         fbq('trackCustom', 'PageView Reggiseno 3in1 Page');
       </script>
