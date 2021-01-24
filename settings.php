@@ -24,15 +24,18 @@
 
 	$fullpath = $projectPath . $projectPathImg;
 
-	function generateImageSize($fullpath, $image, $alt, $env){
+
+	function generateImageSize($fullpath, $image, $extension, $alt, $env, $custom_class= ''){
+		$add_class = isset($custom_class) ? $custom_class : $default;
+
 		if($env=="dev" || $env=="prod"){
-			echo "<img src=" . $fullpath . $image . ".jpg
+			echo "<img src=".$fullpath.$image.".".$extension."
 						srcset='" . $fullpath . $image. "-small.jpg 320w,"
 											. $fullpath . $image. "-medium.jpg 640w,"
 											. $fullpath . $image. "-large.jpg 1200w'
 											alt='".$alt."' class='mx-auto' width='640' height='640'>";
 		}else{
-			echo "<img src=" . $fullpath . $image . ".jpg class='mx-auto'>"	;
+			echo "<img src=" . $fullpath . $image . ".".$extension." class='mx-auto $add_class'>"	;
 		}
   }
 
