@@ -13,7 +13,7 @@
 
         if($recensione->attributes()->category == $category_title_product){ ?>
         <div class="w-3/5 md:w-2/5 flex-none mx-1 py-4 overflow-hidden shadow-lg mt-6 bg-white">
-          <img src="<?php echo $projectPath?><?php echo $projectPathImg?><?php echo $recensione->img?>" class="w-20 h-20 rounded-full mx-auto" alt="">
+          <?php generateImageSize($fullpath, $recensione->img, "jpg", "Foot Energy", $env, "w-20 h-20 rounded-full"); ?>
           <div class="px-6 py-4 text-center">
             <div class="font-bold text-xl mb-2"><?php echo $recensione->name; ?></div>
             <div class="flex">
