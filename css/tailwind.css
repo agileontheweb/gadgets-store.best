@@ -31167,6 +31167,10 @@ video {
           animation: bounce 1s infinite;
 }
 
+/* GENERATE CSS
+ npx tailwindcss-cli@latest build css/generate-tailwind.css -o css/tailwind.css
+*/
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

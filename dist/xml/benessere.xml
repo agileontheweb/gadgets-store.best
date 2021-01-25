@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<products status = "ok">
+  <record>
+    <name>Spirulina</name>
+    <description>integratore alimentare che aiuta ad attaccare l'adipe, a perdere peso</description>
+    <image>spirulina</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csn</linkaffiliate>
+    <link></link>
+    <offer>Promo 4x1</offer>
+    <prezzo>€49.00</prezzo>
+    <produttore>https://benesserestore.net/</produttore>
+  </record>
+
+  <record id="reggiseno3x1">
+    <name>Reggiseno 3 in 1</name>
+    <description>Lovely bra è il Reggiseno ad effetto push-up più comodo sul mercato.</description>
+    <image>reggiseno3in1</image>
+    <average_rating>4.78 / 5</average_rating>
+    <form_short>false</form_short>
+    <url_product_api>dmc_lovelybra3in1</url_product_api>
+    <privacy>https://www.ilmontestore.sm/privacy-policy</privacy>
+    <quantity>1</quantity>
+    <price_affiliate>18.00</price_affiliate>
+    <extra></extra>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZW</linkaffiliate>
+    <link>reggiseno-3in1.php</link>
+    <offer>Promo 3x1</offer>
+    <prezzo>€59.90</prezzo>
+    <produttore>https://www.ilmontestore.sm/</produttore>
+
+    <recensione category="reggisenolovelybra3in1">
+      <name>Aggiungere</name>
+      <img>recensione-elisa-giordani.jpg</img>
+      <description>Aggiungere!!</description>
+    </recensione>
+    <recensione category="reggisenolovelybra3in1">
+      <name>Aggiungere</name>
+      <img>recensione-marcella-guardigli.jpg</img>
+      <description>Aggiungere!!!</description>
+    </recensione>
+    <recensione category="reggisenolovelybra3in1">
+      <name>Aggiungere</name>
+      <img>recensione-alessandra-derossi.jpg</img>
+      <description>Aggiungere!!</description>
+    </recensione>
+
+  </record>
+
+  <record id="footenergy">
+    <name>Foot Energy</name>
+    <description>Tappetino per i piedi a impulsi magnetici che sollecitano e stimolano i muscoli.</description>
+    <image>footenergy-1</image>
+    <average_rating>4.98 / 5</average_rating>
+    <form_short>false</form_short>
+    <url_product_api>nst_footenergy</url_product_api>
+    <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
+    <quantity>1</quantity>
+    <price_affiliate>17.00</price_affiliate>
+    <extra></extra>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZX</linkaffiliate>
+    <link>footenergy.php</link>
+    <offer>Sconto 70%</offer>
+    <prezzo>€69.90</prezzo>
+    <produttore>https://advmarket.shop</produttore>
+
+    <recensione category="footenergy">
+      <name>Elisa Giordani</name>
+      <img>recensione-elisa-giordani</img>
+      <description>Io lavoro in piedi e senza muovermi molto, e sento sempre le gambe pesanti e gonfie!! a fine serata non vedevo l’ora di stendermi con le gambe in alto!! Ma da quando ho provato questo tappetino per i piedi, tutte le gambe sono migliorate: le sento più leggere, e sono meno gonfie!! Insomma non ne faccio più a meno!!</description>
+    </recensione>
+    <recensione category="footenergy">
+      <name>Marcella Guardigli</name>
+      <img>recensione-marcella-guardigli</img>
+      <description>Arrivato un paio di giorni fa: l’ho usato alla sera, a fine giornata, devo dire che, grazie all’aiuto della microcircolazione, sento le gambe meno gonfie e più leggere!! Continuerò ad usarlo!!!</description>
+    </recensione>
+    <recensione category="footenergy">
+      <name>Alessandra De Rossi</name>
+      <img>recensione-alessandra-derossi</img>
+      <description>Di vantaggioso ha che lo puoi portare dove ti pare!! è comodo, compatto e pieghevole su se stesso, sta anche in borsa. Al mattino me lo porto in ufficio e, sotto la scrivania, lo uso: cosi quando mi alzo le mie gambe sono moto meno indolenzite e più rilassate!!</description>
+    </recensione>
+  </record>
+
+  <record id="sentipiu">
+      <name>Senti Più 30x</name>
+      <description>L’amplificatore di suoni da inserire direttamente nel tuo orecchio.</description>
+      <image>sentipiu-1</image>
+      <average_rating>4.48 / 5</average_rating>
+      <form_short>false</form_short>
+      <url_product_api>dmc_sentipiù30x</url_product_api>
+      <privacy>https://www.dmcshop.it/privacy-policy/</privacy>
+      <quantity>1</quantity>
+      <price_affiliate>18.00</price_affiliate>
+      <extra></extra>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr9</linkaffiliate>
+      <link>sentipiu30x.php</link>
+      <offer>Sconto 30%</offer>
+      <prezzo>€69.90</prezzo>
+      <produttore>https://webshopitaly.sm</produttore>
+
+  </record>
+
+  <record>
+      <name>Keto Slim</name>
+      <description>integratore naturale che aiuta a perdere adipe e massa grassa in maniera sana e senza sforzo.</description>
+      <image>ketoslim</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cso</linkaffiliate>
+      <link></link>
+      <offer>Sconto 40%</offer>
+      <prezzo>€59.00</prezzo>
+      <produttore>https://benesserestore.net/</produttore>
+  </record>
+
+  <record>
+      <name>GLUTEI FIT</name>
+      <description>La prima crema naturale che rassoda e aiuta a ridisegnare i glutei.</description>
+      <image>gluteifit</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csp</linkaffiliate>
+      <link></link>
+      <offer>Promo 2x1</offer>
+      <prezzo>€49.00</prezzo>
+      <produttore>https://benesserestore.net/</produttore>
+  </record>
+
+  <record>
+    <name>Penna Agopuntura Elettronica</name>
+    <description>Promuove la circolazione sanguigna nella pelle e mantiene la salute.</description>
+    <image>penna-agopuntura</image>
+    <linkaffiliate>https://amzn.to/386EsMF</linkaffiliate>
+    <link></link>
+    <offer>Amazon</offer>
+    <prezzo>€19.90 - variabile</prezzo>
+    <formtitle></formtitle>
+    <url_api_product></url_api_product>
+    <selector></selector>
+    <privacy>/</privacy>
+    <produttore>https://amazon.com/</produttore>
+  </record>
+
+  <record>
+    <name>NECK RING</name>
+    <description>Massaggiatore innovativo che massaggia in profondità.</description>
+    <image>neckringplus</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crv</linkaffiliate>
+    <link></link>
+    <offer>Sconto 30%</offer>
+    <prezzo>€59.90</prezzo>
+    <produttore>https://italoshop.it/</produttore>
+  </record>
+
+  <record>
+      <name>WHITE PRO</name>
+      <description>formula a base di carbone bio-attivo che permette di sbiancare i denti recuperando fino a 14 toni di bianco.</description>
+      <image>whitepro</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csr</linkaffiliate>
+      <link></link>
+      <offer>Sconto 40%</offer>
+      <prezzo>€39.00</prezzo>
+      <produttore>https://benesserestore.net/</produttore>
+  </record>
+
+  <record>
+      <name>Foltina Plus</name>
+      <description>Valido alleato per arrestare la caduta dei capelli.</description>
+      <image>foltina</image>
+      <linkaffiliate>https://colorecapelli.net/foltina-plus/</linkaffiliate>
+      <link></link>
+      <offer>Promo 2x1</offer>
+      <prezzo>€49.00</prezzo>
+      <produttore>https://benesserestore.net/</produttore>
+  </record>
+
+  <record>
+    <name>Kallo Kill</name>
+    <description>Piedi lisci e morbidi eliminando per sempre calli e duroni.</description>
+    <image>callokiller</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crg</linkaffiliate>
+    <link></link>
+    <prezzo>€49.00</prezzo>
+    <produttore>https://www.ilmontestore.sm/</produttore>
+  </record>
+
+  <record>
+    <name>Stop Germ</name>
+    <description>Sanitizzante per spazzolini da denti a luce UV. Uccide il 99,9% dei batteri nocivi.</description>
+    <image>stopgerm</image>
+    <prezzo>€49.00</prezzo>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crl</linkaffiliate>
+    <produttore>https://advmarket.shop</produttore>
+  </record>
+
+</products>

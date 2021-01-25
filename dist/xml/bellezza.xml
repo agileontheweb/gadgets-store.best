@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<products status = "ok">
+  <record>
+    <name>Legs Legs</name>
+    <description>Leggings snellenti. Tessuto traspirante. Ideali per lo sport o sotto gli abiti</description>
+    <image>legleg</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqH</linkaffiliate>
+    <link></link>
+    <offer>Sconto 30%</offer>
+    <prezzo>€59.90</prezzo>
+    <produttore>https://www.ilmontestore.sm/</produttore>
+  </record>
+
+  <record>
+    <name>Barba Plus</name>
+    <description>Lozione a base di taurina ed arginina che ti permette di rinvigorire la barba.</description>
+    <image>barbaplus</image>
+    <linkaffiliate>http://link.colorecapelli.net/affiliateproject/tracker/click/Css</linkaffiliate>
+    <link></link>
+    <offer>Promo 2x1</offer>
+    <prezzo>€49.00</prezzo>
+    <produttore>https://benesserestore.net/</produttore>
+  </record>
+
+  <record>
+    <name>Fast lifting</name>
+    <description>Crema anti-age che risolve i problemi dovuti all'invecchiamento in maniera definitiva.</description>
+    <image>fast-lifting</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csx</linkaffiliate>
+    <link></link>
+    <prezzo>€49.00</prezzo>
+    <produttore>https://benesserestore.net/</produttore>
+  </record>
+
+  <record>
+    <name>Black Eyelashes</name>
+    <description>Buovissime e rivoluzionarie extentions magnetiche per ciglia.</description>
+    <image>black-eyelashes</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csv</linkaffiliate>
+    <produttore>https://www.ilmontestore.sm/</produttore>
+    <prezzo>€49.00</prezzo>
+    <link></link>
+  </record>
+
+
+  <record>
+      <name>HAIR MASK</name>
+      <description>Maschera per capelli con :olio di argan, pantenolo, olio di cocco, acido ialuronico.</description>
+      <image>hairmaskgold</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqI</linkaffiliate>
+      <link></link>
+      <offer>Promo 2x1</offer>
+      <produttore>https://maviva.net/</produttore>
+      <prezzo>€49.00</prezzo>
+  </record>
+
+  <record>
+      <name>Hair Wig</name>
+      <description>Rivoluzionario sistema di infoltimento dei capelli ad effetto garantito.</description>
+      <image>hairwig</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqJ</linkaffiliate>
+      <link></link>
+      <offer>Sconto 50%</offer>
+      <prezzo>€59.00</prezzo>
+      <produttore>https://www.ilmontestore.sm/</produttore>
+  </record>
+
+  <record>
+      <name>Woman Shave</name>
+      <description>Rasoio/epilatore da donna, puoi utilizzarlo in ogni parte del corpo.</description>
+      <image>woman-shave</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqL</linkaffiliate>
+      <link></link>
+      <prezzo>€59.00</prezzo>
+      <produttore>http://advmarket.shop</produttore>
+  </record>
+
+  <record>
+      <name>Foltina Plus</name>
+      <description>Valido alleato per arrestare la caduta dei capelli.</description>
+      <image>foltina</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crf</linkaffiliate>
+      <link></link>
+      <offer>Promo 2x1</offer>
+      <prezzo>€49.00</prezzo>
+      <produttore>https://benesserestore.net/</produttore>
+  </record>
+
+  <record>
+    <name>Kallo Kill</name>
+    <description>Piedi lisci e morbidi eliminando per sempre calli e duroni.</description>
+    <image>callokiller</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crg</linkaffiliate>
+    <link></link>
+    <prezzo>€59.00</prezzo>
+    <produttore>https://www.ilmontestore.sm/</produttore>
+  </record>
+
+</products>

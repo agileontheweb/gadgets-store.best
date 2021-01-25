@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* GENERATE CSS
+ npx tailwindcss-cli@latest build css/generate-tailwind.css -o css/tailwind.css
+*/

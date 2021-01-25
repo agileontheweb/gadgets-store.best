@@ -11,7 +11,7 @@
 	<?php }else{ ?>
 		<link rel="stylesheet" href="<?php echo $projectPath ?>css/GDPR-cookie.css">
 		<link rel="stylesheet" href="<?php echo $projectPath ?>css/tab.css">
-		<link rel="stylesheet" href="<?php echo $projectPath ?>dist/css.min.css">
+		<link rel="stylesheet" href="<?php echo $projectPath ?>css/tailwind.css">
 	<?php }
 
 	if(isset($env)=="prod"){

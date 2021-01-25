@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<products>
+  <record>
+      <name>Ti Mappo</name>
+      <description>Avrai la posizione di qualsiasi oggetto sempre a portata di smartphone.</description>
+      <image>timappo</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cqz</linkaffiliate>
+      <link></link>
+      <offer>Sconto 30%</offer>
+      <prezzo>€49.00</prezzo>
+      <produttore>https://www.ilmontestore.sm</produttore>
+  </record>
+
+  <record>
+    <name>Paladone Star Wars</name>
+    <description>Una brillante lampada da tavolo nel design di un classico Star Wars.</description>
+    <image>lampada-starwars-posizionabile</image>
+    <linkaffiliate>https://amzn.to/2WWlHoF</linkaffiliate>
+    <link></link>
+    <offer>Amazon</offer>
+    <prezzo>€46.00 - variabile</prezzo>
+    <formtitle></formtitle>
+    <url_api_product></url_api_product>
+    <selector></selector>
+    <privacy>/</privacy>
+    <produttore>https://www.amazon.com</produttore>
+  </record>
+
+  <record id="drone">
+    <name>Drone</name>
+    <description>X Tactical è progettato con estrema precisione con un'alta qualità di ripresa.</description>
+    <image>drone-1</image>
+    <average_rating>4.78 / 5</average_rating>
+    <form_short>false</form_short>
+    <url_product_api>bgood_xdrone</url_product_api>
+    <privacy>https://www.ilmontestore.sm/privacy-policy</privacy>
+    <quantity>null</quantity>
+    <price_affiliate>18.00</price_affiliate>
+    <extra></extra>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/DbK</linkaffiliate>
+    <link>drone-x-tactical.php</link>
+    <offer>Promo 3x1</offer>
+    <prezzo>da €99.00</prezzo>
+    <url_api_product>bgood_xdrone</url_api_product>
+    <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
+    <produttore>https://www.ilmontestore.sm</produttore>
+    <upsell_page>smartwatch-xwatch6.php</upsell_page>
+
+    <selector selector="selector">
+      <selector_1>1 Tactical Drone €99.00</selector_1>
+      <selector_2>2 Tactical Drone €159.00</selector_2>
+      <selector_3>1 Kit completo €169.00</selector_3>
+      <selector_value_1>1</selector_value_1>
+      <selector_value_2>2</selector_value_2>
+      <selector_value_3>1k</selector_value_3>
+      <quantity_upsell>1k</quantity_upsell>
+    </selector>
+  </record>
+
+  <record id="xw6.0">
+    <name>XW6.0</name>
+    <description>Smartwatch performante e intuitivo, avrai tutto ciò che ti occorre a portata di mano.</description>
+    <image>xw60-sceglistile</image>
+    <average_rating>4.88 / 5</average_rating>
+    <form_short>false</form_short>
+    <url_product_api>bgood_xdrone</url_product_api>
+    <privacy>https://www.ilmontestore.sm/privacy-policy</privacy>
+    <quantity>null</quantity>
+    <!-- <price_affiliate>18.00</price_affiliate> -->
+    <!-- <extra> - Colore e cinturini potrai deciderli al telefono.</extra> -->
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqD</linkaffiliate>
+    <link>smartwatch-xwatch6.php</link>
+    <offer>Sconto 50%</offer>
+    <!-- <prezzo>€59.90</prezzo> -->
+    <url_api_product>bgood_xwatch6</url_api_product>
+    <selector>true</selector>
+    <privacy>https://www.ilmontestore.sm/privacy-policy/</privacy>
+    <produttore>https://www.ilmontestore.sm</produttore>
+    <upsell_page>drone-x-tactical.php</upsell_page>
+
+    <selector selector="selector">
+      <selector_1>1 XW6.0 €59.90</selector_1>
+      <selector_2>2 XW6.0 €79.90</selector_2>
+      <selector_3>3 XW6.0 €99.90</selector_3>
+      <selector_value_1>1</selector_value_1>
+      <selector_value_2>2</selector_value_2>
+      <selector_value_3>3</selector_value_3>
+      <quantity_upsell>1</quantity_upsell>
+    </selector>
+  </record>
+
+  <record>
+    <name>C10 XPOWER</name>
+    <description>Controlla la tua salute unendo tutte le funzionalità di uno smart watch.</description>
+    <image>c10xpower</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqD</linkaffiliate>
+    <!-- <link>c10-xpower.php</link> -->
+    <url_api_product>bgood_c10xpower</url_api_product>
+    <offer>Sconto 50%</offer>
+    <prezzo>€59.90</prezzo>
+    <produttore>https://www.ilmontestore.sm</produttore>
+  </record>
+
+  <record>
+    <name>X-STATION</name>
+    <description>Stazione di ricarica wireless che permette di ricaricare fino a 4 dispositivi contemporaneamente.</description>
+    <image>xstation</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CsU</linkaffiliate>
+    <link></link>
+    <offer>Sconto 50%</offer>
+    <prezzo>€69.90</prezzo>
+    <produttore>https://www.ilmontestore.sm</produttore>
+  </record>
+
+  <record>
+    <name>Cinescreen</name>
+    <description>L'Amplificatore di Schermo più scelto dagli Appassionati di Cinema!</description>
+    <image>cinescreen</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqE</linkaffiliate>
+    <link></link>
+    <offer>Sconto 50%</offer>
+    <prezzo>€59.00</prezzo>
+    <produttore>https://advmarket.shop/</produttore>
+  </record>
+
+  <record>
+      <name>HEAD-UP DRIVE</name>
+      <description>Una guida sicura senza rinunciare a stile e tecnologia.</description>
+      <image>headupdrive</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crb</linkaffiliate>
+      <link></link>
+      <offer>Promo 2x1</offer>
+      <prezzo>€59.00</prezzo>
+      <produttore>https://www.bazardelleoccasioni.com</produttore>
+  </record>
+
+  <record>
+      <name>Room Diffuser</name>
+      <description>Design ed efficienza per rendere la tua casa un tripudio di profumo e freschezza.</description>
+      <image>aroomdiffuser</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crc</linkaffiliate>
+      <link></link>
+      <prezzo>€49.90</prezzo>
+      <produttore>https://vigarostore.com/</produttore>
+  </record>
+
+  <record>
+      <name>G-CONSOLE-RETRO</name>
+      <description>La Retro Console con i migliori successi del passato a portata di tasca.</description>
+      <image>gconsoleretro</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crd</linkaffiliate>
+      <link></link>
+      <offer>Sconto 30%</offer>
+      <prezzo>€69.90</prezzo>
+      <produttore>https://www.bazardelleoccasioni.com</produttore>
+  </record>
+
+  <record>
+      <name>AIR LOVER</name>
+      <description>Purificatore d'aria portatile senza fili. Batteria agli ioni di Litio ricaricabile.</description>
+      <image>airlove</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZV</linkaffiliate>
+      <link></link>
+      <prezzo>€99.90</prezzo>
+      <produttore>https://www.ilmontestore.sm</produttore>
+  </record>
+
+  <record>
+      <name>Thermo Pile</name>
+      <description>Gilet riscaldante dotato di power bank per ricaricarlo in qualsiasi circostanza.</description>
+      <image>gilet</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cru</linkaffiliate>
+      <link></link>
+      <prezzo>€89.90</prezzo>
+      <produttore>https://advmarket.shop/</produttore>
+  </record>
+
+</products>

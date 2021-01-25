@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<products>
+  <record id="rigenerapro">
+    <name>Rigenera Pro</name>
+    <description>L’unico liquido rigenerante raccomandato dai professionisti.</description>
+    <image>rigenera-pro</image>
+    <average_rating>4.98 / 5</average_rating>
+    <form_short>true</form_short>
+    <url_product_api>dmc_rigenerapro2x1</url_product_api>
+    <privacy>https://webshopitaly.sm/documenti/2-privacy-policy</privacy>
+    <quantity>2</quantity>
+    <price_affiliate>17.00</price_affiliate>
+    <extra></extra>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csd</linkaffiliate>
+    <link>rigenera-superfici.php</link>
+    <offer>Promo 2x1</offer>
+    <prezzo>€59.90</prezzo>
+    <produttore>https://webshopitaly.sm/</produttore>
+  </record>
+
+  <record id="fornetoo10in1">
+    <name>Fornetto 10in1</name>
+    <description>Tognana vi presenta la nuova linea di padella 10in1.</description>
+    <image>fornetto-tognana-entrambi</image>
+    <average_rating>4.98 / 5</average_rating>
+    <form_short>false</form_short>
+    <url_product_api>cnitalia_tognana</url_product_api>
+    <privacy>https://italoshop.it/content/2-privacy-policy</privacy>
+    <quantity>1</quantity>
+    <price_affiliate>16.00</price_affiliate>
+    <extra><mark>Fornirai all'operatrice telefonica il formato della pentola (rettangolare o rotonda)</mark></extra>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/DcB</linkaffiliate>
+    <link>padella-tognana-fornetto10in1.php</link>
+    <offer>Sconto 20%</offer>
+    <prezzo>€69.90</prezzo>
+    <produttore>https://italoshop.it/</produttore>
+  </record>
+
+  <record id="ecofrost">
+    <name>Eco Frost</name>
+    <description>Piastra che permette di scongelare gli alimenti in maniera semplice, veloce e naturale.</description>
+    <image>ecofrost</image>
+    <average_rating>4.98 / 5</average_rating>
+    <form_short>false</form_short>
+    <url_product_api>cnitalia_tognana</url_product_api>
+    <privacy>https://italoshop.it/content/2-privacy-policy</privacy>
+    <quantity>1</quantity>
+    <price_affiliate>16.00</price_affiliate>
+    <extra><mark>Fornirai all'operatrice telefonica il formato della pentola (rettangolare o rotonda)</mark></extra>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/DbO</linkaffiliate>
+    <link></link>
+    <offer>Promo 2x1</offer>
+    <prezzo>€69.90</prezzo>
+    <produttore>https://www.ilmontestore.sm</produttore>
+  </record>
+
+
+  <record id="suolaclean">
+    <name>Suola Clean</name>
+    <description>Copri scarpe che ti farà risparmiare tempo e denaro nella pulizia dei pavimenti.</description>
+    <image>suolaclean</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csc</linkaffiliate>
+    <link></link>
+    <offer>Promo 2x1</offer>
+    <prezzo>€59.90</prezzo>
+    <produttore>https://webshopitaly.sm/</produttore>
+  </record>
+
+  <record id="setcopper5in1">
+    <name>Set Copper 5 in 1</name>
+    <description>Prepara gustose ricette senza dover acquistare costose padelle diverse.</description>
+    <image>setcopper</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CA6</linkaffiliate>
+    <link></link>
+    <offer>Offerta speciale</offer>
+    <prezzo>€69.90</prezzo>
+    <formtitle></formtitle>
+    <url_api_product></url_api_product>
+    <privacy>https://italoshop.it/privacy-policy/</privacy>
+    <produttore>https://italoshop.it/</produttore>
+  </record>
+
+  <record id="yardhands">
+    <name>Yard Hands</name>
+    <description>I primi guanti pensati per renderti facile e veloce fare giardinaggio.</description>
+    <image>guantogiardino</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Csa</linkaffiliate>
+    <link></link>
+    <offer>Promo 2x1</offer>
+    <prezzo>€59.99</prezzo>
+    <produttore>https://www.kalaishop.com/</produttore>
+  </record>
+
+  <record id="nofumogrill">
+    <name>No Fumo Grill</name>
+    <description>Griglia Elettrica, superficie in pietra antiaderente, anti graffo e facile da pulire.</description>
+    <image>grigliazerofumo</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqO</linkaffiliate>
+    <link></link>
+    <offer>Sconto 50%</offer>
+    <prezzo>€75.00</prezzo>
+    <produttore>https://webshopitaly.sm/</produttore>
+  </record>
+
+  <record id="supervapor">
+      <name>SUPER VAPOR</name>
+      <description>Scopa a vapore.Lava e igienizza la casa eliminando il 99% dei germi e dei batteri.</description>
+      <image>supervapor</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CqP</linkaffiliate>
+      <link></link>
+      <offer>Offerta Lancio</offer>
+      <prezzo>€99.90</prezzo>
+      <produttore>https://webshopitaly.sm/</produttore>
+  </record>
+
+  <record id="airlover">
+      <name>AIR LOVER</name>
+      <description>Purificatore d'aria portatile senza fili. Batteria agli ioni di Litio ricaricabile.</description>
+      <image>airlove</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/CZV</linkaffiliate>
+      <link></link>
+      <offer>Promo 2x1</offer>
+      <prezzo>€99.90</prezzo>
+      <produttore>https://www.ilmontestore.sm</produttore>
+  </record>
+
+  <record id="vortex">
+      <name>Vortex</name>
+      <description>L'estrattore ad elevata velocità che riesce ad estrarre il 100% degli elementi nutritivi dagli alimenti.</description>
+      <image>estrattore</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crj</linkaffiliate>
+      <link></link>
+      <offer>Sconto 70%</offer>
+      <prezzo>€69.90</prezzo>
+      <produttore>https://webshopitaly.sm/</produttore>
+  </record>
+
+  <record id="smartlens">
+      <name>Smart Lens</name>
+      <description>Microscopio tascabile che va applicato alla fotocamera posteriore dello smartphone.</description>
+      <image>smart-lens</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crk</linkaffiliate>
+      <link></link>
+      <prezzo>€49.00</prezzo>
+      <produttore>http://advmarket.shop/</produttore>
+  </record>
+
+  <record id="macchinacucire">
+      <name>Macchina da cucire portatile</name>
+      <description>Leggera e compatta, adatta a tutti i tipi di tessuto, facile.</description>
+      <image>sewwhiz</image>
+      <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Cr8</linkaffiliate>
+      <link></link>
+      <offer>Sconto 30%</offer>
+      <prezzo>€69.90</prezzo>
+      <produttore>https://www.kalaishop.com/</produttore>
+  </record>
+
+  <record id="xwater">
+    <name>X Water</name>
+    <description>Filtro rivoluzionario capace di eliminare ogni impurità e sostanza chimica nociva dall'acqua e renderla potabile.</description>
+    <image>rubinetto</image>
+    <linkaffiliate>http://link.gadgets-store.best/affiliateproject/tracker/click/Crm</linkaffiliate>
+    <link></link>
+    <prezzo>€59.00</prezzo>
+    <produttore>https://www.ilmontestore.sm/</produttore>
+  </record>
+
+</products>

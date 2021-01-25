@@ -33,7 +33,7 @@
 						srcset='" . $fullpath . $image. "-small.jpg 320w,"
 											. $fullpath . $image. "-medium.jpg 640w,"
 											. $fullpath . $image. "-large.jpg 1200w'
-											alt='".$alt."' class='mx-auto' width='640' height='640'>";
+											alt='".$alt."' class='mx-auto $add_class' width='640' height='640'>";
 		}else{
 			echo "<img src=" . $fullpath . $image . ".".$extension." class='mx-auto $add_class'>"	;
 		}

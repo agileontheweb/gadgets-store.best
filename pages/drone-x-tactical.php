@@ -98,7 +98,6 @@
 
             <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 text-base">
               <?php generateImageSize($fullpath, "drone-mike-freizer","png", "drone", $env);?>
-              <!-- <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-mike-freizer.png" alt="Mike Freizer"> -->
               <div class="space-y-2 sm:text-left text-black">
                 <div class="space-y-0.5">
                   <p class="text-lg font-semibold">
