@@ -63,6 +63,10 @@
           ?>
           <h2 class="text-center p-3 font-bold text-2xl text-red-600"> Risparmia 99.00€ acquista a soli 169€!</h2>
 
+          <div class="text-center">
+            <?php howmanybuyer(1429) ?>.
+          </div>
+
           <div class="max-w-screen-sm mx-auto px-3 <?php echo showHideUpsell(true); ?>">
             <?php include("../shared/progress-short.php") ?>
           </div>
@@ -133,7 +137,6 @@
                 tra quelli della sua taglia, con una distanza massima di trasmissione fino a 100 metri.
               </p>
               <?php generateImageSize($fullpath, "drone-2", "png", "drone", $env);?>
-              <!-- <img src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-2.png" class="mx-auto" alt="Drone"> -->
               <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 <div class="flex-1 text-center p-6  bg-gray-100">
                   <h3 class="font-bold uppercase py-3">Drone pieghevole</h3>
@@ -180,8 +183,7 @@
               <p class="p-3 text-center">
                 <strong>XTactical Drone</strong> vanta tutte le funzionalità necessarie a soddisfare i professionisti, ma è estremamente semplice da far volare e da comandare, persino per i principianti assoluti.
               </p>
-              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-3.png" class="mx-auto" alt="Drone">
-
+              <?php generateImageSize($fullpath, "drone-3", "png", "drone", $env, "max-w-md");?>
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
                   <?php if (isUpsell()) { ?>
@@ -195,7 +197,7 @@
               <p class="p-3 text-center">
                 <strong>XTactical Drone</strong> è dotato di scatti fotografici integrati e preimpostati, come lo scatto a boomerang e quello ad asteroide; quindi, premendo solo un pulsante, persino il soggetto tecnicamente più a digiuno può avere un'impronta di qualità professionale
               </p>
-              <img src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-4.png" class="mx-auto" alt="Drone">
+              <?php generateImageSize($fullpath, "drone-4", "png", "drone", $env, "max-w-md");?>
 
               <p class="mx-auto text-center my-6">
                 <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
@@ -216,7 +218,7 @@
               </h2>
 
               <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6">
-                <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-logo-1.png" alt="logo">
+                <?php generateImageSize($fullpath, "drone-logo-1", "png", "drone", $env, "block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0 max-w-xs");?>
                 <div class="text-center space-y-2 sm:text-left text-black">
                   <p>
                     "La qualità di questo drone è sconvolgente, paragonata al prezzo che pagherai. Questo segna un punto di svolta nella vendita dei droni. Dal XTactical Drone si evince chiaramente che, adesso, è possibile acquistare un drone di alta gamma ad una frazione del costo di alcuni dei modelli di punta presenti sul mercato. Adesso, questa tecnologia è accessibile a tutti e non potremmo esserne più entusiasti!"
@@ -225,7 +227,7 @@
               </div>
 
               <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6">
-                <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-logo-2.png" alt="logo">
+                <?php generateImageSize($fullpath, "drone-logo-2", "png", "drone", $env, "block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0 max-w-xs");?>
                 <div class="text-center space-y-2 sm:text-left text-black">
                   <p>
                     "Siamo sempre alla ricerca del modo migliore di documentare le nostre fantastiche avventure, in modo da poterle condividere con i nostri clienti e seguaci. Abbiamo sperimentato i droni in passato, ma finora li avevamo sempre trovati eccessivamente complicati, sottopotenziati e troppo fragili da mettere in valigia. Il XTactical Drone ha completamente cambiato il modo in cui registriamo i nostri viaggi e, adesso, giriamo video di qualità professionale nella metà del tempo!".
@@ -234,7 +236,7 @@
               </div>
 
               <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6">
-                <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-logo-3.png" alt="logo">
+                <?php generateImageSize($fullpath, "drone-logo-3", "png", "drone", $env, "block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0 max-w-xs");?>
                 <div class="text-center space-y-2 sm:text-left text-black">
                   <p>
                     "Non farti ingannare dalle dimensioni compatte del drone: la potenza che custodisce può essere paragonata a quella della maggior parte dei dispositivi dalle dimensioni di due o tre volte maggiori di XTactical Drone. La sua ingegneria di precisione lo rende sia leggero che sorprendentemente robusto. La confezione è corredata di eliche di ricambio per ogni eventualità, ma non siamo del tutto sicuri che avrai mai bisogno di usarle!"
@@ -259,26 +261,7 @@
               <h2 class="text-center text-2xl font-bold pt-12 text-white">
                 <span class="inline-block border-b-4 border-gray-600 pb-3 uppercase">Il Drone meglio valutato dai clienti su Internet</span>
               </h2>
-
-              <img class="block mx-auto h-16 my-6" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-rated-logo.png" alt="Logo">
-              <div class="text-center">
-                <img class="inline-block" src="<?php echo $projectPath?><?php echo $projectPathImg?>star.png" alt="stella">
-                <img class="inline-block" src="<?php echo $projectPath?><?php echo $projectPathImg?>star.png" alt="stella">
-                <img class="inline-block" src="<?php echo $projectPath?><?php echo $projectPathImg?>star.png" alt="stella">
-                <img class="inline-block" src="<?php echo $projectPath?><?php echo $projectPathImg?>star.png" alt="stella">
-                <img class="inline-block" src="<?php echo $projectPath?><?php echo $projectPathImg?>star.png" alt="stella">
-                5/5
-              </div>
-
-              <p class="mx-auto text-center my-6">
-                <button type="submit" class="btn-submit-to-forms font-bold inline-block mt-6 bg-yellow-500 hover:bg-yellow-400 text-white rounded-full px-12 py-3 shadow-xl focus:outline-none">
-                  <?php if (isUpsell()) { ?>
-                    Aggiungi all'ordine
-                  <?php }else { ?>
-                    Ordina Ora
-                  <?php }?>
-                </button>
-              </p>
+              <?php generateImageSize($fullpath, "drone-rated-logo", "png", "drone", $env, "block mx-auto h-16 my-6 max-w-xs");?>
             </div>
 
             <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
@@ -290,7 +273,7 @@
                     		<h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">1 XTACTICAL DRONE</h1>
                     	  <h2 class="text-sm text-gray-500 text-center">€ 99.00</h2>
                         <h3 class="text-sm text-gray-500 text-center text-red-600 pb-6 font-bold">Sconto 50%</h3>
-                        <img class="mx-auto" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-5.png" alt="Drone">
+                        <?php generateImageSize($fullpath, "drone-5", "png", "drone", $env);?>
                       </div>
                       <p class="text-center mt-4">🚚 Spedizione gratuita</p>
                       <div class="block flex items-center p-8 pt-0  uppercase">
@@ -397,7 +380,7 @@
                         </li>
                       </ul>
                     </div>
-                    <img class="mx-auto" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-kit.png" alt="Drone Kit">
+                    <?php generateImageSize($fullpath, "drone-kit", "png", "drone", $env);?>
                   </div>
                   <div class="block flex items-center p-8  uppercase">
                     <button type="submit" class="btn-animate btn-submit-to-forms font-bold text-center mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
@@ -418,7 +401,7 @@
                       </h1>
                       <h2 class="text-sm text-gray-500 text-center">€ 159.00</h2>
                       <h3 class="text-sm text-gray-500 text-center pb-6 text-red-600 pb-6 font-bold">Risparmi €39.00</h3>
-                      <img class="mx-auto" src="<?php echo $projectPath?><?php echo $projectPathImg?>drone-5.png" alt="Drone">
+                      <?php generateImageSize($fullpath, "drone-5", "png", "drone", $env);?>
                       <div class="block flex items-center p-8  uppercase">
                         <button type="submit" class="text-center btn-submit-to-forms font-bold mt-3 text-lg font-semibold bg-black w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
                           Ordina Subito

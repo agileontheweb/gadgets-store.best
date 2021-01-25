@@ -11,5 +11,4 @@
   $visited_newsletter_page = "";
   $store_link_upsell = "";
   $upsell = 0;
-  $is_dev = 0;
 ?>

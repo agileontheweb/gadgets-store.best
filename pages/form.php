@@ -54,7 +54,7 @@ include("../inc/send_form_worldfilia.php");
 	</p>
 
 	<?php
-		generateImageSize(null, $img, "jpg", "Fornetti Tognana tondo e rettangolare", $env);
+		generateImageSize(null, $img, "jpg", "Fornetti Tognana tondo e rettangolare", $env, "max-w-xs");
 	?>
 
 	<div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>

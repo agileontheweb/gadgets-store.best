@@ -19,6 +19,12 @@
 ##### PROGRESS SHORT #####
 # Questo scala la quantità "fake" durante la giornata usando la funzione remainingPieces()
 
+##### ADS FACEBOOK#####
+# Aggiungendo nel url i parametri fbclid si disattivano parti di template, quelle per non fare uscire
+# dalla pagina. Questo si attiva quando si arriva sulla landing page da una inserzione di FB.
+# Aggiungendo nel url i parametri ads-1 ads-2 ads-3 si concatena l'immagine corretta per l'ADS
+
+
 ##### STAGING #####
 # Prima di mettere in produzione le prove si fanno attraverso il sotto dominio dev.nomesito.com
 # Usare Grunt per generare:
@@ -32,8 +38,3 @@
 ##### PRODUZIONE #####
 # Prima di mettere in produzione le prove si fanno attraverso il sotto dominio nomesito.com
 # Usare Grunt per generare e fare il Push sul server
-
-##### ADS #####
-# Aggiungendo nel url i parametri fbclid si disattivano parti di template, quelle per non fare uscire
-# dalla pagina. Questo si attiva quando si arriva sulla landing page da una inserzione di FB.
-# Aggiungendo nel url i parametri ads-1 ads-2 ads-3 si concatena l'immagine corretta per l'ADS
