@@ -35,7 +35,7 @@
 											. $fullpath . $image. "-large.jpg 1200w'
 											alt='".$alt."' class='mx-auto $add_class' width='640' height='640'>";
 		}else{
-			echo "<img src=" . $fullpath . $image . ".".$extension." class='mx-auto $add_class'>"	;
+			echo "<img src=" . $fullpath . $image . ".".$extension." class='mx-auto $add_class' alt='".$alt."'>"	;
 		}
   }
 

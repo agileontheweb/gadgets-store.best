@@ -6,6 +6,7 @@
 <link rel="dns-prefetch" href="//www.facebook.com">
 
 <?php
+	include("favicon.php");
 	if($env=="dev" || $env=="prod"){?>
 		<link rel="stylesheet" href="<?php echo $projectPath ?>dist/css.min.css">
 	<?php }else{ ?>

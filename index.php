@@ -20,7 +20,7 @@
     <?php } ?>
 
     <?php include("shared/navbar.php") ?>
-    <div class="pt-28 md:pt-32">
+    <div class="pt-24">
       <h1 class="py-6 text-center text-3xl md:text-2xl px-3 border">
         Tanti <strong><?php echo $brand_slogan; ?></strong> da prendere al volo !
       </h1>
